@@ -1,0 +1,38 @@
+import React from "react";
+import { IconComponentProps } from "./Icon";
+
+interface SendIconProps extends IconComponentProps {}
+
+const SendIcon: React.FC<SendIconProps> = (props: SendIconProps) => {
+  const {
+    fill = "none",
+    size = 20,
+    iconClassName = "",
+    pathClassName = {},
+    stroke = "",
+    strokeWidth = 2,
+    allPathClassName = "",
+    ...rest
+  } = props;
+  return (
+    <svg
+      className={`${iconClassName}`}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill={fill}
+      stroke={stroke}
+      strokeWidth={strokeWidth}
+      {...rest}
+    >
+      <path
+        d="M16.114 9.291c.552-.552 1.1-1.84-1.2-.276a395.806 395.806 0 0 1-6.489 4.372 2.7 2.7 0 0 1-2.117.046c-1.38-.414-2.991-.966-2.991-.966s-1.1-.691.783-1.427c0 0 7.961-3.267 10.722-4.418 1.058-.46 4.647-1.932 4.647-1.932s1.657-.645 1.519.92c-.046.644-.414 2.9-.782 5.338-.553 3.451-1.151 7.225-1.151 7.225s-.092 1.058-.874 1.242a3.787 3.787 0 0 1-2.3-.828c-.184-.138-3.451-2.209-4.648-3.221a.872.872 0 0 1 .046-1.473 169.31 169.31 0 0 0 4.835-4.602Z"
+        className={`${allPathClassName} ${pathClassName?.[0]}`}
+      ></path>
+    </svg>
+  );
+};
+const MemoSendIcon = React.memo(SendIcon);
+export default MemoSendIcon;
+
+

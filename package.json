@@ -1,0 +1,68 @@
+{
+  "name": "aluminium",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3107",
+    "lint": "eslint",
+    "import:old-data": "node scripts/import-old-data.cjs",
+    "postinstall": "prisma generate",
+    "create-admin": "node scripts/create-admin.cjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@prisma/client": "6.19.3",
+    "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-popover": "^1.1.15",
+    "axios": "^1.20.0",
+    "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "framer-motion": "^12.23.24",
+    "jose": "^6.2.10",
+    "js-cookie": "^3.0.8",
+    "lucide-react": "^0.553.0",
+    "next": "16.3.4",
+    "react": "19.2.0",
+    "react-datepicker": "^8.9.0",
+    "react-dom": "19.2.0",
+    "react-dropzone": "^14.3.8",
+    "react-hook-form": "^7.66.0",
+    "react-select": "^5.10.2",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.4.0",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "@tailwindcss/postcss": "^4",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "postcss": "^8.5.6",
+    "prisma": "6.19.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "pnpm": {
+    "overrides": {
+      "minimatch@<3.1.3": ">=3.1.3",
+      "minimatch@>=9.0.0 <9.0.6": ">=9.0.6",
+      "flatted": ">=3.3.4",
+      "picomatch": ">=4.0.3",
+      "defu": ">=6.1.5",
+      "@babel/core": ">=7.29.6"
+    },
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma",
+      "unrs-resolver"
+    ]
+  }
+}
