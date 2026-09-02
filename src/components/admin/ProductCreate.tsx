@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { prepareWindow } from "@/lib/helperFunctions";
+import { apiInstance } from "@/lib/axiosApi";
 import Image from "next/image";
 
 type ProductFormValues = {
@@ -32,8 +33,7 @@ export default function CreateEditProduct() {
   useEffect(() => {
     if (!productId) return;
     const loadProduct = async () => {
-      const res = await fetch(`/api/product?id=${productId}`);
-      const json = await res.json();
+      const json: any = await apiInstance.get(`/product?id=${productId}`);
       const product = json.data;
       if (product) {
         setValue("title", product.title);
@@ -61,16 +61,10 @@ export default function CreateEditProduct() {
     };
 
     try {
-      const res = await fetch("/api/product", {
-        method: productId ? "PUT" : "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const json = await res.json();
-
-      if (!res.ok) {
-        // alert(json.message || "Operation failed");
-        return;
+      if (productId) {
+        await apiInstance.put("/product", payload);
+      } else {
+        await apiInstance.post("/product", payload);
       }
 
       // alert(productId ? "Product Updated!" : "Product Created!");
@@ -92,14 +86,9 @@ export default function CreateEditProduct() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch("/api/upload", {
-        method: "POST",
-        body: formData,
-      });
-      const json = await res.json();
+      const json: any = await apiInstance.post("/upload", formData);
 
-      
-      if (!res.ok || !json.data?.url) {
+      if (!json.data?.url) {
         // alert(json.message || "Image upload failed");
         return;
       }

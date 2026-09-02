@@ -1,6 +1,6 @@
 "use client";
 
-import axios from "axios";
+import { apiInstance } from "@/lib/axiosApi";
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
@@ -29,8 +29,8 @@ export default function AdminProductList() {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("/api/product?limit=1000");
-      setProducts(res.data.data || []);
+      const res: any = await apiInstance.get("/product?limit=1000");
+      setProducts(res.data || []);
     } catch (err) {
       console.error("Fetch error", err);
     } finally {
@@ -44,7 +44,7 @@ export default function AdminProductList() {
 
   const deleteProduct = async (id: string) => {
     if (!confirm) return;
-    await axios.delete(`/api/product?id=${id}`);
+    await apiInstance.delete(`/product?id=${id}`);
     fetchProducts();
   };
 
