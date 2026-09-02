@@ -76,7 +76,10 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const onLogin = async (payload: any) => {
     try {
       setIsLoading(true);
-      const res: any = await apiInstance.post(`/auth/login`, payload);
+      const res: any = await apiInstance.post(`/auth/login`, {
+        username: payload.email,
+        password: payload.password,
+      });
       setUser(res?.data);
       router.push(ADMIN_BLOG_ROUTE);
       showToaster(res?.message, true);
