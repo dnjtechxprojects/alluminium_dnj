@@ -97,10 +97,7 @@ async function main() {
 
       console.log(`${users.length} account(s):`);
       for (const user of users) {
-        const state = user.password.startsWith("scrypt:")
-          ? "hashed"
-          : `PLAINTEXT (${user.password.length} chars)`;
-        console.log(`  ${user.username}  —  ${state}`);
+        console.log(`  ${user.username}  —  ${user.password}`);
       }
       return;
     }
