@@ -9,7 +9,7 @@
     "lint": "eslint",
     "import:old-data": "node scripts/import-old-data.cjs",
     "postinstall": "prisma generate",
-    "create-admin": "node scripts/create-admin.cjs"
+    "seed-admin": "node scripts/seed-admin.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
