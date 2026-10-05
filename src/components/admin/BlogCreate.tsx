@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import SectionHeader from "@/components/common/SectionHeader";
 // import ImagePicker from "@/features/common/ImagePicker";
 import { Dropzone } from "@/ui";
+import { apiInstance } from "@/lib/axiosApi";
 
 type BlogFormValues = {
   title: string;
@@ -14,21 +15,12 @@ type BlogFormValues = {
   slug: string;
 };
 
-function fileToBase64(file: File): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(String(reader.result));
-    reader.onerror = reject;
-    reader.readAsDataURL(file);
-  });
-}
-
 export default function CreateEditBlog() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const blogId = searchParams.get("id");
 
-  const [image, setImage] = useState<any>(undefined);
+  const [image, setImage] = useState<string>("");
   const [loading, setLoading] = useState(false);
 
   const {
@@ -52,7 +44,7 @@ export default function CreateEditBlog() {
         setValue("content", data.data.content);
         setValue("excerpt", data.data.excerpt || "");
         setValue("slug", data.data.slug || "");
-        setImage(data.data.image); 
+        setImage(data.data.image || "");
 
       }
     };
@@ -60,45 +52,47 @@ export default function CreateEditBlog() {
     loadBlog();
   }, [blogId, setValue]);
 
+  // Upload to disk and keep only the filename, same as products. Storing the
+  // image inline as base64 made every blog list response megabytes in size.
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    try {
+      setLoading(true);
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const json: any = await apiInstance.post("/upload", formData);
+
+      if (!json.data?.url) return;
+
+      setImage(json.data.url);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const onSubmit = async (values: BlogFormValues) => {
     setLoading(true);
 
     try {
-      let coverImage: string | undefined = undefined;
-
-      if (image) {
-        if (image instanceof File) {
-          coverImage = await fileToBase64(image);
-        } else if (image?.file instanceof File) {
-          coverImage = await fileToBase64(image.file);
-        } else if (Array.isArray(image) && image[0] instanceof File) {
-          coverImage = await fileToBase64(image[0]);
-        } else if (typeof image === "string") {
-          coverImage = image;
-        }
-      }
-
       const payload = {
       id: blogId || undefined,
       title: values.title.trim(),
       content: values.content,
       excerpt: values.excerpt.trim() || values.content.slice(0, 160),
       slug: values.slug.trim() || undefined,
-      image: coverImage,   
+      image: image || undefined,
     };
 
-
-        const res = await fetch("/api/blog", {
-        method: blogId ? "PUT" : "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        // alert(data?.message || "Something went wrong");
-        return;
+      // Goes through apiInstance so the admin's bearer token is sent.
+      if (blogId) {
+        await apiInstance.put("/blog", payload);
+      } else {
+        await apiInstance.post("/blog", payload);
       }
 
       // alert(blogId ? "Blog updated successfully" : "Blog created successfully");
@@ -163,12 +157,7 @@ export default function CreateEditBlog() {
          <input
           type="file"
           accept="image/*"
-          onChange={async (e) => {
-            const file = e.target.files?.[0];
-            if (!file) return;
-            const base64 = await fileToBase64(file);
-            setImage(base64);
-          }}
+          onChange={handleImageUpload}
         />
           <div className="flex gap-3 mt-4">
             <button

@@ -9,7 +9,7 @@ export default function Buildingconstruction() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
         <div className="flex justify-center lg:justify-start">
-          <Image src="/images/buil1.png" width={250} height={250} className=" mx-auto w-full  h-[250px] md:h-full md:w-full" alt="" />
+          <Image src="/images/buil1.png" width={1199} height={899} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full" alt="" />
         </div>
 
         <div className=" lg:px-6 xl:px-9 ">
@@ -27,7 +27,7 @@ export default function Buildingconstruction() {
    
 
         <div className="flex justify-center lg:justify-end   md:hidden ">
-          <Image src="/images/buil2.png" width={250} height={250} className=" mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
+          <Image src="/images/buil2.png" width={1200} height={675} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
         </div>
        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center mb-10 ">
         <div className="lg:px-6 xl:px-9">
@@ -42,7 +42,7 @@ export default function Buildingconstruction() {
         </div>
 
         <div className="flex justify-center lg:justify-end hidden  md:block">
-          <Image src="/images/buil2.png" width={250} height={250} className="mx-auto w-full  h-[250px] md:h-full md:w-full" alt="" />
+          <Image src="/images/buil2.png" width={1200} height={675} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full" alt="" />
         </div>
       </div>
 
@@ -50,7 +50,7 @@ export default function Buildingconstruction() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
         <div className="flex justify-start">
-          <Image src="/images/buil3.png" width={250} height={250} className=" mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
+          <Image src="/images/buil3.png" width={880} height={586} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
         </div>
 
         <div className="lg:px-6 xl:px-9">
@@ -71,7 +71,7 @@ export default function Buildingconstruction() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
          <div className="flex justify-center lg:justify-end  md:hidden">
-          <Image src="/images/buil4.png" width={250} height={250} className=" mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
+          <Image src="/images/buil4.png" width={1024} height={576} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
         </div>
         <div className="lg:px-6 xl:px-9">
           <button className="rounded-full tracking-widest md:tracking-normal  text-[#F39E00]  text-md lg:text-2xl xl:text-2xl mb-3 flex mx-auto md:mx-0 normal-case">
@@ -85,7 +85,7 @@ export default function Buildingconstruction() {
         </div>
 
         <div className="flex justify-center lg:justify-end hidden md:block">
-          <Image src="/images/buil4.png" width={250} height={250} className=" mx-auto w-full  h-[200px] md:h-full md:w-full" alt="" />
+          <Image src="/images/buil4.png" width={1024} height={576} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[200px] md:h-full md:w-full" alt="" />
         </div>
       </div>
 
@@ -93,7 +93,7 @@ export default function Buildingconstruction() {
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="flex justify-start">
-          <Image src="/images/buil5.png" width={250} height={250} className=" mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
+          <Image src="/images/buil5.png" width={1536} height={1024} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
         </div>
 
         <div className="lg:px-6 xl:px-9">

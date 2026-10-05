@@ -2,7 +2,6 @@ import ProductPage from "@/components/product/ProductPage";
 
 export default function Newalloy() {
   const contactInfo = {
-    image: "/images/Aluminium-alloys.png",
     title: "Innovative New Alloy Technology",
     description:
       "We continuously develop and introduce new aluminium alloy formulations to meet evolving industry demands. Our research and development team works to create alloys that offer superior strength, durability, and performance characteristics for next-generation applications.",

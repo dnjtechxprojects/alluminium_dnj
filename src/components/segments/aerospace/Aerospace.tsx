@@ -8,8 +8,11 @@ const Aerospace = () => {
     <div className="w-full py-10 px-4 md:px-12 lg:px-20 bg-white">
                       <Image
                                  src="/images/aero3.png"
-                                  width={250}
-                                  height={250}
+                                  width={2432}
+                                  height={1664}
+                                  sizes="100vw"
+                                  quality={90}
+                                  preload
                                   className=" object-cover w-full h-[39vh] md:h-[60vh]"
                                    alt="Business Partnership"
                                    />
@@ -68,16 +71,18 @@ const Aerospace = () => {
            High Precision Tooling
           </h3>
           <p className="text-[#524F4B] max-sm:text-sm  lg:text-lg leading-relaxed">
-            Die and extrusion systems optimized for tight tolerances, complex geometries and consistent quality.
+            Mould and extrusion systems optimized for tight tolerances, complex geometries and consistent quality.
           </p>
         </div>
       </div>
      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
  <Image
                            src="/images/aero2.png"
-                            width={250}
-                            height={250}
-                             className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 max-sm:mt-5"
+                            width={1200}
+                            height={900}
+                            sizes="(min-width: 768px) 50vw, 100vw"
+                            quality={90}
+                             className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 max-sm:mt-5"
                              alt="Business Partnership"
                              />
           <div className='lg:px-6 xl:px-9'>

@@ -30,7 +30,7 @@ const footerLinks: FooterLinkGroup[] = [
     href: "",
     children: [
       { name: "Leadership", href: "/about/leadership" },
-      { name: "Dealers", href: "/about/dealers" },
+      // { name: "Dealers", href: "/about/dealers" }, // hidden for now
       { name: "Capabilities", href: "/about/capabilities" },
     ],
   },
@@ -40,8 +40,8 @@ const footerLinks: FooterLinkGroup[] = [
     children: [
       { name: "Extruded Products", href: "/product/extrudedproducts" },
       { name: "New Alloy", href: "/product/newalloy" },
-      { name: "Die Manufacturing", href: "/product/diemanufacturing" },
-      { name: "Fabrication", href: "/product/fabrication" },
+      { name: "Mould Manufacturing", href: "/product/mouldmanufacturing" },
+      // { name: "Fabrication", href: "/product/fabrication" },
     ],
   },
   {

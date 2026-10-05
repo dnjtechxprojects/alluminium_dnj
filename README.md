@@ -51,6 +51,11 @@ The upload endpoint requires authentication, caps files at 5 MB, and determines
 the file type from its leading bytes — the client-supplied filename and
 `Content-Type` are both ignored.
 
+The two Extruded Products catalogue PDFs follow the same rules: uploaded via
+`POST /api/catalogue` (authenticated, PDF only by leading bytes, 20 MB cap),
+stored in `UPLOAD_DIR` as `catalogue-1.pdf` / `catalogue-2.pdf`, and downloaded
+through `GET /api/catalogue/<slot>`. Their titles live in `src/lib/catalogue.ts`.
+
 Back up `storage/uploads` alongside the database; it is not in version control.
 
 ## API auth

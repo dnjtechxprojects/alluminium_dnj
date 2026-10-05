@@ -11,9 +11,11 @@ const Automobile = () => {
    
          <Image
                    src="/images/auto1.png"
-                    width={250}
-                    height={250}
-                    className=" w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0"
+                    width={1199}
+                    height={799}
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    quality={90}
+                    className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0"
 
                      alt="Business Partnership"
                      />
@@ -32,9 +34,11 @@ Drawing on best practices from global leaders, our composites address   stringen
 
           <Image
                     src="/images/auto2.png"
-                     width={250}
-                     height={250}
-                    className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:hidden max-sm:mt-5"
+                     width={1000}
+                     height={767}
+                     sizes="(min-width: 768px) 50vw, 100vw"
+                     quality={90}
+                    className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:hidden max-sm:mt-5"
 
                       alt="Business Partnership"
                       />
@@ -69,9 +73,11 @@ Aluminium is 100% recyclable without loss of performance, making it a cornerston
 
           <Image
                     src="/images/auto2.png"
-                     width={250}
-                     height={250}
-                    className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:block hidden"
+                     width={1000}
+                     height={767}
+                     sizes="(min-width: 768px) 50vw, 100vw"
+                     quality={90}
+                    className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:block hidden"
 
                       alt="Business Partnership"
                       />
@@ -81,9 +87,11 @@ Aluminium is 100% recyclable without loss of performance, making it a cornerston
 <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
  <Image
            src="/images/auto3.png"
-            width={250}
-            height={250}
-           className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 max-sm:mt-5"
+            width={1200}
+            height={800}
+            sizes="(min-width: 768px) 50vw, 100vw"
+            quality={90}
+           className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 max-sm:mt-5"
 
              alt="Business Partnership"
              />
@@ -124,9 +132,11 @@ Aluminium is 100% recyclable without loss of performance, making it a cornerston
  <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
 <Image
                      src="/images/auto4.png"
-                      width={250}
-                      height={250}
-                      className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:hidden max-sm:mt-5"
+                      width={1200}
+                      height={805}
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      quality={90}
+                      className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:hidden max-sm:mt-5"
 
                        alt="Business Partnership "
                        />
@@ -152,8 +162,10 @@ Aluminium is 100% recyclable without loss of performance, making it a cornerston
           </div>
            <Image
                      src="/images/auto4.png"
-                      width={250}
-                      height={250}
+                      width={1200}
+                      height={805}
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      quality={90}
                       className="w-full h-auto object-contain mx-auto md:block hidden"
 
                        alt="Business Partnership"

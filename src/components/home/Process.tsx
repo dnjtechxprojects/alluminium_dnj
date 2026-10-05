@@ -27,7 +27,7 @@ export function Process() {
   const stages = [
     { title: "1. Billet Casting", desc: "Molten aluminium poured into casting molds" },
     { title: "2. Billet Homogenisation", desc: "Heat treatment for uniform structure" },
-    { title: "3. Extrusion", desc: "Material forced through shaped die" },
+    { title: "3. Extrusion", desc: "Material forced through shaped mould" },
     { title: "4. 3 Mode Quenching", desc: "Three-stage cooling process" },
     { title: "5. Stretching & Cutting", desc: "Straightening and precision cutting" },
     { title: "6. Ageing", desc: "Heat treatment for strength enhancement" },
@@ -38,8 +38,8 @@ export function Process() {
     <div ref={containerRef} className="relative " style={{ height: '500vh' }}>
       {/* Sticky Container */}
       <div className="sticky top-0 h-screen overflow-hidden ">
-        {/* Blueprint Background */}
-        <div className="absolute inset-0 ">
+        {/* Blueprint Background (solid fallback while process-bg.png loads) */}
+        <div className="absolute inset-0 bg-[#161616]">
           <div className="absolute inset-0" style={{
            backgroundImage: "url('/images/process-bg.png')",
             // backgroundSize: '30px 30px',
@@ -262,12 +262,12 @@ export function Process() {
               <rect x="70" y="345" width="40" height="8" fill="#FFFFFF" fillOpacity="0.3" />
             </svg>
 
-            {/* Stage 3: Die Extrusion */}
+            {/* Stage 3: Mould Extrusion */}
             <svg width="600" height="400" viewBox="0 0 600 400" className="flex-shrink-0 w-[450px] h-[450px] md:w-[600px] md:h-[400px] ">
               {/* Container continued */}
               <rect x="50" y="170" width="150" height="80" fill="none" stroke="#FFFFFF" strokeWidth="3" />
               
-              {/* Die */}
+              {/* Mould */}
               <rect x="200" y="150" width="40" height="120" fill="#1F2937" stroke="#FFFFFF" strokeWidth="3" />
               <circle cx="220" cy="210" r="15" fill="none" stroke="#FFB600" strokeWidth="3" />
               <circle cx="220" cy="210" r="8" fill="none" stroke="#FFB600" strokeWidth="2" />
@@ -329,7 +329,7 @@ export function Process() {
               />
               
               {/* Labels */}
-              <text x="220" y="140" fill="#FFB600" fontSize="18" fontWeight="bold" textAnchor="middle">DIE</text>
+              <text x="220" y="140" fill="#FFB600" fontSize="18" fontWeight="bold" textAnchor="middle">MOULD</text>
               <text x="170" y="90" fill="#FFB600" fontSize="18" fontWeight="bold">EXTRUSION</text>
               <text x="340" y="190" fill="#9CA3AF" fontSize="14">Extruded Profile</text>
               

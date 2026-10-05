@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
 import { motion, Variants } from "framer-motion";
+import { getImageSrc } from "@/lib/image";
 
 interface Product {
   id: string;
@@ -23,16 +24,13 @@ const normalize = (str: string) =>
 const pageMap = [
   { key: "extrudedproducts", label: "Extruded Products", href: "/product/extrudedproducts" },
   { key: "newalloy", label: "New Alloy", href: "/product/newalloy" },
-  { key: "diemanufacturing", label: "Die Manufacturing", href: "/product/diemanufacturing" },
-  { key: "fabrication", label: "Fabrication", href: "/product/fabrication" },
+  { key: "diemanufacturing", label: "Mould Manufacturing", href: "/product/mouldmanufacturing" },
+  // { key: "fabrication", label: "Fabrication", href: "/product/fabrication" },
 ];
 
 export default function ProductSection() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
-
-  const origin =
-    typeof window !== "undefined" ? window.location.origin : "";
 
   const fetchProducts = async () => {
     try {
@@ -41,7 +39,7 @@ export default function ProductSection() {
 
       const latest = pageMap.map((page) => {
         return all.find(
-          (p) => normalize(p.page || "") === normalize(page.label)
+          (p) => normalize(p.page || "") === page.key
         );
       });
 
@@ -57,12 +55,10 @@ export default function ProductSection() {
     fetchProducts();
   }, []);
 
-  const getPageHref = (pageName?: string) => {
-    const found = pageMap.find(
-      (p) => normalize(p.label) === normalize(pageName || "")
-    );
-    return found?.href || "/";
-  };
+  const findPage = (pageName?: string) =>
+    pageMap.find((p) => p.key === normalize(pageName || ""));
+
+  const getPageHref = (pageName?: string) => findPage(pageName)?.href || "/";
 
   const container: Variants = {
     hidden: {},
@@ -124,16 +120,16 @@ export default function ProductSection() {
                   <Image
                     src={
                       product.image
-                        ? `${origin}/api/image/${product.image}`
+                        ? getImageSrc(product.image)
                         : "/images/placeholder.png"
                     }
                     alt={product.title}
                     fill
+                    sizes="(min-width: 1024px) 22vw, (min-width: 640px) 44vw, 90vw"
                     className="object-cover"
-                    unoptimized
                   />
                   <span className="absolute top-3 right-3 text-[12px] bg-white/90 text-[#ffb600] px-3 py-1 rounded-full font-medium">
-                    {product.page}
+                    {findPage(product.page)?.label || product.page}
                   </span>
                 </div>
 

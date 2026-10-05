@@ -25,6 +25,11 @@ export const menuItems: MenuItemsTypes[] = [
     title: "Product",
     url: "/admin-product",
   },
+  {
+    icon: "Upload",
+    title: "Catalogue",
+    url: "/admin-catalogue",
+  },
   // {
   //   // id: "upload-documents",
   //   icon: "Upload",

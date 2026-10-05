@@ -11,9 +11,11 @@ const Transportations = () => {
    
       <Image
         src="/images/trans1.png"
-        width={250}
-        height={250}
-         className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0"
+        width={1200}
+        height={960}
+        sizes="(min-width: 768px) 50vw, 100vw"
+        quality={90}
+         className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0"
          alt="Business Partnership"
          />
         <div className='lg:px-6 xl:px-9 '>
@@ -66,9 +68,11 @@ const Transportations = () => {
 <div className="mt-10 lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 ">
 <Image
                               src="/images/trans2.png"
-                               width={250}
-                               height={250}
-                                className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:hidden max-sm:mt-5"
+                               width={1200}
+                               height={834}
+                               sizes="(min-width: 768px) 50vw, 100vw"
+                               quality={90}
+                                className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:hidden max-sm:mt-5"
                                 alt="Business Partnership"
                                 />
           <div className=''>
@@ -104,9 +108,11 @@ const Transportations = () => {
         <div className='flex items-center'>
          <Image
                               src="/images/trans2.png"
-                               width={250}
-                               height={250}
-                                className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 hidden md:block"
+                               width={1200}
+                               height={834}
+                               sizes="(min-width: 768px) 50vw, 100vw"
+                               quality={90}
+                                className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 hidden md:block"
                                 alt="Business Partnership"
                                 />
                                 </div>

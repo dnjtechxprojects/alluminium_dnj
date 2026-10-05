@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { prepareWindow } from "@/lib/helperFunctions";
 import { apiInstance } from "@/lib/axiosApi";
 import Image from "next/image";
+import { getImageSrc } from "@/lib/image";
 
 type ProductFormValues = {
   title: string;
@@ -121,7 +122,7 @@ export default function CreateEditProduct() {
         <select className="border p-2 w-full rounded" {...register("page")}>
           <option value="EXTRUDEDPRODUCTS">Extruded Products</option>
           <option value="NEWALLOY">New Alloy</option>
-          <option value="DIEMANUFACTURING">Die Manufacturing</option>
+          <option value="DIEMANUFACTURING">Mould Manufacturing</option>
           <option value="FABRICATION">Fabrication</option>
         </select>
 
@@ -160,12 +161,11 @@ export default function CreateEditProduct() {
             <div className="mt-2">
               <p className="text-xs text-gray-400 font-mono mb-1">{image}</p>
               <Image
-                src={`/api/image/${image}`}
+                src={getImageSrc(image)}
                 alt="Preview"
                 width={160}
                 height={128}
                 className="object-cover rounded border"
-                unoptimized
               />
             </div>
           )}

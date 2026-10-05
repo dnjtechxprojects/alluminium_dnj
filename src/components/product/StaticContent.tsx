@@ -1,20 +1,45 @@
 "use client";
 
 interface StaticContactProps {
-  image: string;
+  image?: string;
   title: string;
   description: string;
   secondtitle?: string;
   seconddescription?: string;
 }
 
-export default function StaticContent({ 
-  image, 
-  title, 
+export default function StaticContent({
+  image,
+  title,
   description,
   secondtitle,
-  seconddescription 
+  seconddescription
 }: StaticContactProps) {
+  // Without an image, show the content as side-by-side cards
+  if (!image) {
+    return (
+      <section className="w-full px-4 md:px-5 lg:px-5 bg-white">
+        <div className={`grid grid-cols-1 gap-6 ${secondtitle ? "md:grid-cols-2" : ""}`}>
+          <div className="p-6 border border-[#e5e7eb]">
+            <h3 className="text-md lg:text-2xl xl:text-2xl text-black mb-2">{title}</h3>
+            <p className="text-[#4a5565] max-sm:text-sm lg:text-lg leading-relaxed">
+              {description}
+            </p>
+          </div>
+
+          {secondtitle && (
+            <div className="p-6 border border-[#e5e7eb]">
+              <h3 className="text-md lg:text-2xl xl:text-2xl text-black mb-2">{secondtitle}</h3>
+              <p className="text-[#4a5565] max-sm:text-sm lg:text-lg leading-relaxed">
+                {seconddescription}
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="w-full  px-4 md:px-5 lg:px-5 bg-white">
       <div className="w-full mx-auto flex flex-col lg:flex-row">

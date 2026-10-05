@@ -8,8 +8,11 @@ const Renewableenergy = () => {
    <div className="w-full py-10 px-4 md:px-12 lg:px-20 bg-white">
    <Image
             src="/images/renew1.png"
-            width={250}
-            height={250}
+            width={784}
+            height={527}
+            sizes="100vw"
+            quality={90}
+            preload
             className=" object-cover w-full h-[39vh] md:h-[60vh]"  
             alt="Business Partnership"
             />
@@ -27,9 +30,11 @@ const Renewableenergy = () => {
             <div className="mt-10 md:mt-13 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
              <Image
                src="/images/renew2.png"
-               width={250}
-               height={250}
-              className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0"
+               width={1200}
+               height={800}
+               sizes="(min-width: 768px) 50vw, 100vw"
+               quality={90}
+              className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0"
                alt="Business Partnership"
               />
           <div className='lg:px-6 xl:px-9 '>
@@ -61,9 +66,11 @@ const Renewableenergy = () => {
 
          <Image
               src="/images/renew3.png"
-              width={250}
-              height={250}
-              className="w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0  md:hidden max-sm:mt-5"
+              width={1200}
+              height={800}
+              sizes="(min-width: 768px) 50vw, 100vw"
+              quality={90}
+              className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0  md:hidden max-sm:mt-5"
               alt="Business Partnership"
               />
 
@@ -95,8 +102,10 @@ const Renewableenergy = () => {
           </div>
              <Image
               src="/images/renew3.png"
-              width={250}
-              height={250}
+              width={1200}
+              height={800}
+              sizes="(min-width: 768px) 50vw, 100vw"
+              quality={90}
               className="w-full h-auto object-contain mx-auto lg:mx-0 hidden md:block"
               alt="Business Partnership"
               />

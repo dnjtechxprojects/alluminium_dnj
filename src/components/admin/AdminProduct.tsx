@@ -4,6 +4,7 @@ import { apiInstance } from "@/lib/axiosApi";
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
+import { getImageSrc } from "@/lib/image";
 import { prepareWindow } from "@/lib/helperFunctions";
 
 interface Product {
@@ -14,6 +15,13 @@ interface Product {
 }
 
 const LIMIT = 10;
+
+const PAGE_LABELS: Record<string, string> = {
+  EXTRUDEDPRODUCTS: "Extruded Products",
+  NEWALLOY: "New Alloy",
+  DIEMANUFACTURING: "Mould Manufacturing",
+  FABRICATION: "Fabrication",
+};
 
 export default function AdminProductList() {
   const router = useRouter();
@@ -125,12 +133,11 @@ useEffect(() => {
                           <td className="border px-4 py-3">
                             {p.image ? (
                               <Image
-                                src={`/api/image/${p.image}`}
+                                src={getImageSrc(p.image)}
                                 alt={p.title}
                                 width={80}
                                 height={60}
                                 className="rounded object-cover"
-                                unoptimized
                               />
                             ) : (
                               <span className="text-gray-400 text-xs">
@@ -144,7 +151,7 @@ useEffect(() => {
                           </td>
 
                           <td className="border px-4 py-2 text-sm text-gray-600">
-                            {p.page || "-"}
+                            {(p.page && PAGE_LABELS[p.page]) || p.page || "-"}
                           </td>
 
                           <td className="border px-4 py-2 text-center">

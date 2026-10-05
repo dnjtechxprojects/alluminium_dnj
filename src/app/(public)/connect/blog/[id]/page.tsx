@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
+import { getImageSrc } from "@/lib/image";
 import Link from "next/link";
 
 interface Blog {
@@ -77,7 +78,7 @@ export default function BlogDetail() {
 
           {blog.image && (
             <Image
-              src={blog.image}
+              src={getImageSrc(blog.image)}
               alt={blog.title}
               width={900}
               height={400}

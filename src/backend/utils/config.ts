@@ -17,3 +17,6 @@ export const UPLOAD_DIR: string =
 
 // Hard cap on a single uploaded file.
 export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024; // 5 MB
+
+// Catalogue PDFs are larger than photos, so they get their own cap.
+export const MAX_CATALOGUE_BYTES = 20 * 1024 * 1024; // 20 MB

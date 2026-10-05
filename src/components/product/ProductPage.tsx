@@ -7,9 +7,10 @@ import SectionHeader from "@/components/common/SectionHeader";
 import StaticContent from "./StaticContent";
 import Image from "next/image";
 import AuthContext from "@/context/AuthProvider";
+import { getImageSrc } from "@/lib/image";
 
 interface ContactInfo {
-  image: string;
+  image?: string;
   title: string;
   description: string;
   secondtitle: string;
@@ -140,13 +141,15 @@ export default function ProductPage({
                           <Image
                             src={
                               product.image
-                                ? `/api/image/${product.image}`
+                                ? getImageSrc(product.image)
                                 : "/images/placeholder.png"
                             }
                             alt={product.title}
                             fill
+                            sizes="(min-width: 1024px) 512px, 100vw"
                             className="object-contain"
-                            unoptimized
+                            loading={i === 0 ? "eager" : "lazy"}
+                            fetchPriority={i === 0 ? "high" : "auto"}
                           />
                         </div>
                       </div>

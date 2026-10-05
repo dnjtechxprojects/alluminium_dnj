@@ -4,6 +4,7 @@ import axios from "axios";
 import SectionHeader from "@/components/common/SectionHeader";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
+import { getBackgroundImage } from "@/lib/image";
 
 interface BlogItem {
   id: string;
@@ -143,7 +144,7 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
           <Link href={`/connect/blog/${highlightBlog.id}`}>
             <div
               className="h-[380px] rounded-2xl p-8 bg-cover bg-center flex flex-col justify-end relative"
-              style={{ backgroundImage: `url(${getImage(highlightBlog)})` }}
+              style={{ backgroundImage: getBackgroundImage(getImage(highlightBlog), 1200) }}
             >
               <ArrowBtn />
               <h2 className="text-white text-2xl font-bold">
@@ -162,7 +163,7 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
             <Link key={blog.id} href={`/connect/blog/${blog.id}`}>
               <div
                 className="h-[350px] rounded-2xl p-8 bg-cover bg-center relative"
-                style={{ backgroundImage: `url(${getImage(blog)})` }}
+                style={{ backgroundImage: getBackgroundImage(getImage(blog), 1200) }}
               >
                 <ArrowBtn />
                 <h2 className="text-white text-2xl font-bold mt-4">
@@ -191,7 +192,7 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
               <Link
                 href={`/connect/blog/${blog.id}`}
                 className="h-[250px] rounded-2xl p-8 bg-cover bg-center relative block"
-                style={{ backgroundImage: `url(${getImage(blog)})` }}
+                style={{ backgroundImage: getBackgroundImage(getImage(blog), 640) }}
               >
                 <ArrowBtn />
                 <h2 className="text-white text-2xl font-bold mt-4">

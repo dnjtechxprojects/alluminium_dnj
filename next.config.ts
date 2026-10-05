@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
 
   images: {
+    // AVIF is ~40% smaller than WebP for photos; browsers without it get WebP.
+    formats: ["image/avif", "image/webp"],
+    // Next 16 only allows q=75 unless listed; 90 keeps detail in large showcase photos.
+    qualities: [75, 90],
     remotePatterns: [
       {
         protocol: "http",
@@ -64,6 +68,11 @@ const nextConfig: NextConfig = {
           },
         ],
         destination: "https://natrajaluform.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/product/diemanufacturing",
+        destination: "/product/mouldmanufacturing",
         permanent: true,
       },
     ];

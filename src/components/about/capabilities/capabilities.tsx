@@ -1,141 +1,187 @@
 "use client";
 
-import SectionHeader from "@/components/common/SectionHeader";
-import Image from "next/image";
-const Capabilities = () => {
+import type { ReactNode } from "react";
+import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
+import { Check } from "lucide-react";
+
+import AboutPageLayout, {
+  AboutIntro,
+  HighlightStrip,
+  inView,
+} from "@/components/about/AboutPageLayout";
+import extrusionLine from "@/assets/images/capabilities/extrusion-line-7500mt.webp";
+import dieManufacturing from "@/assets/images/capabilities/die-manufacturing-1000mm.webp";
+
+// Figures from the company introduction and the two showcase images below.
+const HIGHLIGHTS = [
+  { value: "7500 MT", label: "Extrusion press capacity" },
+  { value: "45,000 MT", label: "Annual melting capacity" },
+  { value: "36,000 MT", label: "Annual extrusion capacity" },
+  { value: "1000 mm", label: "In-house mould diameter" },
+];
+
+const SERVICES = [
+  {
+    title: "Aluminium Extrusion",
+    description:
+      "We manufacture high-quality aluminium profiles with excellent dimensional accuracy, strength, and surface finish.",
+  },
+  {
+    title: "Custom Profile Manufacturing",
+    description:
+      "We develop specialized aluminium sections based on customer drawings, technical needs, and application requirements.",
+  },
+  {
+    title: "Surface Treatment Solutions",
+    description:
+      "We offer premium finishing solutions such as anodizing and powder coating to enhance durability, corrosion resistance, and aesthetics.",
+  },
+  {
+    title: "Precision Fabrication",
+    description:
+      "Our advanced cutting, drilling, punching, and machining capabilities deliver ready-to-assemble aluminium components.",
+  },
+];
+
+const FACILITY = [
+  "High-capacity extrusion presses",
+  "CNC-operated cutting and machining equipment",
+  "Advanced surface treatment lines",
+  "In-house testing and inspection laboratories",
+  "In-house mould manufacturing (up to 1000 mm diameter)",
+];
+
+export default function Capabilities() {
   return (
-    <section className="w-full bg-white pb-16">
-      <SectionHeader title="Capabilities" maintitle="about us"  />
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+    <AboutPageLayout title="Capabilities">
+      <section className="mt-14 md:mt-20">
+        <AboutIntro
+          lead={
+            <>
+              At Natraj Aluform Pvt. Ltd., our capabilities are driven by
+              innovation, precision, and a deep understanding of aluminium
+              manufacturing. We have built strong infrastructure and streamlined
+              processes that allow us to deliver consistent quality, high
+              performance, and customized solutions for diverse industry needs.
+            </>
+          }
+        >
+          <p>
+            Our facility is designed to handle complex production requirements
+            with efficiency and accuracy. From raw material processing to
+            finished product delivery, every stage is controlled with advanced
+            technology and strict quality standards.
+          </p>
+          <p>
+            We focus on continuous improvement, adopting modern techniques and
+            upgrading our systems to ensure reliability, scalability, and
+            long-term value for our customers.
+          </p>
+        </AboutIntro>
 
-        
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
-         <div className="relative w-full h-full mx-auto flex items-center justify-center ">
-                     <Image
-                       src="/images/cap1.png"
-                       width={600}
-                       height={350}
-                       alt="Leader 1"
-                       className="sm:object-cover sm:object-center "
-                     />
-                   </div>
+        <HighlightStrip items={HIGHLIGHTS} />
+      </section>
 
-          <div className="flex flex-col justify-center items-center text-center md:text-start lg:px-6 xl:px-9">
-            <p className="text-[#524F4B] max-sm:text-sm  lg:text-lg    leading-relaxed text-center md:text-start max-sm:mt-5 max-sm:px-6">
-              At Natraj Aluform Pvt. Ltd., our capabilities are driven by innovation, precision, and a deep understanding of aluminium manufacturing. We have built strong infrastructure and streamlined processes that allow us to deliver consistent quality, high performance, and customized solutions for diverse industry needs.
-            </p>
-            <p className="text-[#524F4B]  max-sm:text-sm  lg:text-lg  leading-relaxed text-center md:text-start max-sm:mt-7 max-sm:px-6">
-              Our facility is designed to handle complex production requirements with efficiency and accuracy. From raw material processing to finished product delivery, every stage is controlled with advanced technology and strict quality standards.
-            </p>
-            <p className="text-[#524F4B]  max-sm:text-sm  lg:text-lg  leading-relaxed text-center md:text-start max-sm:mt-7 max-sm:px-6">
-              We focus on continuous improvement, adopting modern techniques and upgrading our systems to ensure reliability, scalability, and long-term value for our customers.
-            </p>
-          </div>
+      <section className="mt-24 md:mt-32">
+        <Showcase
+          image={extrusionLine}
+          alt="India's largest extrusion line, 7500 MT, can extrude profiles from 100 mm up to 720 mm"
+        />
+
+        <div className="mt-12 grid gap-10 md:mt-16 lg:grid-cols-12 lg:gap-16">
+          <motion.div {...inView} className="lg:col-span-4">
+            <SectionTitle>What We Do Best</SectionTitle>
+          </motion.div>
+
+          <motion.dl
+            {...inView}
+            className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:col-span-8"
+          >
+            {SERVICES.map((service) => (
+              <div
+                key={service.title}
+                className="border-t border-[#212121]/10 pt-6"
+              >
+                <dt className="text-xl font-bold">{service.title}</dt>
+                <dd className="mt-2 text-lg leading-[1.7] text-[#4a5565]">
+                  {service.description}
+                </dd>
+              </div>
+            ))}
+          </motion.dl>
         </div>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          
- <Image
-                       src="/images/cap2.png"
-                       width={600}
-                       height={350}
-                       alt="Leader 1"
-                       className="
-    md:hidden
-    mx-auto
-    block
-    object-contain max-sm:mt-5
-  "
-                     />
-          <div className="lg:px-6 xl:px-9">
-             <span className=" px-2 py-2 md:border md:border-[#F39E00] text-[#F39E00] md:font-normal rounded-full md:bg-[#fffbf2] hover:bg-yellow-50 duration-300 text-md md:text-sm tracking-widest md:tracking-normal  md:hidden w-[80%] flex justify-center mx-auto ">
-              What We Do Best
-            </span>
-            <button className="px-2 py-2 normal-case text-[#F39E00]  text-md hidden md:block text-md lg:text-2xl xl:text-2xl">
-              What We Do Best
-            </button>
+      </section>
 
-            <div className="mt-6 space-y-6 text-[#524F4B] leading-relaxed max-sm:text-center text-start px-3 max-sm:text-sm  lg:text-lg ">
-              <p>
-                <strong>Aluminium Extrusion:</strong><br />
-                We manufacture high-quality aluminium profiles with excellent dimensional accuracy, strength, and surface finish.
-              </p>
+      <section className="mt-24 md:mt-32">
+        <Showcase
+          image={dieManufacturing}
+          alt="In-house die manufacturing up to 1000 mm diameter"
+        />
 
-              <p>
-                <strong>Custom Profile Manufacturing:</strong><br />
-                We develop specialized aluminium sections based on customer drawings, technical needs, and application requirements.
-              </p>
+        <div className="mt-12 grid gap-10 md:mt-16 lg:grid-cols-12 lg:gap-16">
+          <motion.div {...inView} className="lg:col-span-4">
+            <SectionTitle>Manufacturing Strength</SectionTitle>
+            <p className="mt-6 text-lg text-[#4a5565] lg:text-xl">
+              Our modern facility includes:
+            </p>
+          </motion.div>
 
-              <p>
-                <strong>Surface Treatment Solutions:</strong><br />
-                We offer premium finishing solutions such as anodizing and powder coating to enhance durability, corrosion resistance, and aesthetics.
-              </p>
-
-              <p>
-                <strong>Precision Fabrication:</strong><br />
-                Our advanced cutting, drilling, punching, and machining capabilities deliver ready-to-assemble aluminium components.
-              </p>
-
-              
-            </div>
-          </div>
-
-         <div className="relative w-full h-full mx-auto flex items-center justify-center ">
-                     <Image
-                       src="/images/cap2.png"
-                       width={600}
-                       height={350}
-                       alt="Leader 1"
-                        className=" md:block hidden " 
-                     />
-                   </div>
+          <motion.ul
+            {...inView}
+            className="grid gap-x-10 sm:grid-cols-2 lg:col-span-8"
+          >
+            {FACILITY.map((item) => (
+              <li
+                key={item}
+                className="flex gap-3 border-t border-[#212121]/10 py-5 text-lg font-semibold"
+              >
+                <Check
+                  aria-hidden
+                  className="mt-1 size-5 shrink-0 text-[#9C6200]"
+                />
+                {item}
+              </li>
+            ))}
+          </motion.ul>
         </div>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-        <div className="relative w-full h-full mx-auto flex items-center justify-center">
-                    <Image
-                      src="/images/cap3.png"
-                      width={350}
-                      height={350}
-                     className="
-    
-    
-    w-full
-    object-contain
-  "
-                      alt="Business Partnership"
-                    />
-                  </div>
-
-          <div>
-            <span className=" w-full tracking-widest md:tracking-normal py-2 md:border md:border-[#F39E00] text-[#F39E00] md:font-normal rounded-full md:bg-[#fffbf2] hover:bg-yellow-50 duration-300 text-md md:text-sm   md:hidden w-[60%] flex justify-center mx-auto">
-             Manufacturing Strength
-            </span>
-           <button className="px-2 py-2  text-[#F39E00]  text-md hidden md:block lg:px-6 xl:px-9 text-md lg:text-2xl xl:text-2xl">
-              Manufacturing Strength
-            </button>
-
-            <ul className="mt-6 text-[#524F4B] leading-relaxed md:list-disc pl-3 space-y-4 max-sm:text-center md:space-y-4 max-sm:text-sm  lg:text-lg lg:px-6 xl:px-9">
-                <h3 className="text-md font-bold">Our modern facility includes:</h3>
-              <li>High-capacity extrusion presses</li>
-                 <hr className="flex items-center  border-[#e5e7eb]" />
-              <li>CNC-operated cutting and machining equipment</li>
-                 <hr className="flex items-center  border-[#e5e7eb]" />
-              <li>Advanced surface treatment lines</li>
-                 <hr className="flex items-center  border-[#e5e7eb]" />
-              <li>In-house testing and inspection laboratories</li>
-                 <hr className="flex items-center  border-[#e5e7eb]" />
-               <li>in house Die Manufacturing (Die Manufacturing upto 1000 MM diameter)</li>
-               
-            </ul>
-          </div>
-          <div className="relative w-full h-full mx-auto flex items-center justify-center">
-                   
-                  </div>
-        </div>
-
-      </div>
-    </section>
+      </section>
+    </AboutPageLayout>
   );
-};
+}
 
-export default Capabilities;
+function SectionTitle({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <h2 className="text-balance text-4xl font-extrabold tracking-tight sm:text-5xl">
+        {children}
+      </h2>
+      <div className="mt-6 h-1.5 w-24 rounded-full bg-[#FFB600]" />
+    </>
+  );
+}
+
+interface ShowcaseProps {
+  image: StaticImageData;
+  alt: string;
+}
+
+// The showcase artwork carries its own headline text, so it always runs the
+// full content width to keep that text legible.
+function Showcase({ image, alt }: ShowcaseProps) {
+  return (
+    <motion.figure
+      {...inView}
+      className="overflow-hidden rounded-2xl bg-white shadow-[0_30px_60px_-35px_rgba(33,33,33,0.45)] ring-1 ring-[#212121]/5 md:rounded-3xl"
+    >
+      <Image
+        src={image}
+        alt={alt}
+        quality={90}
+        placeholder="blur"
+        sizes="(min-width: 1280px) 1184px, (min-width: 640px) calc(100vw - 4rem), calc(100vw - 2.5rem)"
+        className="h-auto w-full"
+      />
+    </motion.figure>
+  );
+}

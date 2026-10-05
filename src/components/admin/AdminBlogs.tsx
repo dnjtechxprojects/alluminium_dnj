@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import SectionHeader from "@/components/common/SectionHeader";
 import Image from "next/image";
+import { getImageSrc } from "@/lib/image";
 import axios from "axios";
 
 interface Blog {
@@ -159,7 +160,7 @@ const [page, setPage] = useState(startPage);
                           <td className="border px-4 py-4">
                             {blog.image ? (
                               <Image
-                                src={blog.image}
+                                src={getImageSrc(blog.image)}
                                 alt={blog.title}
                                 width={80}
                                 height={60}
