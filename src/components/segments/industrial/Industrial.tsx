@@ -6,32 +6,31 @@ const Industrial = () => {
     <div>
       <SectionHeader title="Industrial" maintitle="segments"/>
     <div className="w-full py-10 px-4 md:px-12 lg:px-20 bg-white">
-       
-         
-      <Image
-       src="/images/ind1.png"
-       width={1200}
-       height={800}
-       sizes="100vw"
-       quality={90}
-       preload
-       className=" object-cover w-full h-[39vh]  md:h-[60vh]"
-       alt="Business Partnership"
-       />
-       <div className="w-full flex justify-center md:mb-7 ">
-        <button className="tracking-widest md:tracking-normal px-2 py-3 mt-5 md:mt-10  text-md lg:text-2xl xl:text-2xl   text-[#F39E00] normal-case">
-          Industrial Performance Overview
-        </button>
-      </div>
-    <div className="max-w-6xl mx-auto text-[#524F4B]">
-        <p className="text-[#524F4B] max-sm:text-sm  lg:text-lg text-center   leading-relaxed  max-sm:mt-5 max-sm:px-6">
-          At Natraj Aluform Pvt. Ltd., we develop industrial-grade aluminium solutions that support high-load, high-precision and high-durability applications. Our extrusion, fabrication and finishing capabilities are designed to meet the rigorous demands of modern manufacturing, automation and heavy industry.        </p>
-          <p className="text-[#524F4B]  max-sm:text-sm  lg:text-lg text-center leading-relaxed  max-sm:mt-7 max-sm:px-6">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
+        <Image
+          src="/images/ind1.png"
+          width={1200}
+          height={800}
+          sizes="(min-width: 768px) 50vw, 100vw"
+          quality={90}
+          preload
+          className="object-cover w-full h-[250px] md:h-auto md:w-full mx-auto lg:mx-0"
+          alt="Business Partnership"
+        />
+        <div className='lg:px-6 xl:px-9'>
+          <div className="flex justify-center md:justify-start">
+            <span className="inline-block px-2 tracking-widest md:tracking-normal text-[#F39E00] text-md lg:text-2xl xl:text-2xl normal-case">
+              Industrial Performance Overview
+            </span>
+          </div>
+          <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-3 md:mt-6 max-sm:mt-5 max-sm:px-6">
+            At Natraj Aluform Pvt. Ltd., we develop industrial-grade aluminium solutions that support high-load, high-precision and high-durability applications. Our extrusion, fabrication and finishing capabilities are designed to meet the rigorous demands of modern manufacturing, automation and heavy industry.        </p>
+          <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-4 max-sm:mt-7 max-sm:px-6">
            Our industrial products are engineered to deliver structural stability, dimensional accuracy and long-term operational reliability, even in challenging working environments. </p>
-         
-       
+        </div>
       </div>
-     
+
       <div className="flex justify-center mt-8 md:mt-10">
         <span className="inline-block px-2 text-[#F39E00]  text-md lg:text-2xl xl:text-2xl normal-case tracking-widest md:tracking-normal">
             Key Strengths

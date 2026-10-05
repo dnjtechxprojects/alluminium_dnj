@@ -6,41 +6,41 @@ const Aerospace = () => {
     <div>
       <SectionHeader title="Aerospace" maintitle="segments" />
     <div className="w-full py-10 px-4 md:px-12 lg:px-20 bg-white">
-                      <Image
-                                 src="/images/aero3.png"
-                                  width={2432}
-                                  height={1664}
-                                  sizes="100vw"
-                                  quality={90}
-                                  preload
-                                  className=" object-cover w-full h-[39vh] md:h-[60vh]"
-                                   alt="Business Partnership"
-                                   />
-                                    <div className="w-full flex justify-center mb-2 md:mb-8">
-        <button className=" py-3 mt-6 md:mt-10 text-md lg:text-2xl xl:text-2xl   md:font-normal   text-[#F39E00] md:normal-case tracking-widest md:tracking-normal">
-          Our Aerospace Capabilities
-        </button>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
+        <Image
+          src="/images/aero3.png"
+          width={2432}
+          height={1664}
+          sizes="(min-width: 768px) 50vw, 100vw"
+          quality={90}
+          preload
+          className="object-cover w-full h-[250px] md:h-auto md:w-full mx-auto lg:mx-0"
+          alt="Business Partnership"
+        />
+        <div className='lg:px-6 xl:px-9 text-[#524F4B] max-sm:text-sm lg:text-lg'>
+          <div className="flex justify-center md:justify-start">
+            <span className="inline-block px-2 text-[#F39E00] text-md lg:text-2xl xl:text-2xl normal-case tracking-widest md:tracking-normal">
+              Our Aerospace Capabilities
+            </span>
+          </div>
+          <p className="text-[#524F4B] max-sm:text-sm leading-relaxed text-center md:text-start mt-3 md:mt-6 max-sm:mt-5 max-sm:px-6">
+           We provide end-to-end aluminium extrusion solutions for the aerospace sector: from alloy selection, billet casting, extrusion, heat-treatment, precision machining to final inspection. Our capabilities include:
+          </p>
 
-      <div className="max-w-5xl mx-auto text-[#524F4B] max-sm:text-sm  lg:text-lg">
-        <p className="text-[#524F4B] max-sm:text-sm   leading-relaxed text-center md:text-start max-sm:mt-5 max-sm:px-6 ">
-         We provide end-to-end aluminium extrusion solutions for the aerospace sector: from alloy selection, billet casting, extrusion, heat-treatment, precision machining to final inspection. Our capabilities include:
-        </p>
-
-        <ul className="md:list-disc md:ml-6 max-sm:mt-8 mt-6 max-sm:text-center space-y-4 md:space-y-4 max-sm:text-sm  lg:text-lg text-start pb-10">
-          <li>
-            Custom profile development for fuselage frames, wing spars, hardware supports and interior structural systems.
-          </li>
-             <hr className="flex items-center  border-[#e5e7eb]" />
-          <li>
-           Fabrication readiness with CNC machining, drilling, punching and assembly to deliver components ready for integration.
-          </li>
-             <hr className="flex items-center  border-[#e5e7eb]" />
-          <li>
-           Surface and finishing options tailored for aerospace needs: corrosion resistance, fatigue control, aesthetic surface integrity.
-          </li>
-          
-        </ul>
+          <ul className="md:list-disc md:ml-6 max-sm:mt-8 mt-6 max-sm:text-center space-y-4 md:space-y-4 max-sm:text-sm lg:text-lg text-start">
+            <li>
+              Custom profile development for fuselage frames, wing spars, hardware supports and interior structural systems.
+            </li>
+               <hr className="flex items-center  border-[#e5e7eb]" />
+            <li>
+             Fabrication readiness with CNC machining, drilling, punching and assembly to deliver components ready for integration.
+            </li>
+               <hr className="flex items-center  border-[#e5e7eb]" />
+            <li>
+             Surface and finishing options tailored for aerospace needs: corrosion resistance, fatigue control, aesthetic surface integrity.
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="flex justify-center max-sm:mb-8 max-sm:mt-7 mb-4 md:mb-10 ">
         <span className="inline-block px-2 text-[#F39E00]  text-md lg:text-2xl xl:text-2xl  md:normal-case tracking-widest md:tracking-normal">
