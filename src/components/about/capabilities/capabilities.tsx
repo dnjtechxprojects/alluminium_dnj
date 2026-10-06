@@ -28,7 +28,7 @@ interface Showcase {
 const EXTRUSION_LINE: Showcase = {
   eyebrow: "India's Largest",
   title: "Extrusion Line",
-  subtitle: "7500 MT hydraulic press",
+  subtitle: "7500 MT",
   description:
     "Our 7500 MT press is the largest extrusion line in India. Running alongside our 1100 MT press, it lets us produce large, heavy sections as well as everyday profiles under one roof.",
   spec: "Profiles from 100 mm up to 720 mm",

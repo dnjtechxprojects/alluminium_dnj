@@ -134,48 +134,41 @@ export default function ProductPage({
                   )}
 
                   <div className="mb-24">
+                    {/* Same image/text row as the Segments pages: the photo
+                        fills half the row at its natural aspect ratio. */}
                     <div
-                      className={`flex flex-col mt-10 lg:flex-row items-center md:gap-12 ${
-                        i % 2 !== 0
-                          ? "lg:flex-row-reverse"
-                          : ""
+                      className={`mt-10 grid grid-cols-1 gap-7 md:gap-10 items-center ${
+                        product.image ? "md:grid-cols-2" : ""
                       }`}
                     >
-                      <div className="w-full lg:w-[560px] h-full lg:p-6">
-                        <div className="rounded-2xl md:rounded-3xl bg-white p-4 md:p-6 ring-1 ring-[#212121]/5 shadow-[0_30px_60px_-35px_rgba(33,33,33,0.45)]">
-                        <div className="relative w-full h-[250px] md:h-[400px]">
-                          <Image
-                            src={
-                              product.image
-                                ? getImageSrc(product.image)
-                                : "/images/placeholder.png"
-                            }
-                            alt={product.title}
-                            fill
-                            sizes="(min-width: 1024px) 512px, 100vw"
-                            className="object-contain"
-                            loading={i === 0 ? "eager" : "lazy"}
-                            fetchPriority={i === 0 ? "high" : "auto"}
-                          />
-                        </div>
-                        </div>
-                      </div>
+                      {product.image && (
+                        // Uploads have unknown dimensions, so let CSS size
+                        // the image from the column width.
+                        <Image
+                          src={getImageSrc(product.image)}
+                          alt={product.title}
+                          width={0}
+                          height={0}
+                          sizes="(min-width: 1280px) 620px, (min-width: 768px) 50vw, 100vw"
+                          quality={90}
+                          className={`object-cover w-full h-[250px] md:h-auto ${
+                            i % 2 !== 0 ? "md:order-last" : ""
+                          }`}
+                          loading={i === 0 ? "eager" : "lazy"}
+                          fetchPriority={i === 0 ? "high" : "auto"}
+                        />
+                      )}
 
-                      <div className="flex-1 max-sm:mt-3 lg:px-12 xl:px-12 space-y-4 
-                        max-md:flex max-md:flex-col max-md:items-center max-md:justify-center lg:mt-1">
-
-                        <h3 className="text-lg lg:text-2xl xl:text-2xl  
-                          text-center lg:text-left text-[#FFB600] tracking-wider">
+                      <div className="lg:px-6 xl:px-9 space-y-4 text-center md:text-left">
+                        <h3 className="text-lg lg:text-2xl xl:text-2xl text-[#FFB600] tracking-wider">
                           {product.title}
                         </h3>
 
-                        <h4 className="mt-1 max-sm:text-md text-black text-lg font-medium
-                          text-center lg:text-left">
+                        <h4 className="mt-1 max-sm:text-md text-black text-lg font-medium">
                           {product.slug}
                         </h4>
 
-                        <p className="mt-3 text-gray-600 max-sm:text-sm lg:text-lg 
-                          text-center lg:text-left">
+                        <p className="mt-3 text-gray-600 max-sm:text-sm lg:text-lg">
                           {product.description}
                         </p>
                       </div>
