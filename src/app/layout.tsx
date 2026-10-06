@@ -6,6 +6,7 @@ import Providers from "@/context/Providers";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import PageLoader from "@/components/PageLoader";
+import BootLoader from "@/components/BootLoader";
 import { Suspense } from "react";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -89,6 +90,7 @@ export default function RootLayout({
     <html lang="en">
      
       <body className={plusJakarta.variable}>
+        <BootLoader />
         <Providers>
           <ScrollToTop />
           <Suspense fallback={<PageLoader />}>

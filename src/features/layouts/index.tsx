@@ -1,6 +1,8 @@
 "use client";
+import { useEffect } from "react";
 // PROJECT IMPORTS
 import { LAYOUT } from "@/lib/constant";
+import { markAppReady } from "@/components/BootLoader";
 import PublicLayout from "./publicLayout/PublicLayout";
 import PublicGuard from "./publicLayout/PublicGuard";
 import MinimalGuard from "./MinimalLayout/MinimalGuard";
@@ -15,6 +17,11 @@ interface LayoutProps {
 
 const LayoutWrapper = (porps: LayoutProps) => {
   const { variant = LAYOUT.main, children } = porps;
+
+  // Page content has hydrated, so the boot loader can fade out
+  useEffect(() => {
+    markAppReady();
+  }, []);
 
   switch (variant) {
     case LAYOUT.minimal:
