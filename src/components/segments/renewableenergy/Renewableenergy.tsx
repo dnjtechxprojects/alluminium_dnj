@@ -1,11 +1,12 @@
 import React from 'react'
 import SectionHeader from '@/components/common/SectionHeader'
+import PaperBackground from '@/components/common/PaperBackground'
 import Image from 'next/image'
 const Renewableenergy = () => {
   return (
     <div>
       <SectionHeader title="Renewable Energy" maintitle="segments"/>
-   <div className="w-full py-10 px-4 md:px-12 lg:px-20 bg-white">
+   <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
         <Image
@@ -27,7 +28,7 @@ const Renewableenergy = () => {
           <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-3 md:mt-6 max-sm:mt-5 max-sm:px-6">
             Renewable energy is reshaping the future of power, infrastructure, and sustainability. At Natraj Aluform Pvt. Ltd., we design and manufacture aluminium solutions that support the backbone of green energy systems, making them stronger, lighter, more durable, and easier to deploy. </p>
           <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-4 max-sm:mt-7 max-sm:px-6">
-            Our aluminium extrusion and fabrication capabilities help build resilient renewable energy structures that perform reliably under harsh environmental and long operational lifecycles.From solar panel frames and wind turbine components to supporting energy storage and transmission infrastructure, our aluminium products are designed to enhance efficiency, reduce weight, and simplify installation. </p>
+            Our aluminium extrusion and fabrication capabilities help build resilient renewable energy structures that perform reliably under harsh environmental and long operational lifecycles. From solar panel frames and wind turbine components to supporting energy storage and transmission infrastructure, our aluminium products are designed to enhance efficiency, reduce weight, and simplify installation. </p>
         </div>
       </div>
 
@@ -128,7 +129,7 @@ const Renewableenergy = () => {
             Our aluminium products feature specialized coatings, anodizing, and protective finishes, designed to resist UV exposure, humidity, corrosion, and extreme climatic conditions. This ensures long-term durability, low maintenance, and consistent performance across diverse renewable energy projects. </p>
         </div>
       </div>
-    </div>
+    </PaperBackground>
     </div>
   )
 }

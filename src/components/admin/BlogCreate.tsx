@@ -150,7 +150,7 @@ export default function CreateEditBlog() {
 
           <input
             className="border p-3 rounded w-full mb-3"
-            placeholder="Sub title"
+            placeholder="Subtitle"
             {...register("slug")}
           />
 

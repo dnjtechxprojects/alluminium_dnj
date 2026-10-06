@@ -52,7 +52,7 @@ const Choose: React.FC = () => {
 
   return (
     <motion.section
-      className="py-20 bg-white text-gray-800"
+      className="py-20 text-gray-800"
       variants={container}
       initial="hidden"
       whileInView="show"
@@ -80,7 +80,7 @@ const Choose: React.FC = () => {
           <motion.div
             key={index}
             variants={item}
-            className="border-2 border-[#e5e7eb] rounded-2xl p-8 hover:shadow-md transition"
+            className="border-2 border-[#e5e7eb] bg-white/60 rounded-2xl p-8 hover:shadow-md transition"
           >
             <div className="flex items-center justify-center w-12 h-12 bg-[#ffb600] rounded-lg mb-6">
               {feature.icon}

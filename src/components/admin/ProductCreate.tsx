@@ -134,7 +134,7 @@ export default function CreateEditProduct() {
 
         <input
           className="border p-2 w-full rounded"
-          placeholder="Sub title (optional)"
+          placeholder="Subtitle (optional)"
           {...register("slug")}
         />
 

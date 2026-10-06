@@ -17,7 +17,7 @@ const LoginForm = () => {
   const router = useRouter();
 
   const schema = yup.object({
-    email: yup.string().required("Please enter a email"),
+    email: yup.string().required("Please enter an email"),
     password: yup.string().required("Please enter a password"),
   });
 

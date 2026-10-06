@@ -1,9 +1,10 @@
 
 "use client";
 
-import { useEffect, useRef, useState, useContext } from "react";
+import { useEffect, useRef, useState, useContext, type ReactNode } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import SectionHeader from "@/components/common/SectionHeader";
+import PaperBackground from "@/components/common/PaperBackground";
 import StaticContent from "./StaticContent";
 import Image from "next/image";
 import AuthContext from "@/context/AuthProvider";
@@ -23,10 +24,13 @@ export default function ProductPage({
   title,
   pageKey,
   contactInfo,
+  children,
 }: {
   title: string;
   pageKey: string;
   contactInfo?: ContactInfo;
+  /** Rendered after the product list, on the same paper surface. */
+  children?: ReactNode;
 }) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -81,9 +85,10 @@ export default function ProductPage({
   }, [page, totalPages]);
 
   return (
-    <section className="w-full bg-white pb-6">
+    <section className="w-full">
       <SectionHeader title={title} maintitle="Products" />
 
+      <PaperBackground className="pb-6">
       <div className="max-w-7xl mx-auto px-4">
 
         <div className="fixed left-5 top-1/2 -translate-y-1/2 z-50 hidden 3xl:flex flex-col gap-3">
@@ -137,7 +142,8 @@ export default function ProductPage({
                       }`}
                     >
                       <div className="w-full lg:w-[560px] h-full lg:p-6">
-                        <div className="relative w-full max-sm:h-[250px] md:h-[400px] ">
+                        <div className="rounded-2xl md:rounded-3xl bg-white p-4 md:p-6 ring-1 ring-[#212121]/5 shadow-[0_30px_60px_-35px_rgba(33,33,33,0.45)]">
+                        <div className="relative w-full h-[250px] md:h-[400px]">
                           <Image
                             src={
                               product.image
@@ -151,6 +157,7 @@ export default function ProductPage({
                             loading={i === 0 ? "eager" : "lazy"}
                             fetchPriority={i === 0 ? "high" : "auto"}
                           />
+                        </div>
                         </div>
                       </div>
 
@@ -207,6 +214,8 @@ export default function ProductPage({
           <div ref={bottomRef} />
         </div>
       </div>
+      {children}
+      </PaperBackground>
     </section>
   );
 }

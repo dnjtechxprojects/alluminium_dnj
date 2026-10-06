@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     const token = await generateToken({ id: data.id, username: data.username });
 
     return successResponse({
-      message: `Login Successfully`,
+      message: `Logged in successfully`,
       data: {
         username: data.username,
         access_token: token,

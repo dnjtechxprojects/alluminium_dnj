@@ -2,6 +2,7 @@
  import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import SectionHeader from "@/components/common/SectionHeader";
+import PaperBackground, { PAPER_COLOR } from "@/components/common/PaperBackground";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getBackgroundImage } from "@/lib/image";
@@ -109,9 +110,10 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
   const sideBlogs = normalBlogs.slice(0, 2);
   const remainingBlogs = normalBlogs.slice(2);
  return (
-    <div className="w-full pb-16 bg-white relative">
+    <div className="w-full relative">
       
       <SectionHeader title="Blogs" maintitle="connect"/>
+      <PaperBackground className="pb-16">
       <div className="fixed left-5 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-3">
         {Array.from({ length: totalPages }).map((_, i) => {
           const p = i + 1;
@@ -214,13 +216,17 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
       )}
 
       <div ref={bottomRef} className="h-20"></div>
+      </PaperBackground>
     </div>
   );
 }
 
 const ArrowBtn = () => (
   <div className="absolute -top-1 -right-1">
-    <div className="bg-white h-20 w-20 rounded-bl-4xl flex items-center justify-center">
+    <div
+      className="h-20 w-20 rounded-bl-4xl flex items-center justify-center"
+      style={{ backgroundColor: PAPER_COLOR }}
+    >
       <div className="bg-[#101828] h-16 w-16 rounded-full flex items-center justify-center">
         <span className="text-white text-5xl -mt-2">↗</span>
       </div>

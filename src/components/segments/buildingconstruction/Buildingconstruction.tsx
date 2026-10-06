@@ -1,11 +1,12 @@
 import Image from "next/image";
 import SectionHeader from "@/components/common/SectionHeader";
+import PaperBackground from '@/components/common/PaperBackground'
 
 export default function Buildingconstruction() {
   return (
     <div>
       <SectionHeader title="Building Construction" maintitle="segments"/>
-    <div className="w-full py-10 px-4 md:px-12 lg:px-20 bg-white">
+    <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
         <div className="flex justify-center lg:justify-start">
@@ -106,7 +107,7 @@ export default function Buildingconstruction() {
           <ul className="mt-6 text-[#524F4B] md:list-disc max-sm:text-center  max-sm:text-sm  lg:text-lg space-y-4 md:space-y-4 pl-3 px-3 ">
             <li>High precision extrusion for exact tolerances and consistent quality.</li>
              <hr className="flex items-center  border-[#e5e7eb]" />
-            <li>Surface-treatment options: anodising, powder coating, PVDF finishes for durability and aesthetics.</li>
+            <li>Surface-treatment options: anodizing, powder coating, PVDF finishes for durability and aesthetics.</li>
              <hr className="flex items-center  border-[#e5e7eb]" />
             <li>Thermal break solutions for improved energy performance and compliance with modern building codes.</li>
              <hr className="flex items-center  border-[#e5e7eb]" />
@@ -146,7 +147,7 @@ export default function Buildingconstruction() {
           </p>
         </div>
       </div>
-    </div>
+    </PaperBackground>
     </div>
   );
 }

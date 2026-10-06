@@ -12,6 +12,7 @@ import Product from "@/components/home/Product";
 // import Impact from "@/components/home/Impact";
 // import Updates from "@/components/home/Updates";
 
+import PaperBackground from "@/components/common/PaperBackground";
 import { LAYOUT } from "@/lib/constant";
 import LayoutWrapper from "@/features/layouts";
 
@@ -44,12 +45,15 @@ function HomeContent() {
       <LayoutWrapper variant={LAYOUT.public}>
         <Hero />
         <Process />
-        <Choose />
-        <Capabilities />
-        <Innovation />
-        {/* <Impact /> */}
-         <Product />
-        {/* <Updates /> */}
+        {/* Hero and Process carry their own backgrounds; the rest share the paper surface. */}
+        <PaperBackground>
+          <Choose />
+          <Capabilities />
+          <Innovation />
+          {/* <Impact /> */}
+          <Product />
+          {/* <Updates /> */}
+        </PaperBackground>
       </LayoutWrapper>
     </motion.div>
   );

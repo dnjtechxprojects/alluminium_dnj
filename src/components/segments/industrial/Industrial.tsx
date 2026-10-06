@@ -1,11 +1,12 @@
 import React from 'react'
 import SectionHeader from '@/components/common/SectionHeader'
+import PaperBackground from '@/components/common/PaperBackground'
 import Image from 'next/image'
 const Industrial = () => {
   return (
     <div>
       <SectionHeader title="Industrial" maintitle="segments"/>
-    <div className="w-full py-10 px-4 md:px-12 lg:px-20 bg-white">
+    <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
         <Image
@@ -88,7 +89,7 @@ const Industrial = () => {
 
               <p>
                 <strong>Automation & Production Lines:</strong><br />
-                Profiles designed for robotic frames,sensor mounting structures and modular automation platforms.
+                Profiles designed for robotic frames, sensor mounting structures and modular automation platforms.
               </p>
 
               <p>
@@ -150,7 +151,7 @@ const Industrial = () => {
                              alt="Business Partnership"
                              />
         </div>
-    </div>
+    </PaperBackground>
     </div>
   )
 }

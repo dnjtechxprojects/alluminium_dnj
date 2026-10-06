@@ -67,7 +67,7 @@ export default function CatalogueDownloads() {
     <section
       ref={sectionRef}
       id={CATALOGUE_SECTION_ID}
-      className="w-full bg-white pb-16 scroll-mt-28"
+      className="w-full pb-16 scroll-mt-28"
     >
       <h3 className="max-w-7xl mx-auto px-4 mb-8 text-lg lg:text-2xl text-center text-[#524F4B]">
         {CATALOGUE_HEADING}

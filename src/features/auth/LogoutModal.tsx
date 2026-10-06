@@ -13,7 +13,7 @@ const LogoutModal = (props: LogoutModalProps) => {
     <>
       <Modal
         bodyClassName="!max-w-md"
-        title={"Are you sure you want to Log out ? "}
+        title={"Are you sure you want to log out?"}
         visible={visible}
         onHide={onHide}
         {...rest}

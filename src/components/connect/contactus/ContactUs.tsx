@@ -2,6 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import SectionHeader from "@/components/common/SectionHeader";
+import PaperBackground from "@/components/common/PaperBackground";
 
 type FormValues = {
   name: string;
@@ -26,18 +27,19 @@ const ContactUs = () => {
   return (
     <div>
       <SectionHeader title="Contact Us" maintitle="connect"/>
-    <section className="w-full py-16 px-4 md:px-12 lg:px-20 bg-white">
+    <PaperBackground>
+    <section className="w-full py-16 px-4 md:px-12 lg:px-20">
       
 
       <div className="flex justify-center mb-10">
         <span className="inline-block px-2   py-1  text-[#F39E00]  text-md lg:text-2xl xl:text-2xl normal-case tracking-widest md:tracking-normal">
-          Contact Infor
+          Contact Info
         </span>
       </div>
 
       <div className="text-center mt-6">
         <div className="lg:flex lg:flex-row lg:items-end lg:justify-center lg:gap-4">
-          <p className="text-md md:text-lg text-[#4a5565]">E-mail</p>
+          <p className="text-md md:text-lg text-[#4a5565]">Email</p>
           <p className="text-xl lg:text-5xl md:text-3xl tracking-wide text-[#101828]">
            info@natrajaluform.com
 
@@ -65,7 +67,7 @@ const ContactUs = () => {
         className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4"
       >
         
-        <div className="bg-[#f4f4f4] rounded-2xl p-6">
+        <div className="bg-white/70 ring-1 ring-[#212121]/5 rounded-2xl p-6">
           <label className="font-medium text-lg text-black">Name</label>
           <input
             type="text"
@@ -78,7 +80,7 @@ const ContactUs = () => {
           )}
         </div>
 
-        <div className="bg-[#f4f4f4] rounded-2xl p-6">
+        <div className="bg-white/70 ring-1 ring-[#212121]/5 rounded-2xl p-6">
           <label className="font-medium text-lg text-black">Company</label>
           <input
             type="text"
@@ -91,9 +93,9 @@ const ContactUs = () => {
           )}
         </div>
 
-        <div className="bg-[#f4f4f4] rounded-2xl p-6 md:row-span-2">
+        <div className="bg-white/70 ring-1 ring-[#212121]/5 rounded-2xl p-6 md:row-span-2">
           <label className="font-medium text-lg text-black">
-            Describe Your task
+            Describe Your Task
           </label>
           <textarea
             placeholder="How can we help you?"
@@ -108,7 +110,7 @@ const ContactUs = () => {
           )}
         </div>
 
-        <div className="bg-[#f4f4f4] rounded-2xl p-6">
+        <div className="bg-white/70 ring-1 ring-[#212121]/5 rounded-2xl p-6">
           <label className="font-medium text-lg text-black">Phone</label>
           <input
             type="text"
@@ -121,7 +123,7 @@ const ContactUs = () => {
           )}
         </div>
 
-        <div className="bg-[#f4f4f4] rounded-2xl p-6">
+        <div className="bg-white/70 ring-1 ring-[#212121]/5 rounded-2xl p-6">
           <label className="font-medium text-lg text-black">Email</label>
           <input
             type="email"
@@ -144,6 +146,7 @@ const ContactUs = () => {
         </div>
       </form>
     </section>
+    </PaperBackground>
     </div>
   );
 };

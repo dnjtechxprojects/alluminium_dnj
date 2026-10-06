@@ -69,7 +69,7 @@ const Picker = (props: PickerProps) => {
   return (
     <div className={`${className} proof-sec`}>
       <label className={`text-sm text-ev-secondary pb-[4px]`}>
-        {label + ` (upto ${selectionLimit})`}
+        {label + ` (up to ${selectionLimit})`}
       </label>
       <div className="file-input">
         <input

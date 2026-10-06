@@ -10,8 +10,8 @@ import AboutPageLayout, {
   HighlightStrip,
   inView,
 } from "@/components/about/AboutPageLayout";
-import extrusionLine from "@/assets/images/capabilities/extrusion-line-7500mt.webp";
-import dieManufacturing from "@/assets/images/capabilities/die-manufacturing-1000mm.webp";
+import extrusionLine from "@/assets/images/capabilities/extrusion-line-7500mt.png";
+import dieManufacturing from "@/assets/images/capabilities/die-manufacturing-1000mm.png";
 
 // Figures from the company introduction and the two showcase images below.
 const HIGHLIGHTS = [

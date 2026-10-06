@@ -4,9 +4,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { MotionConfig, motion, Variants } from "framer-motion";
 
-// Grayscale fractal noise, tiled over the page to give it the paper grain
-// of the reference design without shipping a texture image.
-const NOISE_TEXTURE = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`;
+import PaperBackground from "@/components/common/PaperBackground";
 
 const reveal: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -33,21 +31,7 @@ export default function AboutPageLayout({
 }: AboutPageLayoutProps) {
   return (
     <MotionConfig reducedMotion="user">
-      <div className="relative overflow-hidden bg-[#F8F7F3] text-[#212121]">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-[0.13] mix-blend-multiply"
-          style={{ backgroundImage: NOISE_TEXTURE }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -right-40 top-24 h-[420px] w-[420px] rounded-full bg-[#FFB600]/25 blur-[110px]"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -left-48 top-[55%] h-[380px] w-[380px] rounded-full bg-[#F39E00]/15 blur-[120px]"
-        />
-
+      <PaperBackground className="text-[#212121]">
         <div className="relative mx-auto max-w-7xl px-5 pb-24 pt-32 sm:px-8 md:pt-40 lg:px-12 lg:pb-32">
           <header className="flex flex-col-reverse gap-6 md:flex-row md:items-start md:justify-between">
             <div>
@@ -76,7 +60,7 @@ export default function AboutPageLayout({
 
           {children}
         </div>
-      </div>
+      </PaperBackground>
     </MotionConfig>
   );
 }

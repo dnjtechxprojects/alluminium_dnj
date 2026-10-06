@@ -6,6 +6,7 @@ import axios from "axios";
 import Image from "next/image";
 import { getImageSrc } from "@/lib/image";
 import Link from "next/link";
+import PaperBackground from "@/components/common/PaperBackground";
 
 interface Blog {
   id: string;
@@ -43,30 +44,30 @@ export default function BlogDetail() {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center text-red-500">
+      <PaperBackground className="min-h-screen flex items-center justify-center text-red-500">
         {error}
-      </div>
+      </PaperBackground>
     );
   }
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center text-gray-500 text-xl">
+      <PaperBackground className="min-h-screen flex items-center justify-center text-gray-500 text-xl">
         Loading...
-      </div>
+      </PaperBackground>
     );
   }
 
   if (!blog) {
     return (
-      <div className="min-h-screen flex items-center justify-center text-gray-500">
+      <PaperBackground className="min-h-screen flex items-center justify-center text-gray-500">
         Blog not found.
-      </div>
+      </PaperBackground>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <PaperBackground className="min-h-screen flex flex-col">
       <div className="flex-grow">
         <div className="max-w-4xl mx-auto py-16 px-4 md:px-10">
 
@@ -109,6 +110,6 @@ export default function BlogDetail() {
           )}
         </div>
       </div>
-    </div>
+    </PaperBackground>
   );
 }

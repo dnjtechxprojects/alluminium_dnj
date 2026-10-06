@@ -1,11 +1,12 @@
 import React from 'react'
 import SectionHeader from '@/components/common/SectionHeader'
+import PaperBackground from '@/components/common/PaperBackground'
 import Image from 'next/image'
 const Defense = () => {
   return (
     <div>
       <SectionHeader title="Defense" maintitle="segments"/>
-    <div className="w-full py-10 px-4 md:px-12 lg:px-20 bg-white">
+    <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
         <Image
@@ -27,7 +28,7 @@ const Defense = () => {
           <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-3 md:mt-6 max-sm:mt-5 max-sm:px-6">
             At Natraj Aluform Pvt. Ltd., we support defense and security applications with high-strength aluminium extrusion solutions engineered for extreme reliability, durability and mission-critical performance. </p>
           <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-4 max-sm:mt-7 max-sm:px-6">
-            We understand the importance of confidentiality, consistency and performance in defense supply chains, and we build every product with those values at the core.We leverage advanced manufacturing techniques, precision engineering, and rigorous quality control to ensure every component meets the highest defense standards. </p>
+            We understand the importance of confidentiality, consistency and performance in defense supply chains, and we build every product with those values at the core. We leverage advanced manufacturing techniques, precision engineering, and rigorous quality control to ensure every component meets the highest defense standards. </p>
         </div>
       </div>
 
@@ -44,7 +45,7 @@ const Defense = () => {
         <div className='lg:px-6 xl:px-9'>
           <div className="flex justify-center sm:justify-start">
             <span className="inline-block px-2 py-3 tracking-widest md:tracking-normal text-[#F39E00] normal-case text-md lg:text-2xl xl:text-2xl">
-              Core Defence Capabilities
+              Core Defense Capabilities
             </span>
           </div>
 
@@ -141,7 +142,7 @@ const Defense = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </PaperBackground>
     </div>
   )
 }

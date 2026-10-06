@@ -25,7 +25,7 @@ export function Process() {
   const stage7Progress = useTransform(scrollYProgress, [0.84, 1], [0, 1]);
 
   const stages = [
-    { title: "1. Billet Casting", desc: "Molten aluminium poured into casting molds" },
+    { title: "1. Billet Casting", desc: "Molten aluminium poured into casting moulds" },
     { title: "2. Billet Homogenisation", desc: "Heat treatment for uniform structure" },
     { title: "3. Extrusion", desc: "Material forced through shaped mould" },
     { title: "4. 3 Mode Quenching", desc: "Three-stage cooling process" },
@@ -143,7 +143,7 @@ export function Process() {
               {/* Labels */}
               <text x="250" y="80" fill="#FFB600" fontSize="18" fontWeight="bold" textAnchor="middle">BILLET CASTING</text>
               <text x="130" y="190" fill="#9CA3AF" fontSize="14">Molten Metal</text>
-              <text x="260" y="360" fill="#9CA3AF" fontSize="14" textAnchor="middle">Casting Mold</text>
+              <text x="260" y="360" fill="#9CA3AF" fontSize="14" textAnchor="middle">Casting Mould</text>
               
               {/* Temperature indicator */}
               <text x="250" y="380" fill="#EF4444" fontSize="12" textAnchor="middle">~700°C</text>
@@ -610,7 +610,7 @@ export function Process() {
               <circle cx="350" cy="200" r="5" fill="#FFFFFF" />
               
               {/* Labels */}
-              <text x="230" y="100" fill="#FFB600" fontSize="18" fontWeight="bold" textAnchor="middle">AGING OVEN</text>
+              <text x="230" y="100" fill="#FFB600" fontSize="18" fontWeight="bold" textAnchor="middle">AGEING OVEN</text>
               <text x="200" y="330" fill="#9CA3AF" fontSize="14" textAnchor="middle">Heat Treatment</text>
               <text x="350" y="260" fill="#9CA3AF" fontSize="12" textAnchor="middle">165-190°C</text>
               

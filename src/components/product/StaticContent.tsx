@@ -18,7 +18,7 @@ export default function StaticContent({
   // Without an image, show the content as side-by-side cards
   if (!image) {
     return (
-      <section className="w-full px-4 md:px-5 lg:px-5 bg-white">
+      <section className="w-full px-4 md:px-5 lg:px-5">
         <div className={`grid grid-cols-1 gap-6 ${secondtitle ? "md:grid-cols-2" : ""}`}>
           <div className="p-6 border border-[#e5e7eb]">
             <h3 className="text-md lg:text-2xl xl:text-2xl text-black mb-2">{title}</h3>
@@ -41,7 +41,7 @@ export default function StaticContent({
   }
 
   return (
-    <section className="w-full  px-4 md:px-5 lg:px-5 bg-white">
+    <section className="w-full  px-4 md:px-5 lg:px-5">
       <div className="w-full mx-auto flex flex-col lg:flex-row">
         <div className=" grid grid-cols-1 lg:grid-cols-2 items-center gap-36">
         

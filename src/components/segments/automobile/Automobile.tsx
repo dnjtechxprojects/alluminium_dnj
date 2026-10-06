@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import SectionHeader from '@/components/common/SectionHeader'
+import PaperBackground from '@/components/common/PaperBackground'
 const Automobile = () => {
   return (
     <div>
       <SectionHeader title="Automobile" maintitle="segments"/>
-     <div className="w-full py-10  px-4 md:px-12 lg:px-20 bg-white">
+     <PaperBackground className="w-full py-10  px-4 md:px-12 lg:px-20">
        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
    
@@ -173,7 +174,7 @@ Aluminium is 100% recyclable without loss of performance, making it a cornerston
           
         </div>
 
-    </div>
+    </PaperBackground>
     </div>
   )
 }
