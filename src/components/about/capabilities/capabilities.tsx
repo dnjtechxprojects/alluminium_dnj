@@ -46,7 +46,7 @@ const DIE_MANUFACTURING: Showcase = {
   spec: "Up to 1000 mm diameter",
   specIcon: Diameter,
   image: dieManufacturing,
-  alt: "Two aluminium extrusion dies made in-house",
+  alt: "Blueprint drawing of two aluminium extrusion dies made in-house",
 };
 
 // Figures from the company introduction and the two showcases below.
