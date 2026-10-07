@@ -242,7 +242,7 @@ function ShowcaseRow({ showcase, imageFirst }: ShowcaseRowProps) {
           {showcase.eyebrow}
         </p>
         {showcase.figure && (
-          <p className="mt-3 text-2xl font-extrabold tracking-[0.12em] text-[#9C6200] lg:text-3xl">
+          <p className="mt-3 text-lg font-semibold italic tracking-[0.1em] text-[#9C6200] lg:text-xl">
             {showcase.figure}
           </p>
         )}
