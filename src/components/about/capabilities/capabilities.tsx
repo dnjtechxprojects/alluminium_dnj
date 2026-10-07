@@ -16,7 +16,8 @@ import dieManufacturing from "@/assets/images/capabilities/die-manufacturing.web
 
 interface Showcase {
   eyebrow: string;
-  // Headline number shown between the eyebrow and the title.
+  // Headline number shown between the eyebrow and the title. When set, it
+  // takes the large heading style and the title drops to the gold accent style.
   figure?: string;
   title: string;
   subtitle?: string;
@@ -242,11 +243,18 @@ function ShowcaseRow({ showcase, imageFirst }: ShowcaseRowProps) {
           {showcase.eyebrow}
         </p>
         {showcase.figure && (
-          <p className="mt-3 text-lg font-semibold italic tracking-[0.1em] text-[#9C6200] lg:text-xl">
+          <p className="mt-3 text-4xl font-extrabold italic tracking-[0.1em] lg:text-5xl">
             {showcase.figure}
           </p>
         )}
-        <h2 className="mt-3 text-4xl font-extrabold italic tracking-tight lg:text-5xl">
+        <h2
+          className={cn(
+            "mt-3 italic",
+            showcase.figure
+              ? "text-lg font-semibold tracking-[0.1em] text-[#9C6200] lg:text-xl"
+              : "text-4xl font-extrabold tracking-tight lg:text-5xl",
+          )}
+        >
           {showcase.title}
         </h2>
         {showcase.subtitle && (
