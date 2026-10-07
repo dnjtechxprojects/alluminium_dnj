@@ -16,8 +16,10 @@ import dieManufacturing from "@/assets/images/capabilities/die-manufacturing.web
 
 interface Showcase {
   eyebrow: string;
+  // Headline number shown between the eyebrow and the title.
+  figure?: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   description: string;
   spec: string;
   specIcon: LucideIcon;
@@ -27,8 +29,8 @@ interface Showcase {
 
 const EXTRUSION_LINE: Showcase = {
   eyebrow: "India's Largest",
+  figure: "7500 MT",
   title: "Extrusion Line",
-  subtitle: "7500 MT",
   description:
     "Our 7500 MT press is the largest extrusion line in India. Running alongside our 1100 MT press, it lets us produce large, heavy sections as well as everyday profiles under one roof.",
   spec: "Profiles from 100 mm up to 720 mm",
@@ -239,12 +241,19 @@ function ShowcaseRow({ showcase, imageFirst }: ShowcaseRowProps) {
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9C6200]">
           {showcase.eyebrow}
         </p>
+        {showcase.figure && (
+          <p className="mt-3 text-2xl font-extrabold tracking-[0.12em] text-[#9C6200] lg:text-3xl">
+            {showcase.figure}
+          </p>
+        )}
         <h2 className="mt-3 text-4xl font-extrabold italic tracking-tight lg:text-5xl">
           {showcase.title}
         </h2>
-        <p className="mt-3 text-lg font-semibold italic text-[#9C6200] lg:text-xl">
-          {showcase.subtitle}
-        </p>
+        {showcase.subtitle && (
+          <p className="mt-3 text-lg font-semibold italic text-[#9C6200] lg:text-xl">
+            {showcase.subtitle}
+          </p>
+        )}
         <div
           className={cn(
             "mx-auto my-7 h-1 w-16 rounded-full bg-[#FFB600]",
