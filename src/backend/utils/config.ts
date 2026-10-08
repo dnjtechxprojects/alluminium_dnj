@@ -20,3 +20,7 @@ export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024; // 5 MB
 
 // Catalogue PDFs are larger than photos, so they get their own cap.
 export const MAX_CATALOGUE_BYTES = 20 * 1024 * 1024; // 20 MB
+
+// Contact form enquiries are appended to this JSON file. Like uploads it sits
+// outside public/, so it can never be fetched by URL, and it is git-ignored.
+export const ENQUIRIES_FILE: string = "storage/enquiries/enquiries.json";

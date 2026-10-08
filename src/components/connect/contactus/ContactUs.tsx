@@ -1,6 +1,7 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
+import axios from "axios";
 import { useForm, type RegisterOptions } from "react-hook-form";
 import {
   ArrowRight,
@@ -108,11 +109,20 @@ const ContactUs = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<FormValues>();
+  const [status, setStatus] = useState<"idle" | "sent" | "failed">("idle");
 
-  const onSubmit = () => {
-    reset();
+  const onSubmit = async (values: FormValues) => {
+    setStatus("idle");
+    try {
+      await axios.post("/api/enquiry", values);
+      reset();
+      setStatus("sent");
+    } catch (err) {
+      console.error("Enquiry failed", err);
+      setStatus("failed");
+    }
   };
 
   return (
@@ -246,11 +256,27 @@ const ContactUs = () => {
               <div className="sm:col-span-2">
                 <button
                   type="submit"
-                  className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#212121] px-8 py-4 text-base font-semibold text-white transition hover:cursor-pointer hover:bg-[#FFB600] hover:text-[#212121] sm:w-auto"
+                  disabled={isSubmitting}
+                  className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#212121] px-8 py-4 text-base font-semibold text-white transition hover:cursor-pointer hover:bg-[#FFB600] hover:text-[#212121] disabled:cursor-wait disabled:opacity-70 sm:w-auto"
                 >
-                  Submit request
+                  {isSubmitting ? "Sending..." : "Submit request"}
                   <ArrowRight aria-hidden className="size-5" />
                 </button>
+
+                <p role="status" className="text-sm font-semibold">
+                  {status === "sent" && (
+                    <span className="mt-4 block text-[#067647]">
+                      Thank you! Your enquiry has been sent and we will get
+                      back to you soon.
+                    </span>
+                  )}
+                  {status === "failed" && (
+                    <span className="mt-4 block text-[#B42318]">
+                      Sorry, we couldn&apos;t send your enquiry. Please try
+                      again, or email us at info@natrajaluform.com.
+                    </span>
+                  )}
+                </p>
               </div>
             </form>
           </div>

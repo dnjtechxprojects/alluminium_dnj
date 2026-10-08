@@ -58,12 +58,21 @@ through `GET /api/catalogue/<slot>`. Their titles live in `src/lib/catalogue.ts`
 
 Back up `storage/uploads` alongside the database; it is not in version control.
 
+## Contact enquiries
+
+The Contact Us form posts to `POST /api/enquiry`, which validates the fields and
+appends each enquiry to `storage/enquiries/enquiries.json`. Like uploads, the
+file is outside `public/`, so it can't be opened by URL, and no endpoint reads it
+back. It is git-ignored: read it on the server, and back it up with
+`storage/uploads`.
+
 ## API auth
 
 Every mutating endpoint (`POST`/`PUT`/`DELETE` on `/api/blog` and `/api/product`,
 and `POST /api/upload`) calls `requireAuth` and rejects unauthenticated requests
 with 403. `GET` on blog and product stays public — the site is public.
-`/api/auth/login` is the only unauthenticated write endpoint.
+`/api/auth/login` and `POST /api/enquiry` (the contact form) are the only
+unauthenticated write endpoints.
 
 When adding a route handler that writes data, start it with:
 
