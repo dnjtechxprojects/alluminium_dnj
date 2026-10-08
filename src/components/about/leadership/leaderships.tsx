@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 import AboutPageLayout, {
   AboutIntro,
   HighlightStrip,
-  inView,
 } from "@/components/about/AboutPageLayout";
+import { inView } from "@/components/common/Reveal";
 import mukeshPatel from "@/assets/images/leadership/mukesh-patel.webp";
 import dishankVekariya from "@/assets/images/leadership/dishank-vekariya.webp";
 import priyankVekariya from "@/assets/images/leadership/priyank-vekariya.webp";

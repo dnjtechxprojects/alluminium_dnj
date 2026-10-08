@@ -1,14 +1,15 @@
 import React from 'react'
-import SectionHeader from '@/components/common/SectionHeader'
+import PageHeader from '@/components/common/PageHeader'
 import PaperBackground from '@/components/common/PaperBackground'
+import Reveal from '@/components/common/Reveal'
 import Image from 'next/image'
 const Industrial = () => {
   return (
     <div>
-      <SectionHeader title="Industrial" maintitle="segments"/>
-    <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
+    <PaperBackground className="w-full pb-10 pt-32 md:pt-40 px-4 md:px-12 lg:px-20">
+      <PageHeader title="Industrial" section="Segments" className="mb-14 md:mb-20" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
+      <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
         <Image
           src="/images/ind1.png"
           width={1200}
@@ -30,15 +31,15 @@ const Industrial = () => {
           <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-4 max-sm:mt-7 max-sm:px-6">
            Our industrial products are engineered to deliver structural stability, dimensional accuracy and long-term operational reliability, even in challenging working environments. </p>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="flex justify-center mt-8 md:mt-10">
+      <Reveal className="flex justify-center mt-8 md:mt-10">
         <span className="inline-block px-2 text-[#F39E00]  text-md lg:text-2xl xl:text-2xl normal-case tracking-widest md:tracking-normal">
             Key Strengths
             </span>
-      </div>
+      </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 md:mt-10">
+      <Reveal className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 md:mt-10">
        
         <div className=" p-6  border border-[#e5e7eb]">
           <h3 className="text-md lg:text-2xl xl:text-2xl text-black mb-2">High Load Capacity</h3>
@@ -64,8 +65,8 @@ const Industrial = () => {
            Aluminium’s natural resistance to rust, moisture, and chemical exposure makes our profiles perfectly suited for harsh industrial environments, ensuring long service life and minimal maintenance even under continuous use.
           </p>
         </div>
-      </div>
-     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
+      </Reveal>
+     <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
                     <Image
                            src="/images/ind2.png"
                             width={1200}
@@ -107,8 +108,8 @@ const Industrial = () => {
           </div>
 
           
-        </div>
-         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+        </Reveal>
+         <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
  <Image
                            src="/images/ind3.png"
                             width={1200}
@@ -150,7 +151,7 @@ const Industrial = () => {
                             className="object-cover w-full h-[250px] md:h-auto md:w-full  mx-auto lg:mx-0 md:block hidden"
                              alt="Business Partnership"
                              />
-        </div>
+        </Reveal>
     </PaperBackground>
     </div>
   )

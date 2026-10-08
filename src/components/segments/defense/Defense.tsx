@@ -1,14 +1,15 @@
 import React from 'react'
-import SectionHeader from '@/components/common/SectionHeader'
+import PageHeader from '@/components/common/PageHeader'
 import PaperBackground from '@/components/common/PaperBackground'
+import Reveal from '@/components/common/Reveal'
 import Image from 'next/image'
 const Defense = () => {
   return (
     <div>
-      <SectionHeader title="Defense" maintitle="segments"/>
-    <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
+    <PaperBackground className="w-full pb-10 pt-32 md:pt-40 px-4 md:px-12 lg:px-20">
+      <PageHeader title="Defense" section="Segments" className="mb-14 md:mb-20" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
+      <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
         <Image
           src="/images/def1.png"
           width={1199}
@@ -30,9 +31,9 @@ const Defense = () => {
           <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-4 max-sm:mt-7 max-sm:px-6">
             We understand the importance of confidentiality, consistency and performance in defense supply chains, and we build every product with those values at the core. We leverage advanced manufacturing techniques, precision engineering, and rigorous quality control to ensure every component meets the highest defense standards. </p>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+      <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
         <Image
           src="/images/def3.png"
           width={1200}
@@ -68,9 +69,9 @@ const Defense = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-6 items-center">
+      <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-6 items-center">
         <Image
           src="/images/def2.png"
           width={1199}
@@ -109,9 +110,9 @@ const Defense = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+      <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
         <Image
           src="/images/def4.png"
           width={1200}
@@ -141,7 +142,7 @@ const Defense = () => {
             <li>Custom engineering under controlled conditions</li>
           </ul>
         </div>
-      </div>
+      </Reveal>
     </PaperBackground>
     </div>
   )

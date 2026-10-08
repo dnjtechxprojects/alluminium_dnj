@@ -1,14 +1,15 @@
 import React from 'react'
-import SectionHeader from '@/components/common/SectionHeader'
+import PageHeader from '@/components/common/PageHeader'
 import PaperBackground from '@/components/common/PaperBackground'
+import Reveal from '@/components/common/Reveal'
 import Image from 'next/image'
 const Transportations = () => {
   return (
     <div>
-      <SectionHeader title="Transportations" maintitle="segments"/>
-   <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
+   <PaperBackground className="w-full pb-10 pt-32 md:pt-40 px-4 md:px-12 lg:px-20">
+     <PageHeader title="Transportations" section="Segments" className="mb-14 md:mb-20" />
       
-       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
+       <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
    
       <Image
         src="/images/trans1.png"
@@ -31,15 +32,15 @@ const Transportations = () => {
               <p className="text-[#524F4B]  max-sm:text-sm  lg:text-lg  leading-relaxed text-center md:text-start max-sm:mt-7 max-sm:px-6">
               Our manufacturing systems are optimized for high-volume, high-precision production of aluminium profiles tailored to demanding transport-industry requirements: durability, safety, corrosion resistance, and long lifecycle performance. </p>
               </div>
-      </div>
+      </Reveal>
       
-<div className="flex justify-center max-sm:mt-3">
+<Reveal className="flex justify-center max-sm:mt-3">
   <span className="inline-block  text-center text-[#F39E00] text-md lg:text-2xl xl:text-2xl  normal-case tracking-widest md:tracking-normal">
    Solution Highlights
   </span>
-</div>
+</Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 mt-10 md:mt-7">
+      <Reveal className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 mt-10 md:mt-7">
        
         <div className=" p-6  border border-[#e5e7eb]">
           <h3 className="text-md lg:text-2xl xl:text-2xl  text-black mb-2">Rail & Mass Transit Systems</h3>
@@ -65,8 +66,8 @@ const Transportations = () => {
            For modular transport pods, electric shuttles, mobility units and chassis systems, we supply custom aluminium extrusion solutions that support complex geometries, integrated fastening systems and assembly-ready fabrication.
           </p>
         </div>
-      </div>
-<div className="mt-10 lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 ">
+      </Reveal>
+<Reveal className="mt-10 lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 ">
 <Image
                               src="/images/trans2.png"
                                width={1200}
@@ -117,7 +118,7 @@ const Transportations = () => {
                                 alt="Business Partnership"
                                 />
                                 </div>
-        </div>
+        </Reveal>
     </PaperBackground>
     </div>
   )

@@ -1,13 +1,14 @@
 import React from 'react'
-import SectionHeader from '@/components/common/SectionHeader'
+import PageHeader from '@/components/common/PageHeader'
 import PaperBackground from '@/components/common/PaperBackground'
+import Reveal from '@/components/common/Reveal'
 import Image from 'next/image'
 const Aerospace = () => {
   return (
     <div>
-      <SectionHeader title="Aerospace" maintitle="segments" />
-    <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
+    <PaperBackground className="w-full pb-10 pt-32 md:pt-40 px-4 md:px-12 lg:px-20">
+      <PageHeader title="Aerospace" section="Segments" className="mb-14 md:mb-20" />
+      <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
         <Image
           src="/images/aero3.png"
           width={2432}
@@ -42,14 +43,14 @@ const Aerospace = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="flex justify-center max-sm:mb-8 max-sm:mt-7 mb-4 md:mb-10 ">
+      </Reveal>
+      <Reveal className="flex justify-center max-sm:mb-8 max-sm:mt-7 mb-4 md:mb-10 ">
         <span className="inline-block px-2 text-[#F39E00]  text-md lg:text-2xl xl:text-2xl  md:normal-case tracking-widest md:tracking-normal">
              Quick Facts
             </span>
-      </div>
+      </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <Reveal className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
        
         <div className=" p-6  border border-[#e5e7eb]">
           <h3 className="text-md lg:text-2xl xl:text-2xl  text-black mb-2">Ultra-Lightweight Components</h3>
@@ -75,8 +76,8 @@ const Aerospace = () => {
             Mould and extrusion systems optimized for tight tolerances, complex geometries and consistent quality.
           </p>
         </div>
-      </div>
-     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+      </Reveal>
+     <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
  <Image
                            src="/images/aero2.png"
                             width={1200}
@@ -118,7 +119,7 @@ const Aerospace = () => {
           </div>
 
           
-        </div>
+        </Reveal>
     </PaperBackground>
     </div>
   )

@@ -1,14 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-import SectionHeader from '@/components/common/SectionHeader'
+import PageHeader from '@/components/common/PageHeader'
 import PaperBackground from '@/components/common/PaperBackground'
+import Reveal from '@/components/common/Reveal'
 const Automobile = () => {
   return (
     <div>
-      <SectionHeader title="Automobile" maintitle="segments"/>
-     <PaperBackground className="w-full py-10  px-4 md:px-12 lg:px-20">
+     <PaperBackground className="w-full pb-10 pt-32 md:pt-40 px-4 md:px-12 lg:px-20">
+       <PageHeader title="Automobile" section="Segments" className="mb-14 md:mb-20" />
        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
+        <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
    
          <Image
                    src="/images/auto1.png"
@@ -30,8 +31,8 @@ In the dynamic world of automotive manufacturing, performance, weight reduction,
 <p className="text-[#524F4B]  max-sm:text-sm  lg:text-lg leading-relaxed text-center md:text-start max-sm:mt-7 max-sm:px-6">
 Drawing on best practices from global leaders, our composites address   stringent standards of strength, structural integrity and aesthetic finish. Our aluminium components help manufacturers achieve lighter, stronger, and more energy-efficient vehicles, directly contributing to improved fuel efficiency, extended EV range, and lower emissions. </p>
         </div>
-      </div>
-      <div className="lg:mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
+      </Reveal>
+      <Reveal className="lg:mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
 
           <Image
                     src="/images/auto2.png"
@@ -83,9 +84,9 @@ Aluminium is 100% recyclable without loss of performance, making it a cornerston
                       alt="Business Partnership"
                       />
          
-        </div>
+        </Reveal>
 
-<div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
+<Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
  <Image
            src="/images/auto3.png"
             width={1200}
@@ -129,8 +130,8 @@ Aluminium is 100% recyclable without loss of performance, making it a cornerston
           </div>
 
           
-        </div>
- <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+        </Reveal>
+ <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
 <Image
                      src="/images/auto4.png"
                       width={1200}
@@ -172,7 +173,7 @@ Aluminium is 100% recyclable without loss of performance, making it a cornerston
                        alt="Business Partnership"
                        />
           
-        </div>
+        </Reveal>
 
     </PaperBackground>
     </div>

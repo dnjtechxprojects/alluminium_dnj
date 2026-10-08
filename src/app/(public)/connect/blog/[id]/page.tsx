@@ -7,6 +7,7 @@ import Image from "next/image";
 import { getImageSrc } from "@/lib/image";
 import Link from "next/link";
 import PaperBackground from "@/components/common/PaperBackground";
+import Reveal from "@/components/common/Reveal";
 
 interface Blog {
   id: string;
@@ -78,32 +79,36 @@ export default function BlogDetail() {
           </Link>
 
           {blog.image && (
-            <Image
-              src={getImageSrc(blog.image)}
-              alt={blog.title}
-              width={900}
-              height={400}
-              className="rounded-xl w-full object-cover mb-6"
-            />
+            <Reveal>
+              <Image
+                src={getImageSrc(blog.image)}
+                alt={blog.title}
+                width={900}
+                height={400}
+                className="rounded-xl w-full object-cover mb-6"
+              />
+            </Reveal>
           )}
 
-          <h1 className="text-3xl font-bold mb-4 max-sm:text-center">{blog.title}</h1>
+          <Reveal>
+            <h1 className="text-3xl font-bold mb-4 max-sm:text-center">{blog.title}</h1>
 
-          {blog.date && (
-            <p className="text-gray-400 mb-6 max-sm:text-center">
-              {new Date(blog.date).toLocaleDateString()}
-            </p>
-          )}
+            {blog.date && (
+              <p className="text-gray-400 mb-6 max-sm:text-center">
+                {new Date(blog.date).toLocaleDateString()}
+              </p>
+            )}
 
-          {blog.excerpt && (
-            <p className="text-lg text-gray-600 mb-6 max-sm:text-center">
-              {blog.excerpt}
-            </p>
-          )}
+            {blog.excerpt && (
+              <p className="text-lg text-gray-600 mb-6 max-sm:text-center">
+                {blog.excerpt}
+              </p>
+            )}
+          </Reveal>
 
-          <div className="text-gray-800 whitespace-pre-line leading-relaxed max-sm:text-center">
+          <Reveal className="text-gray-800 whitespace-pre-line leading-relaxed max-sm:text-center">
             {blog.content}
-          </div>
+          </Reveal>
 
           {blog.slug && (
             <p className="text-sm text-gray-400 mt-6 max-sm:text-center">{blog.slug}</p>

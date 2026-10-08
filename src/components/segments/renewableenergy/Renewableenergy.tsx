@@ -1,14 +1,15 @@
 import React from 'react'
-import SectionHeader from '@/components/common/SectionHeader'
+import PageHeader from '@/components/common/PageHeader'
 import PaperBackground from '@/components/common/PaperBackground'
+import Reveal from '@/components/common/Reveal'
 import Image from 'next/image'
 const Renewableenergy = () => {
   return (
     <div>
-      <SectionHeader title="Renewable Energy" maintitle="segments"/>
-   <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
+   <PaperBackground className="w-full pb-10 pt-32 md:pt-40 px-4 md:px-12 lg:px-20">
+     <PageHeader title="Renewable Energy" section="Segments" className="mb-14 md:mb-20" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
+      <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center">
         <Image
           src="/images/renew1.png"
           width={784}
@@ -30,9 +31,9 @@ const Renewableenergy = () => {
           <p className="text-[#524F4B] max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start mt-4 max-sm:mt-7 max-sm:px-6">
             Our aluminium extrusion and fabrication capabilities help build resilient renewable energy structures that perform reliably under harsh environmental and long operational lifecycles. From solar panel frames and wind turbine components to supporting energy storage and transmission infrastructure, our aluminium products are designed to enhance efficiency, reduce weight, and simplify installation. </p>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+      <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
         <Image
           src="/images/renew2.png"
           width={1200}
@@ -66,9 +67,9 @@ const Renewableenergy = () => {
               We provide custom aluminium parts and structures for hydrogen energy systems and next-generation renewable infrastructure.</p>
           </div>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+      <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
         <Image
           src="/images/renew3.png"
           width={1200}
@@ -99,14 +100,14 @@ const Renewableenergy = () => {
                <hr className="flex items-center  border-[#e5e7eb]" />
           </ul>
         </div>
-      </div>
-         <div className="flex justify-center mt-6 md:mt-10">
+      </Reveal>
+         <Reveal className="flex justify-center mt-6 md:mt-10">
         <span className="tracking-widest md:tracking-normal inline-block px-2 text-center py-3  text-[#F39E00] text-md lg:text-2xl xl:text-2xl  normal-case ">
              Technology & Manufacturing Focus
             </span>
-      </div>
+      </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 ">
+      <Reveal className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 ">
        
         <div className=" p-6  border border-[#e5e7eb]">
           <h3 className="text-md lg:text-2xl xl:text-2xl  text-black mb-2">Advanced Extrusion Technology</h3>
@@ -128,7 +129,7 @@ const Renewableenergy = () => {
           <p className="text-[#524F4B] max-sm:text-sm  lg:text-lg leading-relaxed">
             Our aluminium products feature specialized coatings, anodizing, and protective finishes, designed to resist UV exposure, humidity, corrosion, and extreme climatic conditions. This ensures long-term durability, low maintenance, and consistent performance across diverse renewable energy projects. </p>
         </div>
-      </div>
+      </Reveal>
     </PaperBackground>
     </div>
   )

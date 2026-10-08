@@ -1,67 +1,33 @@
 "use client";
 
 import type { ReactNode } from "react";
-import Link from "next/link";
-import { MotionConfig, motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
+import PageHeader from "@/components/common/PageHeader";
 import PaperBackground from "@/components/common/PaperBackground";
-
-const reveal: Variants = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
-};
-
-/** Spread onto a motion element to fade it up once it scrolls into view. */
-export const inView = {
-  initial: "hidden",
-  whileInView: "show",
-  viewport: { once: true, amount: 0.25 },
-  variants: reveal,
-} as const;
+import { inView } from "@/components/common/Reveal";
 
 interface AboutPageLayoutProps {
   title: string;
+  /** Site section shown as the eyebrow and in the breadcrumb. */
+  section?: string;
   children: ReactNode;
 }
 
 /** Shared shell for the About Us pages: paper background, title and breadcrumb. */
 export default function AboutPageLayout({
   title,
+  section = "About Us",
   children,
 }: AboutPageLayoutProps) {
   return (
-    <MotionConfig reducedMotion="user">
-      <PaperBackground className="text-[#212121]">
-        <div className="relative mx-auto max-w-7xl px-5 pb-24 pt-32 sm:px-8 md:pt-40 lg:px-12 lg:pb-32">
-          <header className="flex flex-col-reverse gap-6 md:flex-row md:items-start md:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9C6200]">
-                About Us
-              </p>
-              <h1 className="mt-3 text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl">
-                {title}
-              </h1>
-              <div className="mt-6 h-1.5 w-24 rounded-full bg-[#FFB600]" />
-            </div>
+    <PaperBackground className="text-[#212121]">
+      <div className="relative mx-auto max-w-7xl px-5 pb-24 pt-32 sm:px-8 md:pt-40 lg:px-12 lg:pb-32">
+        <PageHeader title={title} section={section} />
 
-            <nav
-              aria-label="Breadcrumb"
-              className="flex items-center gap-2 text-sm text-[#6b6b6b] md:pt-2"
-            >
-              <Link href="/" className="transition hover:text-[#212121]">
-                Home
-              </Link>
-              <span aria-hidden>/</span>
-              <span>About Us</span>
-              <span aria-hidden>/</span>
-              <span className="font-medium text-[#212121]">{title}</span>
-            </nav>
-          </header>
-
-          {children}
-        </div>
-      </PaperBackground>
-    </MotionConfig>
+        {children}
+      </div>
+    </PaperBackground>
   );
 }
 

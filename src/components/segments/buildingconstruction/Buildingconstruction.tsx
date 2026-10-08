@@ -1,14 +1,15 @@
 import Image from "next/image";
-import SectionHeader from "@/components/common/SectionHeader";
+import PageHeader from "@/components/common/PageHeader";
 import PaperBackground from '@/components/common/PaperBackground'
+import Reveal from '@/components/common/Reveal'
 
 export default function Buildingconstruction() {
   return (
     <div>
-      <SectionHeader title="Building Construction" maintitle="segments"/>
-    <PaperBackground className="w-full py-10 px-4 md:px-12 lg:px-20">
+    <PaperBackground className="w-full pb-10 pt-32 md:pt-40 px-4 md:px-12 lg:px-20">
+      <PageHeader title="Building Construction" section="Segments" className="mb-14 md:mb-20" />
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
+      <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 items-center mb-10">
         <div className="flex justify-center lg:justify-start">
           <Image src="/images/buil1.png" width={1199} height={899} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full" alt="" />
         </div>
@@ -23,14 +24,14 @@ export default function Buildingconstruction() {
           <p className="text-[#524F4B]  max-sm:text-sm lg:text-lg leading-relaxed text-center md:text-start max-sm:mt-7 max-sm:px-5">
            Our aluminium facade solutions support large glass panels with ultra-slim sightlines, allowing architects to create modern, open, and light-filled spaces while maintaining excellent weather resistance and thermal efficiency. These systems protect buildings from wind, rain, heat, and noise, ensuring year-round comfort and durability.</p>
         </div>
-      </div>
+      </Reveal>
 
    
 
-        <div className="flex justify-center lg:justify-end   md:hidden ">
+        <Reveal className="flex justify-center lg:justify-end   md:hidden ">
           <Image src="/images/buil2.png" width={1200} height={675} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
-        </div>
-       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center mb-10 ">
+        </Reveal>
+       <Reveal className="grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center mb-10 ">
         <div className="lg:px-6 xl:px-9">
           <button className="rounded-full tracking-widest md:tracking-normal  mt-7 md:mt-0  text-[#F39E00]  text-md lg:text-2xl xl:text-2xl mb-3 flex mx-auto md:mx-0 normal-case">
             Windows, Doors & Fenestration
@@ -45,11 +46,11 @@ export default function Buildingconstruction() {
         <div className="flex justify-center lg:justify-end hidden  md:block">
           <Image src="/images/buil2.png" width={1200} height={675} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full" alt="" />
         </div>
-      </div>
+      </Reveal>
 
     
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
+      <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
         <div className="flex justify-start">
           <Image src="/images/buil3.png" width={880} height={586} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
         </div>
@@ -66,11 +67,11 @@ export default function Buildingconstruction() {
         </div>
 
         
-      </div>
+      </Reveal>
 
       
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
          <div className="flex justify-center lg:justify-end  md:hidden">
           <Image src="/images/buil4.png" width={1024} height={576} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
         </div>
@@ -88,11 +89,11 @@ export default function Buildingconstruction() {
         <div className="flex justify-center lg:justify-end hidden md:block">
           <Image src="/images/buil4.png" width={1024} height={576} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[200px] md:h-full md:w-full" alt="" />
         </div>
-      </div>
+      </Reveal>
 
 
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <Reveal className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="flex justify-start">
           <Image src="/images/buil5.png" width={1536} height={1024} sizes="(min-width: 768px) 50vw, 100vw" quality={90} className="object-cover mx-auto w-full  h-[250px] md:h-full md:w-full max-sm:mt-5" alt="" />
         </div>
@@ -118,14 +119,14 @@ export default function Buildingconstruction() {
         </div>
 
         
-      </div>
-      <div className="flex justify-center mb-10">
+      </Reveal>
+      <Reveal className="flex justify-center mb-10">
         <span className="inline-block tracking-widest md:tracking-normal text-center px-4 py-1 mt-10  text-[#F39E00] text-md lg:text-2xl xl:text-2xl normal-case rounded-full md:font-normal flex mx-auto ">
           Why Aluminium for Construction?
         </span>
-      </div>
+      </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <Reveal className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         <div className=" p-6 border border-[#e5e7eb]">
           <h3 className="text-md lg:text-2xl xl:text-2xl text-black  mb-2">Lightweight & Strong</h3>
           <p className="text-[#4a5565] max-sm:text-sm  lg:text-lg leading-relaxed">
@@ -146,7 +147,7 @@ export default function Buildingconstruction() {
             Extruded aluminium allows complex shapes, thermal-break systems, recycled content and supports green building.
           </p>
         </div>
-      </div>
+      </Reveal>
     </PaperBackground>
     </div>
   );

@@ -1,5 +1,7 @@
 "use client";
 
+import Reveal from "@/components/common/Reveal";
+
 interface StaticContactProps {
   image?: string;
   title: string;
@@ -19,7 +21,7 @@ export default function StaticContent({
   if (!image) {
     return (
       <section className="w-full px-4 md:px-5 lg:px-5">
-        <div className={`grid grid-cols-1 gap-6 ${secondtitle ? "md:grid-cols-2" : ""}`}>
+        <Reveal className={`grid grid-cols-1 gap-6 ${secondtitle ? "md:grid-cols-2" : ""}`}>
           <div className="p-6 border border-[#e5e7eb]">
             <h3 className="text-md lg:text-2xl xl:text-2xl text-black mb-2">{title}</h3>
             <p className="text-[#4a5565] max-sm:text-sm lg:text-lg leading-relaxed">
@@ -35,14 +37,14 @@ export default function StaticContent({
               </p>
             </div>
           )}
-        </div>
+        </Reveal>
       </section>
     );
   }
 
   return (
     <section className="w-full  px-4 md:px-5 lg:px-5">
-      <div className="w-full mx-auto flex flex-col lg:flex-row">
+      <Reveal className="w-full mx-auto flex flex-col lg:flex-row">
         <div className=" grid grid-cols-1 lg:grid-cols-2 items-center gap-36">
         
           <div className=" h-[250px] md:h-[400px]  shrink-0 lg:hidden flex justify-center" >
@@ -82,7 +84,7 @@ export default function StaticContent({
           </div> 
         </div>
 
-      </div>
+      </Reveal>
     </section>
   );
 }

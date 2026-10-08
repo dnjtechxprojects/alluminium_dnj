@@ -8,8 +8,8 @@ import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import AboutPageLayout, {
   AboutIntro,
-  inView,
 } from "@/components/about/AboutPageLayout";
+import { inView } from "@/components/common/Reveal";
 import warehouse from "@/assets/images/dealers/warehouse.png";
 import handshake from "@/assets/images/dealers/handshake.png";
 

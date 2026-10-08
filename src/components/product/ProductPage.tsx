@@ -3,8 +3,9 @@
 
 import { useEffect, useRef, useState, useContext, type ReactNode } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import SectionHeader from "@/components/common/SectionHeader";
+import PageHeader from "@/components/common/PageHeader";
 import PaperBackground from "@/components/common/PaperBackground";
+import Reveal from "@/components/common/Reveal";
 import StaticContent from "./StaticContent";
 import Image from "next/image";
 import AuthContext from "@/context/AuthProvider";
@@ -86,10 +87,9 @@ export default function ProductPage({
 
   return (
     <section className="w-full">
-      <SectionHeader title={title} maintitle="Products" />
-
-      <PaperBackground className="pb-6">
+      <PaperBackground className="pb-6 pt-32 md:pt-40">
       <div className="max-w-7xl mx-auto px-4">
+        <PageHeader title={title} section="Products" />
 
         <div className="fixed left-5 top-1/2 -translate-y-1/2 z-50 hidden 3xl:flex flex-col gap-3">
           {Array.from({ length: totalPages }).map((_, i) => {
@@ -110,7 +110,7 @@ export default function ProductPage({
           })}
         </div>
 
-        <div className="mt-16">
+        <div className="mt-4 md:mt-10">
 
           {filteredProducts.length === 0 &&
             productLoader[pageKey] && (
@@ -136,7 +136,7 @@ export default function ProductPage({
                   <div className="mb-24">
                     {/* Same image/text row as the Segments pages: the photo
                         fills half the row at its natural aspect ratio. */}
-                    <div
+                    <Reveal
                       className={`mt-10 grid grid-cols-1 gap-7 md:gap-10 items-center ${
                         product.image ? "md:grid-cols-2" : ""
                       }`}
@@ -172,7 +172,7 @@ export default function ProductPage({
                           {product.description}
                         </p>
                       </div>
-                    </div>
+                    </Reveal>
                   </div>
 
                   {i === 0 && contactInfo && (

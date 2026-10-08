@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 import AboutPageLayout, {
   AboutIntro,
   HighlightStrip,
-  inView,
 } from "@/components/about/AboutPageLayout";
+import { inView } from "@/components/common/Reveal";
 import extrusionLine from "@/assets/images/capabilities/extrusion-line.webp";
 import dieManufacturing from "@/assets/images/capabilities/die-manufacturing.webp";
 

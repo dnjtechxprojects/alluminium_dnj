@@ -1,8 +1,9 @@
 "use client";
  import { useEffect, useRef, useState } from "react";
 import axios from "axios";
-import SectionHeader from "@/components/common/SectionHeader";
+import PageHeader from "@/components/common/PageHeader";
 import PaperBackground, { PAPER_COLOR } from "@/components/common/PaperBackground";
+import Reveal from "@/components/common/Reveal";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getBackgroundImage } from "@/lib/image";
@@ -58,9 +59,13 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
         await fetchBlogs(i);
       }
 
-      setTimeout(() => {
-        pageRefs.current[startPage]?.scrollIntoView({ behavior: "smooth" });
-      }, 300);
+      // Page 1 starts at the top, so only jump when the URL asks for a later
+      // page; scrolling to it would hide the page title under the navbar.
+      if (startPage > 1) {
+        setTimeout(() => {
+          pageRefs.current[startPage]?.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
     };
 
     load();
@@ -111,9 +116,12 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
   const remainingBlogs = normalBlogs.slice(2);
  return (
     <div className="w-full relative">
-      
-      <SectionHeader title="Blogs" maintitle="connect"/>
-      <PaperBackground className="pb-16">
+      <PaperBackground className="pb-16 pt-32 md:pt-40">
+      <PageHeader
+        title="Blogs"
+        section="Connect"
+        className="mx-auto mb-14 max-w-6xl px-5 md:mb-20"
+      />
       <div className="fixed left-5 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-3">
         {Array.from({ length: totalPages }).map((_, i) => {
           const p = i + 1;
@@ -144,7 +152,7 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
 
         {highlightBlog && (
           <Link href={`/connect/blog/${highlightBlog.id}`}>
-            <div
+            <Reveal
               className="h-[380px] rounded-2xl p-8 bg-cover bg-center flex flex-col justify-end relative"
               style={{ backgroundImage: getBackgroundImage(getImage(highlightBlog), 1200) }}
             >
@@ -156,14 +164,14 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
                 {highlightBlog.excerpt ||
                   highlightBlog.content.slice(0, 120) + "..."}
               </p>
-            </div>
+            </Reveal>
           </Link>
         )}
 
         <div className="flex flex-col gap-6">
           {sideBlogs.map((blog) => (
             <Link key={blog.id} href={`/connect/blog/${blog.id}`}>
-              <div
+              <Reveal
                 className="h-[350px] rounded-2xl p-8 bg-cover bg-center relative"
                 style={{ backgroundImage: getBackgroundImage(getImage(blog), 1200) }}
               >
@@ -174,7 +182,7 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
                 <p className="text-white">
                   {blog.excerpt || blog.content.slice(0, 90) + "..."}
                 </p>
-              </div>
+              </Reveal>
             </Link>
           ))}
         </div>
@@ -191,19 +199,21 @@ const pageRefs = useRef<Record<number, HTMLDivElement | null>>({});
                 <div ref={(el:any) => (pageRefs.current[pageNo] = el)}></div>
               )}
 
-              <Link
-                href={`/connect/blog/${blog.id}`}
-                className="h-[250px] rounded-2xl p-8 bg-cover bg-center relative block"
-                style={{ backgroundImage: getBackgroundImage(getImage(blog), 640) }}
-              >
-                <ArrowBtn />
-                <h2 className="text-white text-2xl font-bold mt-4">
-                  {blog.title}
-                </h2>
-                <p className="text-white">
-                  {blog.excerpt || blog.content.slice(0, 90) + "..."}
-                </p>
-              </Link>
+              <Reveal>
+                <Link
+                  href={`/connect/blog/${blog.id}`}
+                  className="h-[250px] rounded-2xl p-8 bg-cover bg-center relative block"
+                  style={{ backgroundImage: getBackgroundImage(getImage(blog), 640) }}
+                >
+                  <ArrowBtn />
+                  <h2 className="text-white text-2xl font-bold mt-4">
+                    {blog.title}
+                  </h2>
+                  <p className="text-white">
+                    {blog.excerpt || blog.content.slice(0, 90) + "..."}
+                  </p>
+                </Link>
+              </Reveal>
             </div>
           );
         })}

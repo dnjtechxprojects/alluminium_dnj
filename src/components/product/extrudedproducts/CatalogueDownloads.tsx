@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { Download } from "lucide-react";
+import Reveal from "@/components/common/Reveal";
 import {
   CATALOGUE_HEADING,
   CATALOGUE_SECTION_ID,
@@ -69,22 +70,24 @@ export default function CatalogueDownloads() {
       id={CATALOGUE_SECTION_ID}
       className="w-full pb-16 scroll-mt-28"
     >
-      <h3 className="max-w-7xl mx-auto px-4 mb-8 text-lg lg:text-2xl text-center text-[#524F4B]">
-        {CATALOGUE_HEADING}
-      </h3>
-      <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-        {catalogues.map(({ slot, title }) => (
-          <a
-            key={slot}
-            href={`/api/catalogue/${slot}`}
-            className="inline-flex items-center gap-2 border border-[#FFB600] px-6 py-3
-              text-black tracking-wider hover:bg-[#FFB600] transition"
-          >
-            <Download size={18} />
-            {title}
-          </a>
-        ))}
-      </div>
+      <Reveal>
+        <h3 className="max-w-7xl mx-auto px-4 mb-8 text-lg lg:text-2xl text-center text-[#524F4B]">
+          {CATALOGUE_HEADING}
+        </h3>
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          {catalogues.map(({ slot, title }) => (
+            <a
+              key={slot}
+              href={`/api/catalogue/${slot}`}
+              className="inline-flex items-center gap-2 border border-[#FFB600] px-6 py-3
+                text-black tracking-wider hover:bg-[#FFB600] transition"
+            >
+              <Download size={18} />
+              {title}
+            </a>
+          ))}
+        </div>
+      </Reveal>
     </section>
   );
 }
