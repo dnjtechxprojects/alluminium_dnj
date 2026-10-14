@@ -52,8 +52,9 @@ const DIE_MANUFACTURING: Showcase = {
   alt: "Blueprint drawing of two aluminium extrusion dies made in-house",
 };
 
-// Figures from the company introduction and the two showcases below.
-const HIGHLIGHTS = [
+// Figures from the company introduction and the two showcases below; the home
+// page hero shows the same strip.
+export const HIGHLIGHTS = [
   { value: "7500 MT", label: "Extrusion press capacity" },
   { value: "45,000 MT", label: "Annual melting capacity" },
   { value: "36,000 MT", label: "Annual extrusion capacity" },

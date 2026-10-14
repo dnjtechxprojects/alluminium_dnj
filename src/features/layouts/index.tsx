@@ -12,11 +12,13 @@ import MainLayout from "./MainLayout";
 
 interface LayoutProps {
   variant?: "main" | "minimal";
+  /** Public layout only: false for pages that close with their own footer. */
+  footer?: boolean;
   children: React.ReactNode;
 }
 
 const LayoutWrapper = (porps: LayoutProps) => {
-  const { variant = LAYOUT.main, children } = porps;
+  const { variant = LAYOUT.main, footer = true, children } = porps;
 
   // Page content has hydrated, so the boot loader can fade out
   useEffect(() => {
@@ -34,7 +36,7 @@ const LayoutWrapper = (porps: LayoutProps) => {
     case LAYOUT.public:
       return (
         <PublicGuard>
-          <PublicLayout>{children}</PublicLayout>
+          <PublicLayout footer={footer}>{children}</PublicLayout>
         </PublicGuard>
       );
 

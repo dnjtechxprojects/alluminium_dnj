@@ -403,6 +403,143 @@ html {
   max-width: 100% !important;
 }
 
+/* ===== Home page process drawings (src/components/home/process) ===== */
+
+.np-label {
+  font: 600 11px/1 var(--font-sans), ui-sans-serif, sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  fill: #6f6a60;
+  stroke: none;
+}
+
+.np-plate {
+  font: 700 11px/1 var(--font-sans), ui-sans-serif, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  fill: #2b2b2b;
+  stroke: none;
+}
+
+.np-readout {
+  font: 800 15px/1 var(--font-sans), ui-sans-serif, sans-serif;
+  letter-spacing: 0.08em;
+  fill: #ffb600;
+  stroke: none;
+}
+
+.np-dim-text {
+  font: 700 12px/1 var(--font-sans), ui-sans-serif, sans-serif;
+  letter-spacing: 0.04em;
+  fill: #9c6200;
+  stroke: none;
+}
+
+/* Callout labels are too small to read once a sheet is phone-width. */
+.np-mobile .np-callout {
+  display: none;
+}
+
+/* Ambient effects only; the machines themselves move with the scroll. */
+@keyframes np-flow { to { stroke-dashoffset: -56; } }
+@keyframes np-flicker { 0%, 100% { opacity: 1; } 45% { opacity: 0.7; } 70% { opacity: 0.9; } }
+@keyframes np-rise {
+  0% { transform: translateY(0) scale(0.8); opacity: 0; }
+  30% { opacity: 0.8; }
+  100% { transform: translateY(-40px) scale(1.3); opacity: 0; }
+}
+@keyframes np-pulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+@keyframes np-sway { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(-10px); } }
+@keyframes np-nudge { 0%, 100% { transform: translateY(-2px); } 50% { transform: translateY(3px); } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .np-flow { animation: np-flow 1.2s linear infinite; }
+  .np-flicker { animation: np-flicker 1.8s ease-in-out infinite; }
+  .np-rise { animation: np-rise 3.6s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+  .np-pulse { animation: np-pulse 1.6s ease-in-out infinite; }
+  .np-sway { animation: np-sway 3s ease-in-out infinite; }
+  .np-nudge { animation: np-nudge 1.6s ease-in-out infinite; }
+}
+
+/* Stages away from the middle of the screen stop animating. */
+[data-live="false"] .np-anim {
+  animation-play-state: paused;
+}
+
+/* ===== Home page line (src/components/home/line) ===== */
+
+/* Sizes for the full-screen line. The drawings are 400 units high, so --u is
+   the size of one drawing unit and machine panels are multiples of it. */
+.nl-viewport {
+  --top: 104px; /* clear of the navbar */
+  --band: clamp(46px, 6.5svh, 64px); /* shop floor in front of the machines */
+  --stage-h: clamp(190px, 46svh, 400px);
+  --gutter: 16px;
+  --u: calc(var(--stage-h) / 400);
+}
+
+@media (min-width: 1024px) {
+  .nl-viewport {
+    --top: 120px;
+    --band: clamp(52px, 7svh, 76px);
+    --stage-h: clamp(260px, calc(100svh - 340px), 620px);
+    --gutter: clamp(2rem, 4vw, 4.5rem);
+  }
+}
+
+/* Phones on their side: keep a machine and its text on screen together. */
+@media (max-height: 520px) {
+  .nl-viewport {
+    --top: 96px;
+    --band: 36px;
+    --stage-h: clamp(130px, 38svh, 200px);
+  }
+}
+
+/* Height left between the navbar and the floor line. */
+.nl-viewport {
+  --room: calc(100svh - var(--top) - var(--band) - var(--stage-h) * 0.07);
+}
+
+/* In the components layer so Tailwind utilities on the same element win. */
+@layer components {
+  .nl-col {
+    flex: none;
+    width: min(var(--col, 420px), calc(100vw - 2 * var(--gutter)));
+  }
+
+  .nl-caption {
+    width: min(440px, calc(100vw - 2 * var(--gutter)));
+  }
+
+  .nl-card {
+    width: clamp(220px, min(22vw, calc((var(--room) - 250px) / 0.75)), 330px);
+  }
+
+  .nl-tile {
+    width: clamp(110px, min(max(15vw, 150px), calc((var(--room) - 60px) / 2.4)), 230px);
+  }
+
+  /* Chapter names standing behind the machines. */
+  .nl-outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(33, 33, 33, 0.08);
+  }
+}
+
+/* Callout labels get too small to read on phone-sized drawings. */
+@media (max-width: 1023px) {
+  .nl-viewport .np-callout {
+    display: none;
+  }
+}
+
+@keyframes nl-nudge-x { 0%, 100% { transform: translateX(-3px); } 50% { transform: translateX(4px); } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .nl-nudge-x { animation: nl-nudge-x 1.6s ease-in-out infinite; }
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }

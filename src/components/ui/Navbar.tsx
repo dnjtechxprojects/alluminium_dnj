@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone } from "lucide-react";
 import { CATALOGUE_PAGE, CATALOGUE_SECTION_ID } from "@/lib/catalogue";
+import { PAPER_COLOR, PaperTexture } from "@/components/common/PaperBackground";
 
 // Stacked extruded tubes and a coil, the header shortcut to the catalogue downloads
 function ProfilesIcon({ className }: { className?: string }) {
@@ -105,10 +106,20 @@ export default function Navbar() {
 
 const pathname = usePathname();
 const [safePath, setSafePath] = useState<string | null>(null);
+const [scrolled, setScrolled] = useState(false);
 
 useEffect(() => {
   setSafePath(pathname);
 }, [pathname]);
+
+// Every page starts on the paper surface, so the bar stays clear at the top
+// and only frosts over once content scrolls underneath it.
+useEffect(() => {
+  const onScroll = () => setScrolled(window.scrollY > 8);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
 
 // Stop the page behind the full-screen menu from scrolling
 useEffect(() => {
@@ -119,28 +130,6 @@ useEffect(() => {
 }, [menuOpen]);
 
 if (!safePath) return null;
-  const whiteBgPages = [
-    "/about/leadership",
-    "/about/dealers",
-    "/about/capabilities",
-    "/product/extrudedproducts",
-    "/product/newalloy",
-    "/product/mouldmanufacturing",
-    "/product/fabrication",
-    "/segments/buildingconstruction",
-    "/segments/automobile",
-    "/segments/transportations",
-    "/segments/aerospace",
-    "/segments/industrial",
-    "/segments/defense",
-    "/segments/renewableenergy",
-    "/connect/contactus",
-    "/connect/inthenews",
-    "/connect/blog",
-    "/connect/blog/1",
-  ];
-
- const isWhiteBg = whiteBgPages.includes(safePath);
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -166,16 +155,15 @@ if (!safePath) return null;
   };
 
    return (
-   <nav
-  className={`fixed top-0 left-0 z-50 w-full h-20 flex justify-between items-center px-5 sm:px-8 md:px-16 ${
-    isWhiteBg ? "bg-white" : "bg-cover"
-  }`}
-  style={
-    !isWhiteBg
-      ? { backgroundImage: "url('/images/navbar-bg.png')" }
-      : {}
-  }
->
+   <nav className="fixed top-0 left-0 z-50 w-full h-20 flex justify-between items-center px-5 sm:px-8 md:px-16">
+      {/* Frosted paper bar on its own layer: backdrop-filter on the nav itself
+          would make it the containing block of the fixed full-screen menu. */}
+      <div
+        aria-hidden
+        className={`absolute inset-0 -z-10 bg-[#F8F7F3]/85 backdrop-blur-md shadow-[0_1px_0_rgba(33,33,33,0.08)] transition-opacity duration-300 ${
+          scrolled && !menuOpen ? "opacity-100" : "opacity-0"
+        }`}
+      />
 
 
       <div className="absolute left-10 max-sm:left-5 z-[60]">
@@ -246,14 +234,14 @@ if (!safePath) return null;
           animate={{ y: 0 }}
           exit={{ y: "-100%" }}
           transition={{ duration: 0.5 }}
-          className="fixed top-0 left-0 w-full h-dvh flex flex-col lg:pl-20 justify-center space-y-8 z-40"
-          style={{
-            backgroundImage: "url('/images/navbar-bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundColor: isWhiteBg ? "rgba(255, 255, 255, 0.8)" : "transparent",
-          }}
+          className="fixed top-0 left-0 isolate w-full h-dvh flex flex-col lg:pl-20 justify-center space-y-8 z-40"
+          style={{ backgroundColor: PAPER_COLOR }}
         >
+            {/* Own layer with no margin: space-y-8 would otherwise give the
+                absolutely positioned grain a bottom margin and shorten it. */}
+            <div aria-hidden className="absolute inset-0 -z-10" style={{ margin: 0 }}>
+              <PaperTexture />
+            </div>
 
             {/* Desktop menu */}
             <ul className="hidden lg:block lg:text-6xl font-medium space-y-7 text-start text-[#2F2F2F] lg:w-100">

@@ -1,12 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import {
-  Linkedin,
-  Instagram,
-  MapPin,
-  Phone,
-  Mail,
-} from "lucide-react";
+import { Linkedin, Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { PaperTexture } from "@/components/common/PaperBackground";
 
 interface SubLink {
   name: string;
@@ -15,19 +11,19 @@ interface SubLink {
 
 interface FooterLinkGroup {
   title: string;
-  href: string;
   children: SubLink[];
 }
 
 interface ContactItem {
   icon: React.ReactNode;
+  label: string;
   text: string;
+  href?: string;
 }
 
-const footerLinks: FooterLinkGroup[] = [
+export const footerLinks: FooterLinkGroup[] = [
   {
     title: "About Us",
-    href: "",
     children: [
       { name: "Leadership", href: "/about/leadership" },
       // { name: "Dealers", href: "/about/dealers" }, // hidden for now
@@ -36,7 +32,6 @@ const footerLinks: FooterLinkGroup[] = [
   },
   {
     title: "Products",
-    href: "",
     children: [
       { name: "Extruded Products", href: "/product/extrudedproducts" },
       { name: "New Alloy", href: "/product/newalloy" },
@@ -46,7 +41,6 @@ const footerLinks: FooterLinkGroup[] = [
   },
   {
     title: "Segments",
-    href: "",
     children: [
       { name: "Building Construction", href: "/segments/buildingconstruction" },
       { name: "Automobile", href: "/segments/automobile" },
@@ -59,7 +53,6 @@ const footerLinks: FooterLinkGroup[] = [
   },
   {
     title: "Connect",
-    href: "",
     children: [
       { name: "Contact Us", href: "/connect/contactus" },
       { name: "Blogs", href: "/connect/blog" },
@@ -67,90 +60,102 @@ const footerLinks: FooterLinkGroup[] = [
   },
 ];
 
-const contacts: ContactItem[] = [
+export const contacts: ContactItem[] = [
   {
-    icon: <MapPin className="w-5 h-5 text-[#ffb600] mt-1" />,
+    icon: <MapPin className="size-5" />,
+    label: "Visit",
     text: "Block No.-907 & 908, Sevni, Surat, Gujarat - 394320",
   },
   {
-    icon: <Phone className="w-4 h-4 text-[#ffb600]" />,
-    text: " +91 96388 11159",
+    icon: <Phone className="size-5" />,
+    label: "Call",
+    text: "+91 96388 11159",
+    href: "tel:+919638811159",
   },
   {
-    icon: <Mail className="w-4 h-4 text-[#ffb600]" />,
+    icon: <Mail className="size-5" />,
+    label: "Email",
     text: "info@natrajaluform.com",
+    href: "mailto:info@natrajaluform.com",
   },
 ];
 
-const socialLinks = [
+export const socialLinks = [
   {
-    icon: <Linkedin />,
+    label: "LinkedIn",
+    icon: <Linkedin className="size-[18px]" />,
     href: "https://www.linkedin.com/company/natraj-aluform-pvt-ltd/",
   },
   {
-    icon: <Instagram />,
+    label: "Instagram",
+    icon: <Instagram className="size-[18px]" />,
     href: "https://www.instagram.com/natrajaluform?igsh=ampsZjV3M3J2dTRw&utm_source=qr",
   },
 ];
 
+/**
+ * Paper-themed footer: a slightly deeper sheet than the page above it, with
+ * the same eyebrows, hairline rules and gold accents as the inner pages.
+ */
 const Footer: React.FC = () => {
   return (
     <footer
-      className="text-gray-300 py-10 px-6 lg:px-24 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/process-bg.png')" }}
+      className="relative isolate overflow-hidden border-t border-[#212121]/10 text-[#212121]"
+      style={{ backgroundColor: "#F1EDE4" }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-8">
-        
-        <div>
-          <Link href="/">
-            <img
-              src="/svg/white-logo.svg"
-              alt="Natraj Aluform Logo"
-              className="h-10 mb-4"
-            />
-          </Link>
+      <PaperTexture glows={false} />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-48 -top-40 -z-10 h-[460px] w-[460px] rounded-full bg-[#FFB600]/20 blur-[120px]"
+      />
 
-          <p className="text-sm leading-relaxed text-[#99a1af]">
-            Leading aluminium extrusion manufacturer committed to innovation,
-            quality, and sustainability.
-          </p>
-
-          <div className="flex space-x-3 mt-4">
-            {socialLinks.map((item, i) => (
-              <a
-                key={i}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#ffffff1a] hover:bg-[#ffb600] p-2 rounded-xl transition duration-300 hover:scale-110"
-              >
-                {React.cloneElement(item.icon, {
-                  className: "w-4 h-4 text-white",
-                })}
-              </a>
-            ))}
+      <div className="mx-auto max-w-7xl px-5 pt-16 sm:px-8 md:pt-20 lg:px-12">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-4">
+            <Link href="/" aria-label="Natraj Aluform home">
+              <Image
+                src="/svg/black-logo.svg"
+                alt="Natraj Aluform Logo"
+                width={190}
+                height={60}
+                className="h-11 w-auto"
+              />
+            </Link>
+            <p className="mt-6 max-w-sm text-base leading-relaxed text-[#4a5565]">
+              Leading aluminium extrusion manufacturer committed to innovation,
+              quality, and sustainability.
+            </p>
+            <div className="mt-6 flex gap-3">
+              {socialLinks.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label}
+                  className="flex size-10 items-center justify-center rounded-full border border-[#212121]/15 bg-white/50 text-[#212121] transition hover:border-[#FFB600] hover:bg-[#FFB600]"
+                >
+                  {item.icon}
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="md:col-span-2">
-          <h3 className="text-lg text-white mb-6">Quick Links</h3>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-14">
+          <nav
+            aria-label="Footer"
+            className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4 lg:col-span-8"
+          >
             {footerLinks.map((section) => (
               <div key={section.title}>
-                <Link
-                  href={section.href}
-                  className="block text-white font-semibold mb-3 hover:text-[#ffb600] transition"
-                >
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#9C6200]">
                   {section.title}
-                </Link>
-
-                <ul className="space-y-2 text-sm">
+                </p>
+                <ul className="mt-5 space-y-3 text-[15px]">
                   {section.children.map((item) => (
                     <li key={item.name}>
                       <Link
                         href={item.href}
-                        className="text-[#99a1af] hover:text-[#ffb600] transition"
+                        className="text-[#212121]/70 transition hover:text-[#212121]"
                       >
                         {item.name}
                       </Link>
@@ -159,25 +164,52 @@ const Footer: React.FC = () => {
                 </ul>
               </div>
             ))}
-          </div>
+          </nav>
         </div>
 
-        <div>
-          <h3 className="text-lg text-white mb-4">Contact</h3>
-          <ul className="space-y-3 text-sm">
-            {contacts.map((item, index) => (
-              <li key={index} className="flex items-start gap-2">
-                {item.icon}
-                <span className="text-[#99a1af]">{item.text}</span>
+        <ul className="mt-14 grid gap-6 border-y border-[#212121]/10 py-8 md:grid-cols-3">
+          {contacts.map((item) => {
+            const body = (
+              <>
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-full border border-[#FFB600]/60 bg-white/60 text-[#9C6200]">
+                  {item.icon}
+                </span>
+                <span>
+                  <span className="block text-xs font-semibold uppercase tracking-[0.3em] text-[#6b6b6b]">
+                    {item.label}
+                  </span>
+                  <span className="mt-1 block font-semibold leading-snug text-[#212121]">
+                    {item.text}
+                  </span>
+                </span>
+              </>
+            );
+            return (
+              <li key={item.label}>
+                {item.href ? (
+                  <a href={item.href} className="flex items-start gap-4 transition hover:text-[#9C6200]">
+                    {body}
+                  </a>
+                ) : (
+                  <div className="flex items-start gap-4">{body}</div>
+                )}
               </li>
-            ))}
-          </ul>
-        </div>
+            );
+          })}
+        </ul>
+
+        <p className="py-6 text-sm text-[#6b6b6b]">
+          © {new Date().getFullYear()} Natraj Aluform Private Limited. All rights reserved.
+        </p>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-sm text-[#99a1af]">
-        <p>© 2025 Natraj Aluform Private Limited. All rights reserved.</p>
-      </div>
+      {/* Oversized faint wordmark, cropped by the bottom edge. */}
+      <p
+        aria-hidden
+        className="pointer-events-none -mb-[0.2em] select-none whitespace-nowrap text-center text-[clamp(2.5rem,10vw,10.5rem)] font-extrabold leading-none tracking-tighter text-[#212121]/[0.06]"
+      >
+        NATRAJ ALUFORM
+      </p>
     </footer>
   );
 };

@@ -143,7 +143,8 @@ export default function ProductPage({
                     >
                       {product.image && (
                         // Uploads have unknown dimensions, so let CSS size
-                        // the image from the column width.
+                        // the image from the column width. Shown whole (no
+                        // crop) so transparent PNG cut-outs sit on the paper.
                         <Image
                           src={getImageSrc(product.image)}
                           alt={product.title}
@@ -151,7 +152,7 @@ export default function ProductPage({
                           height={0}
                           sizes="(min-width: 1280px) 620px, (min-width: 768px) 50vw, 100vw"
                           quality={90}
-                          className={`object-cover w-full h-[250px] md:h-auto ${
+                          className={`w-full h-auto ${
                             i % 2 !== 0 ? "md:order-last" : ""
                           }`}
                           loading={i === 0 ? "eager" : "lazy"}

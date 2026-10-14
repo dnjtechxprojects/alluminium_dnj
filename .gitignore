@@ -21,6 +21,7 @@ prisma/migrations
 public/uploads
 storage/uploads
 storage/enquiries
+storage/backups
 
 # production
 /build
