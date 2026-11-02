@@ -2,6 +2,10 @@
 // by backup-data.cjs. Rows are upserted by id, so re-running it is safe and
 // nothing that is missing from the file gets deleted.
 //
+// On a laptop it first copies the images the rows use, and the catalogue
+// PDFs, from storage/uploads/production (where backup-data.cjs saves them)
+// into the UPLOAD_DIR the site reads, so the restored pages show their images.
+//
 // User rows are deliberately NOT imported: old-data.json once carried a
 // plaintext password, and re-running this would have overwritten a hashed
 // password with that plaintext value. Admin accounts are managed separately.
@@ -11,6 +15,7 @@ const path = require("node:path");
 const projectRoot = path.resolve(__dirname, "..");
 const dataPath = path.join(__dirname, "old-data.json");
 const envPath = path.join(projectRoot, ".env");
+const backupDir = path.join(projectRoot, "storage", "uploads", "production");
 const productPages = new Set([
   "DIEMANUFACTURING",
   "EXTRUDEDPRODUCTS",
@@ -100,6 +105,58 @@ function readOldData() {
   return { products, blogs };
 }
 
+function imageNames(rows) {
+  const names = rows
+    .map((row) => row.image)
+    // Blogs may have no image, and very old rows may carry a full URL.
+    .filter((image) => image && !/^(data:|https?:)/.test(image))
+    .map((image) => path.basename(image));
+
+  return [...new Set(names)];
+}
+
+// On the server UPLOAD_DIR is the backup folder itself, so nothing is copied
+// there; any image still missing is only reported.
+function syncUploads(rows) {
+  const uploadDir = path.resolve(
+    projectRoot,
+    process.env.UPLOAD_DIR || "storage/uploads/production",
+  );
+  const sameFolder = uploadDir === backupDir;
+  let copied = 0;
+  const missing = [];
+
+  fs.mkdirSync(uploadDir, { recursive: true });
+
+  // Catalogues keep a fixed name and can be replaced, so the backup's copy wins.
+  if (!sameFolder && fs.existsSync(backupDir)) {
+    const catalogues = fs
+      .readdirSync(backupDir)
+      .filter((name) => /^catalogue-\d+\.pdf$/.test(name));
+
+    for (const name of catalogues) {
+      fs.copyFileSync(path.join(backupDir, name), path.join(uploadDir, name));
+      copied += 1;
+    }
+  }
+
+  // Upload names are unique and never reused, so an existing file is kept.
+  for (const name of imageNames(rows)) {
+    if (fs.existsSync(path.join(uploadDir, name))) continue;
+
+    const source = path.join(backupDir, name);
+    if (sameFolder || !fs.existsSync(source)) {
+      missing.push(name);
+      continue;
+    }
+
+    fs.copyFileSync(source, path.join(uploadDir, name));
+    copied += 1;
+  }
+
+  return { folder: path.relative(projectRoot, uploadDir), copied, missing };
+}
+
 async function main() {
   const { products, blogs } = readOldData();
   const summary = `${products.length} product(s) and ${blogs.length} blog(s)`;
@@ -121,6 +178,19 @@ async function main() {
 
   if (!process.env.DATABASE_URL) {
     throw new Error(`DATABASE_URL is missing from ${envPath}`);
+  }
+
+  // Files first, so the restored rows never point at images that aren't there.
+  const uploads = syncUploads([...products, ...blogs]);
+
+  if (uploads.copied > 0) {
+    console.log(`Copied ${uploads.copied} file(s) into ${uploads.folder}.`);
+  }
+
+  if (uploads.missing.length > 0) {
+    console.warn(
+      `Warning: ${uploads.missing.length} image(s) used by the data are not in ${uploads.folder}:\n  ${uploads.missing.join("\n  ")}`,
+    );
   }
 
   const { PrismaClient } = require("@prisma/client");

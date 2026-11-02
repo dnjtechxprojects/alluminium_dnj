@@ -40,10 +40,12 @@ Uploaded images are written to `UPLOAD_DIR`, which is **deliberately outside
 `public/`** so nothing uploaded can ever be served as a static asset. There are
 two upload folders:
 
-| Folder | Used by | In git? |
+| Folder | On the server | On your laptop |
 | --- | --- | --- |
-| `storage/uploads/local` | your machine, for `pnpm dev` and `pnpm build`/`start` (`UPLOAD_DIR` in `.env`) | no, ignored |
-| `storage/uploads/production` | the production server (`UPLOAD_DIR` unset) | yes, committed from the server as a backup |
+| `storage/uploads/production` | where uploads are saved (`UPLOAD_DIR` unset) | the backup copy of the live files, filled by `pnpm backup-data` |
+| `storage/uploads/local` | not used | where uploads are saved, for `pnpm dev` and `pnpm build`/`start` (`UPLOAD_DIR` in `.env`) |
+
+Both folders are git-ignored: images never go into git.
 
 Images are read back only through `GET /api/image/<filename>`,
 which serves a fixed allowlist of image types with `nosniff`.
@@ -59,21 +61,29 @@ through `GET /api/catalogue/<slot>`. Their titles live in `src/lib/catalogue.ts`
 
 ## Backup and restore
 
-Product and blog rows are backed up to `scripts/old-data.json`, and the files
-they use live in `storage/uploads/production`. Both are committed, so the repo
-is the backup. Admin accounts are never backed up (they hold password hashes).
-
-On the production server:
+One command on your laptop backs up the live site:
 
 ```bash
-pnpm backup-data        # database → scripts/old-data.json
-git add scripts/old-data.json storage/uploads/production
-git commit -m "Back up production data" && git push
+pnpm backup-data
 ```
 
-Then `git pull` anywhere to get a copy. To restore, put the files in place and
-run `pnpm import-data`. It upserts by id, so it is safe to re-run and never
-deletes rows. Add `--dry-run` to only validate the file.
+It reads the site's public endpoints (no server login needed) and saves:
+
+- product and blog rows → `scripts/old-data.json`
+- the images they use and the catalogue PDFs → `storage/uploads/production`
+
+Images are downloaded only once, since upload names are never reused. Admin
+accounts and contact enquiries are not public, so they are not included. Set
+`BACKUP_SITE_URL` to back up a different copy of the site.
+
+To restore, run `pnpm import-data`. It upserts the rows by id, so it is safe to
+re-run and never deletes anything. On your laptop it first copies the images it
+needs from `storage/uploads/production` into `storage/uploads/local`. Add
+`--dry-run` to only validate the file.
+
+To restore the server from your laptop, copy `storage/uploads/production` up to
+the same folder on the server, push `scripts/old-data.json`, and run
+`pnpm import-data` there.
 
 ## Contact enquiries
 
@@ -108,5 +118,5 @@ Client-side guards (`MainGuard`) only hide UI. They are not access control.
 | `pnpm build` / `pnpm start` | Production build / serve on port 3205 |
 | `pnpm lint` | ESLint |
 | `pnpm seed` | Create the admin account (refuses if it already exists) |
-| `pnpm backup-data` | Back up product and blog rows to `scripts/old-data.json` |
+| `pnpm backup-data` | Back up the live site (data and images) to this laptop |
 | `pnpm import-data` | Restore product and blog rows from `scripts/old-data.json` (never touches accounts) |

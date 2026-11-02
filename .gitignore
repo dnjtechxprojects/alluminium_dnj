@@ -19,10 +19,9 @@
 
 prisma/migrations
 public/uploads
-# Only the production uploads are committed (from the server, as a backup);
-# storage/uploads/local and anything else in storage/uploads stays private.
-storage/uploads/*
-!storage/uploads/production/
+# Both upload folders (local/ and production/) stay out of git; production
+# files reach a laptop only through pnpm backup-data.
+storage/uploads
 storage/enquiries
 storage/backups
 

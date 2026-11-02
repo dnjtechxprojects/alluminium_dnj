@@ -14,9 +14,9 @@ export const SECRET_KEY: string = rawSecret;
 // nothing written by an upload can ever be served as a static asset.
 //
 // The production server leaves UPLOAD_DIR unset and writes to
-// storage/uploads/production, which is committed to git as a backup of the
-// live images. Local machines set UPLOAD_DIR="storage/uploads/local" in .env,
-// a git-ignored folder, so test uploads never end up in the repo.
+// storage/uploads/production. Laptops set UPLOAD_DIR="storage/uploads/local"
+// in .env, and keep storage/uploads/production for the copy of the live files
+// that pnpm backup-data downloads. Both folders are git-ignored.
 export const UPLOAD_DIR: string =
   process.env.UPLOAD_DIR || "storage/uploads/production";
 
