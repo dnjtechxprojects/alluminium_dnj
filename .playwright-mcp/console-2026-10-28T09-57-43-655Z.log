@@ -1,0 +1,62 @@
+[   11547ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   11631ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   11722ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant?panel=Trending:0
+[   11835ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   16810ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   26052ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/ai-medical-assistant?panel=Trending&mode=student&date=2026-10&trending_id=ce0d4671-7db9-4caf-a535-ce5cab6eba6f:0
+[   30969ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   34746ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   34779ms] [LOG] [Fast Refresh] done in 135ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   35146ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   35216ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   35334ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/calculator:0
+[   35496ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   35499ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   35718ms] [LOG] [Fast Refresh] done in 423ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   38394ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   40418ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   70777ms] [LOG] [Fast Refresh] done in 32480ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   74669ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   75886ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   76184ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/calculator/masld-mash-nit:0
+[   76257ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   77028ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   78587ms] [LOG] [Fast Refresh] done in 2442ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   82258ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  103110ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  104105ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  104296ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/calculator/fib4:0
+[  104363ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  104546ms] [LOG] [Fast Refresh] done in 291ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  104574ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  109414ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  109445ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/calculator/fib4:0
+[  125632ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  125655ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  125934ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  125948ms] [LOG] [Fast Refresh] done in 115ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  130242ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  130244ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  130369ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  130479ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  131908ms] [LOG] [Fast Refresh] done in 1530ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  132104ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3000/api/consents/state:0
+[  132141ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3000/api/announcements/state:0
+[  135341ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  146325ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  146447ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  148065ms] [LOG] [Fast Refresh] done in 1720ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  161477ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  161601ms] [LOG] [Fast Refresh] done in 224ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  161871ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  161903ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  162210ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  162404ms] [LOG] [Fast Refresh] done in 296ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  163611ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  163887ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3000/api/announcements/state:0
+[  164167ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3000/api/consents/state:0
+[  168586ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  170178ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  170187ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  172303ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  177289ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0

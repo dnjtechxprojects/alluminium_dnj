@@ -1,0 +1,42 @@
+[    4469ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    4672ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    4951ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    6333ms] [LOG] [Fast Refresh] done in 1482ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   12462ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   12470ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   14825ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   14848ms] [LOG] [Fast Refresh] done in 125ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   17772ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   65294ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   65827ms] [LOG] [Fast Refresh] done in 638ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   65930ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   66045ms] [LOG] [Fast Refresh] done in 217ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   93465ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   95006ms] [LOG] [Fast Refresh] done in 1617ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   99390ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   99414ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  108581ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  108830ms] [LOG] [Fast Refresh] done in 351ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  122203ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  122249ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  127212ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  127216ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  127391ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  129850ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/gastro-trending-topics/small-and-large-bowel/international-consensus-links-masld-with-higher-colorectal-cancer-risk-gut-httpsdoiorg101136gutjnl-2025-337374:0
+[  132369ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  150380ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  151048ms] [LOG] [Fast Refresh] done in 770ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  151151ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  151348ms] [LOG] [Fast Refresh] done in 300ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  151577ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  151612ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  151777ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant:0
+[  151826ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  151908ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  152074ms] [LOG] [Fast Refresh] done in 319ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  152324ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  153389ms] [LOG] [Fast Refresh] done in 1164ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  156815ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  176826ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  197000ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/ai-medical-assistant?mode=student&conference_id=0e1059d8-deb1-43d6-a7a5-98eed04bda7b&date=2026-10&trending_id=ce0d4671-7db9-4caf-a535-ce5cab6eba6f:0
+[  201135ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0

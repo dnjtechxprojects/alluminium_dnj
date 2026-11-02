@@ -1,0 +1,165 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic:
+      - banner:
+        - generic [ref=e4]:
+          - generic [ref=e5]:
+            - button "Go back" [ref=e6] [cursor=pointer]
+            - button "GastroAGI home" [ref=e7] [cursor=pointer]:
+              - img "GastroAGI Logo" [ref=e8]
+          - button "Open menu" [ref=e10] [cursor=pointer]
+      - button "Close menu backdrop"
+      - dialog "Site navigation":
+        - generic:
+          - button "GastroAGI home":
+            - img "GastroAGI Logo"
+          - button "Close menu"
+        - navigation:
+          - button "Overview"
+          - button "Calculator"
+          - button "Blogs"
+          - button "About"
+          - button "Trending Topics"
+          - button "Daily Brief"
+          - button "Conference"
+        - generic:
+          - button "Try now"
+    - main [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e19]:
+          - navigation [ref=e21]:
+            - link "Home" [ref=e22] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e23]: /
+            - generic [ref=e24]: About
+          - heading "Evidence-based gastroenterology, for everyone." [level=1] [ref=e26]
+          - paragraph [ref=e28]: GastroAGI is an AI-powered gastroenterology platform that delivers evidence-based clinical insights, exam preparation, conference highlights, and patient-friendly digestive health guidance. Our mission is to make trustworthy GI knowledge accessible to everyone — from first-year students to practising clinicians and the patients they care for.
+          - generic [ref=e30]:
+            - button [ref=e31] [cursor=pointer]
+            - link "Explore modes" [ref=e36] [cursor=pointer]:
+              - /url: /for-students
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: Built for the GI community
+            - heading "Who GastroAGI is for" [level=2] [ref=e41]
+            - paragraph [ref=e42]: Choose the experience that fits your role and get clear, evidence-aware answers in seconds.
+          - generic [ref=e43]:
+            - link "Students Students Structured learning for MBBS, PG training, and entrance-exam preparation. Explore →" [ref=e45] [cursor=pointer]:
+              - /url: /for-students
+              - generic [ref=e46]:
+                - img "Students" [ref=e48]
+                - paragraph [ref=e49]: Students
+                - paragraph [ref=e50]: Structured learning for MBBS, PG training, and entrance-exam preparation.
+                - generic [ref=e51]:
+                  - text: Explore
+                  - generic [ref=e52]: →
+            - link "Clinicians Clinicians Guideline-driven clinical decision support for real-world GI practice. Explore →" [ref=e54] [cursor=pointer]:
+              - /url: /for-clinicians
+              - generic [ref=e55]:
+                - img "Clinicians" [ref=e57]
+                - paragraph [ref=e58]: Clinicians
+                - paragraph [ref=e59]: Guideline-driven clinical decision support for real-world GI practice.
+                - generic [ref=e60]:
+                  - text: Explore
+                  - generic [ref=e61]: →
+            - link "Researchers Researchers Academic and translational research intelligence for GI science. Explore →" [ref=e63] [cursor=pointer]:
+              - /url: /for-researchers
+              - generic [ref=e64]:
+                - img "Researchers" [ref=e66]
+                - paragraph [ref=e67]: Researchers
+                - paragraph [ref=e68]: Academic and translational research intelligence for GI science.
+                - generic [ref=e69]:
+                  - text: Explore
+                  - generic [ref=e70]: →
+            - link "Patients Patients Calm, safe, patient-friendly digestive health guidance without fear-based answers. Explore →" [ref=e72] [cursor=pointer]:
+              - /url: /for-patients
+              - generic [ref=e73]:
+                - img "Patients" [ref=e75]
+                - paragraph [ref=e76]: Patients
+                - paragraph [ref=e77]: Calm, safe, patient-friendly digestive health guidance without fear-based answers.
+                - generic [ref=e78]:
+                  - text: Explore
+                  - generic [ref=e79]: →
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Our approach
+            - heading "How our content is created" [level=2] [ref=e83]
+            - paragraph [ref=e84]: Trustworthy by design — grounded, responsible, and current.
+          - generic [ref=e85]:
+            - generic [ref=e87]:
+              - heading "Synthesized from evidence" [level=3] [ref=e91]
+              - paragraph [ref=e92]: Answers are grounded in current guidelines, journal articles, and conference proceedings across gastroenterology and hepatology.
+            - generic [ref=e94]:
+              - heading "Checked for safety" [level=3] [ref=e99]
+              - paragraph [ref=e100]: Content is framed responsibly — educational, non-alarmist, and clear that it never replaces professional clinical judgment.
+            - generic [ref=e102]:
+              - heading "Kept current" [level=3] [ref=e109]
+              - paragraph [ref=e110]: Trending topics and conference highlights are distilled and refreshed so the knowledge you read stays up to date.
+        - generic [ref=e113]:
+          - heading "Start exploring GastroAGI" [level=2] [ref=e114]
+          - paragraph [ref=e115]: Pick the mode that matches your role and get clear, evidence-aware answers in seconds.
+          - button [ref=e116] [cursor=pointer]
+          - paragraph [ref=e121]:
+            - text: GastroAGI is for informational and educational purposes only. It is not medical advice and is not a substitute for professional clinical judgment. Always consult a qualified healthcare professional for diagnosis or treatment.
+            - link "Read the full medical disclaimer" [ref=e122] [cursor=pointer]:
+              - /url: /medical-disclaimer
+            - text: .
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - img "GastroAGI Logo" [ref=e128]
+          - paragraph [ref=e129]: We are pioneers in clinical intelligence, dedicated to helping gastroenterologists harness the power of artificial intelligence to drive precision, efficiency, and patient growth.
+          - generic [ref=e130]:
+            - button [ref=e131] [cursor=pointer]
+            - button [ref=e136] [cursor=pointer]
+            - button [ref=e140] [cursor=pointer]
+            - button [ref=e146] [cursor=pointer]
+            - button [ref=e150] [cursor=pointer]
+            - button [ref=e154] [cursor=pointer]
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - heading "For You" [level=4] [ref=e160]
+            - link "For Students" [ref=e161] [cursor=pointer]:
+              - /url: /for-students
+            - link "For Clinicians" [ref=e162] [cursor=pointer]:
+              - /url: /for-clinicians
+            - link "For Researchers" [ref=e163] [cursor=pointer]:
+              - /url: /for-researchers
+            - link "For Patients" [ref=e164] [cursor=pointer]:
+              - /url: /for-patients
+          - generic [ref=e165]:
+            - heading "Core Tools" [level=4] [ref=e166]
+            - link "MELD-Na Score" [ref=e167] [cursor=pointer]:
+              - /url: /calculator/meld-na
+            - link "Child-Pugh" [ref=e168] [cursor=pointer]:
+              - /url: /calculator/child-pugh
+            - link "FIB-4 Index" [ref=e169] [cursor=pointer]:
+              - /url: /calculator/fib4
+            - link "Glasgow-Blatchford" [ref=e170] [cursor=pointer]:
+              - /url: /calculator/glasgow-blatchford
+            - link "BISAP Score" [ref=e171] [cursor=pointer]:
+              - /url: /calculator/bisap
+          - generic [ref=e172]:
+            - heading "Explore" [level=4] [ref=e173]
+            - link "Overview" [ref=e174] [cursor=pointer]:
+              - /url: /
+            - link "About" [ref=e175] [cursor=pointer]:
+              - /url: /about
+            - link "Calculators" [ref=e176] [cursor=pointer]:
+              - /url: /calculator
+            - generic [ref=e177] [cursor=pointer]: Trending Topics
+            - generic [ref=e178] [cursor=pointer]: Conference Briefings
+            - link "Blog Insights" [ref=e179] [cursor=pointer]:
+              - /url: /blog
+      - generic [ref=e182]:
+        - generic [ref=e183]: ©GastroAGI 2026
+        - generic [ref=e184]:
+          - link "Privacy Policy" [ref=e185] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Use" [ref=e186] [cursor=pointer]:
+            - /url: /terms-of-use
+          - link "Medical Disclaimer" [ref=e187] [cursor=pointer]:
+            - /url: /medical-disclaimer
+          - button "Cookie notice" [ref=e188] [cursor=pointer]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e194] [cursor=pointer]
+  - alert [ref=e198]

@@ -1,0 +1,336 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]:
+    - generic:
+      - banner:
+        - generic [ref=f1e4]:
+          - generic [ref=f1e5]:
+            - button "Go back" [ref=f1e6] [cursor=pointer]
+            - button "GastroAGI home" [ref=f1e7] [cursor=pointer]:
+              - img "GastroAGI Logo" [ref=f1e8]
+          - button "Open menu" [ref=f1e10] [cursor=pointer]
+      - button "Close menu backdrop"
+      - dialog "Site navigation":
+        - generic:
+          - button "GastroAGI home":
+            - img "GastroAGI Logo"
+          - button "Close menu"
+        - navigation:
+          - button "Overview"
+          - button "Calculator"
+          - button "Blogs"
+          - button "About"
+          - button "Trending Topics"
+          - button "Daily Brief"
+          - button "Conference"
+        - generic:
+          - button "Try now"
+    - main [ref=f1e15]:
+      - article [ref=f1e16]:
+        - generic [ref=f1e17]:
+          - generic [ref=f1e18]:
+            - link "Back to blogs" [ref=f1e19] [cursor=pointer]:
+              - /url: /blog
+            - generic [ref=f1e22]:
+              - generic [ref=f1e23]:
+                - 'heading "ACG 2026 Cirrhosis Prevention Guideline: From Portal Hypertension to Whole-Patient Care" [level=1] [ref=f1e24]'
+                - generic [ref=f1e25]:
+                  - generic [ref=f1e26]: October 27, 2026
+                  - generic [ref=f1e29]: GastroAGI Team
+                  - generic [ref=f1e33]: 11 min read
+                  - generic "18 reads" [ref=f1e37]:
+                    - generic [ref=f1e41]: "18"
+                    - generic [ref=f1e42]: reads
+                - paragraph [ref=f1e43]: "Review the 2026 ACG cirrhosis prevention guideline: variceal prophylaxis, HCC surveillance, infection prevention, nutrition, exercise and bone health."
+                - generic [ref=f1e44]:
+                  - link [ref=f1e45] [cursor=pointer]:
+                    - /url: https://x.com/GastroAGI
+                  - link "LinkedIn" [ref=f1e46] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/gastroagi
+                    - img "LinkedIn" [ref=f1e47]
+                  - link "Instagram" [ref=f1e48] [cursor=pointer]:
+                    - /url: https://www.instagram.com/gastroagi/
+                    - img "Instagram" [ref=f1e49]
+                  - link "Facebook" [ref=f1e50] [cursor=pointer]:
+                    - /url: https://www.facebook.com/GastroenterologyAGI/
+                    - img "Facebook" [ref=f1e51]
+                  - button "Copy Link" [ref=f1e52] [cursor=pointer]:
+                    - img "Copy Link" [ref=f1e53]
+                - 'img "ACG 2026 Cirrhosis Prevention Guideline: From Portal Hypertension to Whole-Patient Care" [ref=f1e54]'
+                - generic [ref=f1e55]:
+                  - generic [ref=f1e57]:
+                    - paragraph [ref=f1e58]
+                    - paragraph [ref=f1e59]:
+                      - strong [ref=f1e60]: For a patient with compensated cirrhosis who has never experienced ascites, variceal bleeding, or hepatic encephalopathy, what should clinicians do today to reduce the likelihood of complications tomorrow?
+                    - paragraph [ref=f1e61]: "For patients who have already decompensated, the question becomes equally important: which preventive measures remain beneficial, and how can they be delivered consistently across hospital and outpatient settings?"
+                    - paragraph [ref=f1e62]:
+                      - text: These questions form the foundation of the 2026 American College of Gastroenterology (ACG) Clinical Guideline on Preventive Care for Patients With Cirrhosis, published online in the
+                      - emphasis [ref=f1e63]: American Journal of Gastroenterology
+                      - text: on October 5, 2026.
+                    - paragraph [ref=f1e64]: The document challenges a predominantly complication-driven model of cirrhosis care. Rather than concentrating exclusively on established ascites, bleeding, and encephalopathy, it emphasizes interventions that may reduce future complications, improve functional health, and address preventable risks outside the liver.
+                    - paragraph [ref=f1e65]: Its scope is deliberately broad. Portal hypertension, hepatocellular carcinoma (HCC), vaccination, nutrition, exercise, alcohol use disorder, smoking, and osteoporosis all appear within a coordinated preventive-care framework.
+                    - paragraph [ref=f1e66]: For gastroenterologists and hepatologists, the key clinical challenge is not simply knowing these interventions individually, but identifying which patients need them and ensuring they are delivered at the appropriate time.
+                    - heading "1. Why Cirrhosis Prevention Requires a Broader Clinical Framework" [level=2] [ref=f1e67]
+                    - paragraph [ref=f1e68]: Cirrhosis affects more than two million Americans and contributes substantially to mortality, impaired quality of life, and healthcare utilization.
+                    - paragraph [ref=f1e69]: Yet cirrhosis is not uniformly progressive.
+                    - paragraph [ref=f1e70]: Patients with compensated disease may maintain a relatively favorable prognosis, while selected patients with previously decompensated disease can experience recompensation.
+                    - paragraph [ref=f1e71]: This variability creates an important opportunity for preventive intervention.
+                    - paragraph [ref=f1e72]: "The 2026 ACG guideline organizes preventive care into four domains:"
+                    - list [ref=f1e73]:
+                      - listitem [ref=f1e74]:
+                        - paragraph [ref=f1e75]: Prevention of cirrhosis-specific complications
+                      - listitem [ref=f1e76]:
+                        - paragraph [ref=f1e77]: Prevention of infections
+                      - listitem [ref=f1e78]:
+                        - paragraph [ref=f1e79]: Promotion of health through lifestyle interventions
+                      - listitem [ref=f1e80]:
+                        - paragraph [ref=f1e81]: Prevention of non-liver-specific conditions
+                    - paragraph [ref=f1e82]: The guideline contains 18 evidence-graded recommendations and six additional key concept statements.
+                    - paragraph [ref=f1e83]: Its clinical scope is broader than conventional strategies focused only on portal hypertension and HCC surveillance.
+                    - paragraph [ref=f1e84]: For example, a patient may receive appropriate variceal prophylaxis but remain vulnerable to vaccine-preventable infection, malnutrition, declining physical function, or osteoporotic fracture.
+                    - paragraph [ref=f1e85]: The guideline encourages clinicians to consider these risks together.
+                    - paragraph [ref=f1e86]: Importantly, prevention must still be individualized according to disease stage, treatment eligibility, tolerability, and patient preferences.
+                    - heading "2. How the ACG Developed Its Recommendations" [level=2] [ref=f1e87]
+                    - paragraph [ref=f1e88]: This publication is a clinical practice guideline rather than a newly conducted randomized controlled trial.
+                    - paragraph [ref=f1e89]: A hepatology expert writing group, supported by two GRADE methodologists, developed structured clinical questions using the Population, Intervention, Comparator, and Outcomes (PICO) framework.
+                    - paragraph [ref=f1e90]: Librarian-assisted literature searches covered PubMed, Embase, and the Cochrane Library.
+                    - paragraph [ref=f1e91]: Systematic reviews, meta-analyses, and randomized trials were prioritized when evaluating evidence.
+                    - paragraph [ref=f1e92]: The Grading of Recommendations Assessment, Development and Evaluation (GRADE) approach was used to distinguish recommendation strength from certainty of evidence.
+                    - paragraph [ref=f1e93]: This distinction is particularly important because most recommendations are supported by low-certainty evidence.
+                    - paragraph [ref=f1e94]: Strong recommendations may nevertheless be appropriate when anticipated benefits, potential harms, feasibility, and clinical values favor an intervention.
+                    - paragraph [ref=f1e95]: Consequently, clinicians should not interpret all 18 recommendations as having equivalent evidentiary strength.
+                    - paragraph [ref=f1e96]: Nor should the guideline be mistaken for a single trial demonstrating that an integrated preventive-care package reduces mortality.
+                    - paragraph [ref=f1e97]: Its contribution is to synthesize available evidence and establish a practical framework for preventive clinical decisions.
+                    - 'heading "3. Portal Hypertension: Preventing Bleeding and First Decompensation" [level=2] [ref=f1e98]'
+                    - paragraph [ref=f1e99]: Portal hypertension remains central to cirrhosis-related morbidity.
+                    - paragraph [ref=f1e100]: The guideline strongly recommends carvedilol or endoscopic variceal ligation (EVL) for primary prophylaxis against variceal bleeding in patients with high-risk esophageal varices.
+                    - paragraph [ref=f1e101]: This was the only recommendation supported by moderate-certainty evidence.
+                    - paragraph [ref=f1e102]: The choice between carvedilol and EVL requires individualized assessment.
+                    - paragraph [ref=f1e103]: Carvedilol offers pharmacological reduction of portal pressure, whereas EVL provides an endoscopic strategy for treating high-risk varices.
+                    - paragraph [ref=f1e104]: Medication tolerability, hemodynamic status, contraindications, patient preference, and availability of endoscopic services influence treatment selection.
+                    - paragraph [ref=f1e105]: A separate conditional recommendation addresses patients with compensated cirrhosis and clinically significant portal hypertension (CSPH).
+                    - paragraph [ref=f1e106]: For this population, the guideline suggests carvedilol to reduce the incidence of first-episode ascites.
+                    - paragraph [ref=f1e107]: This recommendation differs from prophylaxis for established high-risk varices. It concerns patients at risk of their first decompensating event.
+                    - paragraph [ref=f1e108]: CSPH assessment may incorporate noninvasive information, including liver stiffness measurements and platelet count, within an appropriate clinical evaluation.
+                    - paragraph [ref=f1e109]: However, a conditional recommendation should not be interpreted as authorization to prescribe carvedilol indiscriminately to every patient with compensated cirrhosis.
+                    - paragraph [ref=f1e110]: The preventive benefit must be weighed against individual safety considerations.
+                    - paragraph [ref=f1e111]: The broader clinical implication is that portal hypertension assessment has a role before overt decompensation, not only after variceal bleeding or ascites develops.
+                    - 'heading "4. Hepatic Encephalopathy and Gastrointestinal Bleeding: Preventing Recurrence and Secondary Harm" [level=2] [ref=f1e112]'
+                    - paragraph [ref=f1e113]: Hepatic encephalopathy (HE) presents a different preventive challenge because risk and treatment objectives vary across disease stages.
+                    - paragraph [ref=f1e114]: For patients with minimal HE, the guideline conditionally suggests lactulose rather than no treatment.
+                    - paragraph [ref=f1e115]: However, it does not suggest rifaximin solely as primary prevention of overt HE in patients with minimal HE.
+                    - paragraph [ref=f1e116]: This is a clinically important distinction.
+                    - paragraph [ref=f1e117]: Improving symptoms or neurocognitive performance is not necessarily equivalent to demonstrating prevention of overt encephalopathy.
+                    - paragraph [ref=f1e118]: For patients who experience overt HE while receiving lactulose, the guideline conditionally suggests adding rifaximin to prevent recurrence.
+                    - paragraph [ref=f1e119]: Treatment decisions should therefore distinguish minimal HE, prior overt HE, and breakthrough episodes despite existing therapy.
+                    - paragraph [ref=f1e120]: The guideline also addresses antibiotic prophylaxis during upper gastrointestinal bleeding.
+                    - paragraph [ref=f1e121]: For patients with cirrhosis experiencing upper GI bleeding, it conditionally suggests a short prophylactic antibiotic course of approximately 2–3 days, compared with a longer course or no prophylaxis.
+                    - paragraph [ref=f1e122]: This recommendation highlights antimicrobial stewardship while acknowledging uncertainty about the optimal balance between infection prevention, duration of exposure, and adverse consequences.
+                    - paragraph [ref=f1e123]: Importantly, prophylaxis during bleeding is not interchangeable with treatment for an established infection.
+                    - paragraph [ref=f1e124]: Clinicians should apply the recommendation in the appropriate clinical context, considering disease severity, infection status, and local antimicrobial resistance.
+                    - paragraph [ref=f1e125]: Both HE management and gastrointestinal bleeding prophylaxis illustrate the guideline's emphasis on reducing complications through appropriately targeted interventions rather than automatically intensifying treatment.
+                    - 'heading "5. HCC Surveillance: Eligibility Matters as Much as the Interval" [level=2] [ref=f1e126]'
+                    - paragraph [ref=f1e127]: Hepatocellular carcinoma remains a major concern throughout the course of cirrhosis.
+                    - paragraph [ref=f1e128]: The ACG strongly recommends HCC surveillance using liver ultrasound and alpha-fetoprotein (AFP) every six months in patients with cirrhosis who are candidates for HCC-directed therapies.
+                    - paragraph [ref=f1e129]: The qualification regarding treatment eligibility is essential.
+                    - paragraph [ref=f1e130]: Surveillance is intended to identify potentially actionable disease. Its value depends partly on whether a patient could receive appropriate treatment if HCC were detected.
+                    - paragraph [ref=f1e131]: Accordingly, decisions should consider clinical status, treatment options, and individual goals of care rather than applying surveillance mechanically.
+                    - paragraph [ref=f1e132]: The guideline also addresses medications proposed for cancer prevention.
+                    - paragraph [ref=f1e133]: It conditionally advises against prescribing aspirin solely to prevent HCC in patients with cirrhosis.
+                    - paragraph [ref=f1e134]: This should not be interpreted as a general prohibition against aspirin when a separate established indication exists.
+                    - paragraph [ref=f1e135]: The critical distinction is between observational associations suggesting reduced cancer risk and sufficiently reliable evidence to recommend a medication specifically for chemoprevention.
+                    - paragraph [ref=f1e136]: Similarly, the guideline's preventive framework does not establish a role for initiating otherwise unindicated medication solely on the basis of possible HCC risk reduction.
+                    - paragraph [ref=f1e137]: For clinicians, the immediate priority remains reliable surveillance in eligible patients, rather than adding unproven chemopreventive strategies.
+                    - 'heading "6. Vaccination: A Core Component of Cirrhosis Management" [level=2] [ref=f1e138]'
+                    - paragraph [ref=f1e139]: Infection prevention receives substantial attention in the ACG document.
+                    - paragraph [ref=f1e140]: The guideline strongly recommends assessing hepatitis A immunity and vaccinating susceptible patients.
+                    - paragraph [ref=f1e141]: It also conditionally suggests hepatitis B immunity assessment and vaccination.
+                    - paragraph [ref=f1e142]: Additional strong recommendations cover influenza immunization, SARS-CoV-2 vaccination, and respiratory syncytial virus (RSV) vaccination.
+                    - paragraph [ref=f1e143]: For RSV, the guideline specifies vaccination for patients with cirrhosis aged 50 years or older.
+                    - paragraph [ref=f1e144]: Implementation should account for applicable national immunization schedules, product availability, regulatory indications, and individual eligibility.
+                    - paragraph [ref=f1e145]: These recommendations are notable because preventive hepatology often concentrates on infections arising directly from decompensated disease, whereas routine vaccination addresses broader infectious risks.
+                    - paragraph [ref=f1e146]: The certainty of evidence for several vaccination recommendations remains low, despite their strong recommendation status.
+                    - paragraph [ref=f1e147]: This reflects the panel's assessment of anticipated benefits and established vaccine safety rather than uniform availability of cirrhosis-specific randomized outcome data.
+                    - paragraph [ref=f1e148]: In practical terms, immunization history should form part of routine liver clinic assessment.
+                    - paragraph [ref=f1e149]: A vaccination review is particularly relevant when patients first enter specialist care, after hospitalization, or when preventive health information is incomplete.
+                    - 'heading "7. Nutrition and Exercise: Addressing Functional Vulnerability" [level=2] [ref=f1e150]'
+                    - paragraph [ref=f1e151]: Cirrhosis management cannot be separated from nutritional and physical function.
+                    - paragraph [ref=f1e152]: The guideline conditionally suggests dietitian-guided nutritional interventions that provide adequate protein and calories.
+                    - paragraph [ref=f1e153]: It also suggests structured aerobic and resistance exercise for ambulatory patients to improve muscle health and physical function.
+                    - paragraph [ref=f1e154]: These recommendations recognize that clinical outcomes are influenced by more than biochemical indices and measures of portal hypertension.
+                    - paragraph [ref=f1e155]: Malnutrition, reduced muscle strength, and impaired physical performance can complicate long-term care.
+                    - paragraph [ref=f1e156]: Nevertheless, nutritional interventions should be individualized.
+                    - paragraph [ref=f1e157]: Patients differ in body composition, obesity status, functional capacity, nutritional needs, and complications of liver disease.
+                    - paragraph [ref=f1e158]: Similarly, structured exercise requires appropriate selection and adjustment rather than a uniform activity prescription.
+                    - paragraph [ref=f1e159]: The guideline does not establish that every patient will achieve equivalent functional improvement or that a particular exercise program definitively reduces mortality.
+                    - paragraph [ref=f1e160]: For clinicians, the relevant practice signal is to make nutrition and physical function active components of longitudinal assessment.
+                    - paragraph [ref=f1e161]: This may require closer collaboration with dietitians and rehabilitation professionals rather than expecting hepatology consultations alone to deliver all necessary interventions.
+                    - heading "8. Alcohol Use, Smoking, and Bone Health Beyond the Liver" [level=2] [ref=f1e162]
+                    - paragraph [ref=f1e163]: The guideline also addresses modifiable behaviors and extrahepatic conditions.
+                    - paragraph [ref=f1e164]: For patients hospitalized with cirrhosis and alcohol use disorder, the ACG conditionally suggests postdischarge behavioral therapy to reduce alcohol use.
+                    - paragraph [ref=f1e165]: This recommendation highlights the importance of continuity after hospitalization.
+                    - paragraph [ref=f1e166]: An inpatient admission may create an opportunity to identify alcohol-related needs, but preventive benefit depends on successful transition to ongoing care.
+                    - paragraph [ref=f1e167]: The guideline separately makes a strong recommendation for smoking-cessation counseling in patients with cirrhosis who actively smoke.
+                    - paragraph [ref=f1e168]: Smoking prevention is relevant to overall health and should not be treated as unrelated to hepatology.
+                    - paragraph [ref=f1e169]: Bone health is another important component.
+                    - paragraph [ref=f1e170]: For patients with cirrhosis and osteoporosis, the guideline conditionally suggests bisphosphonate therapy to reduce fracture risk.
+                    - paragraph [ref=f1e171]: This recommendation concerns patients with established osteoporosis; it is not a recommendation for universal bisphosphonate treatment in cirrhosis.
+                    - paragraph [ref=f1e172]: Treatment requires assessment of conventional indications, contraindications, tolerability, and relevant comorbidities.
+                    - paragraph [ref=f1e173]: Together, these recommendations reinforce a whole-patient approach.
+                    - paragraph [ref=f1e174]: Preventive care should consider the consequences of liver disease alongside other conditions that influence functional health, quality of life, and future healthcare needs.
+                    - heading "9. Turning Recommendations Into Reliable Clinical Practice" [level=2] [ref=f1e175]
+                    - paragraph [ref=f1e176]: "The guideline's implementation framework emphasizes three complementary activities: education and dissemination, stakeholder engagement, and integration into routine practice."
+                    - paragraph [ref=f1e177]: This is particularly relevant because preventive recommendations span multiple clinical environments.
+                    - paragraph [ref=f1e178]: Specialist clinics may initiate portal hypertension assessment and HCC surveillance, while vaccination, smoking cessation, nutrition, rehabilitation, and postdischarge support frequently involve other healthcare professionals.
+                    - paragraph [ref=f1e179]: A reasonable implementation approach is a structured preventive-care review incorporating disease-specific complications, immunization status, lifestyle needs, nutritional function, and bone health.
+                    - paragraph [ref=f1e180]: Electronic health records may also help identify overdue assessments and follow-up requirements.
+                    - paragraph [ref=f1e181]: However, the guideline does not demonstrate that any single checklist, electronic reminder, or implementation strategy independently improves survival.
+                    - paragraph [ref=f1e182]: Preventive systems should therefore be evaluated for feasibility, reliability, and patient-centered outcomes.
+                    - paragraph [ref=f1e183]: The evidence base also has broader limitations.
+                    - paragraph [ref=f1e184]: Most recommendations rely on low-certainty evidence, and different interventions address substantially different outcomes.
+                    - paragraph [ref=f1e185]: Results from studies involving specific cirrhosis populations may not apply equally to patients with advanced decompensation, major comorbidities, or limited access to multidisciplinary services.
+                    - paragraph [ref=f1e186]: Future research should prioritize clinically meaningful outcomes, comparative effectiveness, intervention tolerability, and implementation across diverse healthcare systems.
+                    - paragraph [ref=f1e187]: Importantly, a strong recommendation is not synonymous with high-certainty evidence, and an observational association should not be presented as proof of causation.
+                    - paragraph [ref=f1e188]
+                  - 'figure "ACG 2026 Cirrhosis Prevention Guideline: From Portal Hypertension to Whole-Patient Care" [ref=f1e189]':
+                    - link [ref=f1e191] [cursor=pointer]:
+                      - /url: /chat
+                      - 'img "ACG 2026 Cirrhosis Prevention Guideline: From Portal Hypertension to Whole-Patient Care" [ref=f1e194]'
+                  - generic [ref=f1e197]:
+                    - paragraph [ref=f1e198]
+                    - 'heading "Clinical Takeaway: Prevention Must Become a Routine Part of Cirrhosis Care" [level=2] [ref=f1e199]'
+                    - paragraph [ref=f1e200]: The 2026 ACG guideline presents prevention as a longitudinal responsibility rather than an additional task performed only after complications develop.
+                    - paragraph [ref=f1e201]: Its recommendations support appropriate variceal prophylaxis, risk-informed portal hypertension management, HCC surveillance, vaccination, targeted encephalopathy prevention, nutritional intervention, physical activity, behavioral support, and osteoporosis treatment.
+                    - paragraph [ref=f1e202]: The principal clinical message is not that every intervention is equally effective or universally applicable.
+                    - paragraph [ref=f1e203]: Instead, the most useful change is to make preventive assessment systematic, individualized, and continuous throughout cirrhosis care.
+                    - paragraph [ref=f1e204]:
+                      - strong [ref=f1e205]: "GastroAGI Perspective:"
+                      - text: This guideline offers a practical framework for more comprehensive management of cirrhosis. Its strongest signals concern established preventive interventions and reliable delivery of care. However, low evidence certainty across many recommendations, variable patient eligibility, and unresolved implementation questions require careful clinical interpretation.
+                    - paragraph [ref=f1e206]:
+                      - strong [ref=f1e207]: Primary Source / Reference
+                    - paragraph [ref=f1e208]:
+                      - text: Tapper EB, Kardashian A, Debes JD, Gripshover J, Moon AM, Kim JJ, Lai JC.
+                      - emphasis [ref=f1e209]: "ACG Clinical Guideline: Preventive Care for Patients With Cirrhosis."
+                      - text: American Journal of Gastroenterology. Published online October 5, 2026.
+                    - paragraph [ref=f1e210]:
+                      - strong [ref=f1e211]: "DOI:"
+                      - link "https://doi.org/10.14309/ajg.0000000000004186" [ref=f1e212] [cursor=pointer]:
+                        - /url: https://doi.org/10.14309/ajg.0000000000004186
+                    - paragraph [ref=f1e213]:
+                      - strong [ref=f1e214]: "Official ACG guideline directory:"
+                      - link "https://gi.org/guidelines/" [ref=f1e215] [cursor=pointer]:
+                        - /url: https://gi.org/guidelines/
+                    - paragraph [ref=f1e216]
+                  - generic [ref=f1e218]:
+                    - heading "Five key clinical takeaways" [level=2] [ref=f1e219]
+                    - paragraph [ref=f1e220]: 1. Prevent decompensation proactively. Carvedilol or EVL is strongly recommended for high-risk esophageal varices; carvedilol is conditionally suggested in compensated cirrhosis with CSPH to reduce first-episode ascites.
+                    - paragraph [ref=f1e221]: 2. Maintain six-monthly HCC surveillance in eligible patients. The recommended strategy is ultrasound plus AFP. Aspirin should not be initiated solely for HCC prevention.
+                    - paragraph [ref=f1e222]: 3. Distinguish stages of hepatic encephalopathy. Lactulose may be considered for minimal HE; adjunctive rifaximin is suggested following overt HE despite lactulose, not routinely for primary prevention in minimal HE.
+                    - paragraph [ref=f1e223]: 4. Make vaccination and functional health routine priorities. Review hepatitis A and B immunity, respiratory immunization, nutritional status, physical function and smoking at appropriate clinical encounters.
+                    - paragraph [ref=f1e224]: 5. Treat cirrhosis as a whole-patient condition. Postdischarge behavioral treatment for alcohol use disorder, dietitian-guided nutrition, structured exercise and osteoporosis treatment are important components of preventive care, although several recommendations are conditional.
+                - generic [ref=f1e225]:
+                  - heading "References" [level=2] [ref=f1e226]
+                  - list [ref=f1e227]:
+                    - listitem [ref=f1e228]:
+                      - link "doi.org" [ref=f1e229] [cursor=pointer]:
+                        - /url: https://doi.org/10.14309/ajg.0000000000004186
+                    - listitem [ref=f1e230]:
+                      - link "gi.org" [ref=f1e231] [cursor=pointer]:
+                        - /url: https://gi.org/guidelines/
+              - complementary [ref=f1e232]:
+                - region [ref=f1e233]:
+                  - heading "Article details" [level=2] [ref=f1e234]
+                  - generic [ref=f1e235]:
+                    - generic [ref=f1e240]:
+                      - paragraph [ref=f1e241]: Author
+                      - paragraph [ref=f1e242]: GastroAGI Team
+                    - generic [ref=f1e246]:
+                      - paragraph [ref=f1e247]: Published
+                      - paragraph [ref=f1e248]: October 27, 2026
+                    - generic [ref=f1e253]:
+                      - paragraph [ref=f1e254]: Reading time
+                      - paragraph [ref=f1e255]: 11 min read
+                    - generic [ref=f1e260]:
+                      - paragraph [ref=f1e261]: Reads
+                      - paragraph [ref=f1e262]: 18 reads
+                  - paragraph [ref=f1e263]: Clinical knowledge base written and curated by GastroAGI Team from primary medical literature
+                - region [ref=f1e264]:
+                  - heading "Related articles" [level=2] [ref=f1e265]
+                  - list [ref=f1e266]:
+                    - listitem [ref=f1e267]:
+                      - 'link "Serrated Polyposis Syndrome: 2026 US Multi-Society Recommendations for Diagnosis, Endoscopic Management and Surveillance October 27, 2026" [ref=f1e268] [cursor=pointer]':
+                        - /url: /blog/serrated-polyposis-syndrome-2026-usmstf-recommendations
+                        - generic [ref=f1e270]:
+                          - generic [ref=f1e271]: "Serrated Polyposis Syndrome: 2026 US Multi-Society Recommendations for Diagnosis, Endoscopic Management and Surveillance"
+                          - generic [ref=f1e272]: October 27, 2026
+                    - listitem [ref=f1e273]:
+                      - 'link "2026 AASLD–AGA PBC Guideline: Six Recommendations That Matter in Clinical Practice October 27, 2026" [ref=f1e274] [cursor=pointer]':
+                        - /url: /blog/2026-aasld-aga-pbc-guideline-clinical-management
+                        - generic [ref=f1e276]:
+                          - generic [ref=f1e277]: "2026 AASLD–AGA PBC Guideline: Six Recommendations That Matter in Clinical Practice"
+                          - generic [ref=f1e278]: October 27, 2026
+                    - listitem [ref=f1e279]:
+                      - 'link "Post-Polypectomy Surveillance: Are We Recommending Repeat Colonoscopy Too Early? October 23, 2026" [ref=f1e280] [cursor=pointer]':
+                        - /url: /blog/post-polypectomy-surveillance-guideline-adherence-colonoscopy
+                        - generic [ref=f1e282]:
+                          - generic [ref=f1e283]: "Post-Polypectomy Surveillance: Are We Recommending Repeat Colonoscopy Too Early?"
+                          - generic [ref=f1e284]: October 23, 2026
+          - generic [ref=f1e285]:
+            - generic [ref=f1e288]:
+              - generic [ref=f1e289]:
+                - img "GastroAGI Logo" [ref=f1e291]
+                - paragraph [ref=f1e292]: We are pioneers in clinical intelligence, dedicated to helping gastroenterologists harness the power of artificial intelligence to drive precision, efficiency, and patient growth.
+                - generic [ref=f1e293]:
+                  - button [ref=f1e294] [cursor=pointer]
+                  - button [ref=f1e299] [cursor=pointer]
+                  - button [ref=f1e303] [cursor=pointer]
+                  - button [ref=f1e309] [cursor=pointer]
+                  - button [ref=f1e313] [cursor=pointer]
+                  - button [ref=f1e317] [cursor=pointer]
+              - generic [ref=f1e321]:
+                - generic [ref=f1e322]:
+                  - heading "For You" [level=4] [ref=f1e323]
+                  - link "For Students" [ref=f1e324] [cursor=pointer]:
+                    - /url: /for-students
+                  - link "For Clinicians" [ref=f1e325] [cursor=pointer]:
+                    - /url: /for-clinicians
+                  - link "For Researchers" [ref=f1e326] [cursor=pointer]:
+                    - /url: /for-researchers
+                  - link "For Patients" [ref=f1e327] [cursor=pointer]:
+                    - /url: /for-patients
+                - generic [ref=f1e328]:
+                  - heading "Core Tools" [level=4] [ref=f1e329]
+                  - link "MELD-Na Score" [ref=f1e330] [cursor=pointer]:
+                    - /url: /calculator/meld-na
+                  - link "Child-Pugh" [ref=f1e331] [cursor=pointer]:
+                    - /url: /calculator/child-pugh
+                  - link "FIB-4 Index" [ref=f1e332] [cursor=pointer]:
+                    - /url: /calculator/fib4
+                  - link "Glasgow-Blatchford" [ref=f1e333] [cursor=pointer]:
+                    - /url: /calculator/glasgow-blatchford
+                  - link "BISAP Score" [ref=f1e334] [cursor=pointer]:
+                    - /url: /calculator/bisap
+                - generic [ref=f1e335]:
+                  - heading "Explore" [level=4] [ref=f1e336]
+                  - link "Overview" [ref=f1e337] [cursor=pointer]:
+                    - /url: /
+                  - link "About" [ref=f1e338] [cursor=pointer]:
+                    - /url: /about
+                  - link "Calculators" [ref=f1e339] [cursor=pointer]:
+                    - /url: /calculator
+                  - generic [ref=f1e340] [cursor=pointer]: Trending Topics
+                  - generic [ref=f1e341] [cursor=pointer]: Conference Briefings
+                  - link "Blog Insights" [ref=f1e342] [cursor=pointer]:
+                    - /url: /blog
+            - generic [ref=f1e345]:
+              - generic [ref=f1e346]: ©GastroAGI 2026
+              - generic [ref=f1e347]:
+                - link "Privacy Policy" [ref=f1e348] [cursor=pointer]:
+                  - /url: /privacy-policy
+                - link "Terms of Use" [ref=f1e349] [cursor=pointer]:
+                  - /url: /terms-of-use
+                - link "Medical Disclaimer" [ref=f1e350] [cursor=pointer]:
+                  - /url: /medical-disclaimer
+                - button "Cookie notice" [ref=f1e351] [cursor=pointer]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f1e357] [cursor=pointer]
+  - alert [ref=f1e361]

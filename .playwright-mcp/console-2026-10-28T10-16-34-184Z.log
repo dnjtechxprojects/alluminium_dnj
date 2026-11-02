@@ -1,0 +1,39 @@
+[     400ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[     484ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    8306ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    8309ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    8626ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[    8627ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   13591ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   13627ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   13640ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   14252ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   14267ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   14532ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/calculator/fib4:0
+[   14541ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   14541ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   18403ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   18570ms] [LOG] [Fast Refresh] done in 269ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   18725ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   18733ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   18735ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   18924ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   19611ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   19615ms] [LOG] [Fast Refresh] done in 791ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   19668ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/daily-brief:0
+[   19701ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   19702ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   24686ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   54383ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   54670ms] [LOG] [Fast Refresh] done in 388ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   69774ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   69825ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   74276ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   75988ms] [LOG] [Fast Refresh] done in 1813ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   77048ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   77051ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   77235ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   77235ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   77841ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   78248ms] [LOG] [Fast Refresh] done in 510ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   82188ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0

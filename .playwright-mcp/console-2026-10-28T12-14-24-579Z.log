@@ -1,0 +1,113 @@
+[     751ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[     830ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[     921ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/:0
+[    1002ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    1488ms] [LOG] [Fast Refresh] done in 596ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    1612ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    1613ms] [LOG] [Fast Refresh] done in 102ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    6134ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   15130ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   15609ms] [LOG] [Fast Refresh] done in 580ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   15796ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   15807ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   16020ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   16200ms] [LOG] [Fast Refresh] done in 282ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   17320ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   19986ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   19998ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   20173ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   20213ms] [LOG] [Fast Refresh] done in 141ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   20270ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   22881ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   22961ms] [LOG] [Fast Refresh] done in 182ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   23289ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   23310ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   23448ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/calculator:0
+[   23609ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   28547ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   30001ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   30010ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   31179ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   36134ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   87008ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   87084ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   87233ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   87253ms] [LOG] [Fast Refresh] done in 122ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   92568ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   92571ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   92680ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   97671ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  110517ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  110531ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  117040ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  117041ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  117128ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  119808ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/gastro-trending-topics/small-and-large-bowel/global-guidance-for-colonic-diverticular-disease-the-fiesole-consensus-gut-doi101136gutjnl-2025-336902:0
+[  122117ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  130738ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/gastro-trending-topics/small-and-large-bowel/global-guidance-for-colonic-diverticular-disease-the-fiesole-consensus-gut-doi101136gutjnl-2025-336902:0
+[  135645ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  209805ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  209817ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  218151ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  218152ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  218353ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  220936ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/gastro-trending-topics/small-and-large-bowel/global-guidance-for-colonic-diverticular-disease-the-fiesole-consensus-gut-doi101136gutjnl-2025-336902:0
+[  223224ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  223345ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  223474ms] [LOG] [Fast Refresh] done in 351ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  224135ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  224143ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  224334ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  224501ms] [LOG] [Fast Refresh] done in 270ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  226521ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  229161ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/clinical-conferences-highlights/wcog-new-delhi-2026:0
+[  231678ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  231703ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  231705ms] [LOG] %c%s%c Daily digest request: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {date: 2026-10-28, url: https://backend.gastroagi.com/gastroagi_admin/get_daily_digest/?date=2026-10-28} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  232639ms] [LOG] %c%s%c Daily digest response: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {status: true, date: 2026-10-28, total: 4, data: Array(4)} @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  232693ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/daily-brief:0
+[  232733ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  234956ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/daily-brief:0
+[  237716ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  239568ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  239580ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  239741ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/calculator/fib4:0
+[  240035ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  242356ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/calculator/fib4:0
+[  244801ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  244813ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  244895ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/:0
+[  245239ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  248891ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  248899ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  249066ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  249074ms] [LOG] [Fast Refresh] done in 110ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  250190ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  252521ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  252530ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  252626ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant:0
+[  252655ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  252889ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  252897ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  256214ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/ai-medical-assistant?mode=student&date=2026-10&trending_id=ce0d4671-7db9-4caf-a535-ce5cab6eba6f&conference_id=0e1059d8-deb1-43d6-a7a5-98eed04bda7b:0
+[  257640ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  261896ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  261906ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  262004ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant?q=Barrett%20oesophagus%20surveillance%20interval:0
+[  262048ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  262214ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/ai-medical-assistant:0
+[  267025ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  270789ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  270799ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  270901ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant:0
+[  270945ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  270945ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  275926ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  277894ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/ai-medical-assistant?mode=student&conference_id=0e1059d8-deb1-43d6-a7a5-98eed04bda7b&date=2026-10&trending_id=ce0d4671-7db9-4caf-a535-ce5cab6eba6f:0
+[  282805ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  283268ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  283279ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  283468ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  283468ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  283568ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant:0
+[  283635ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/ai-medical-assistant:0

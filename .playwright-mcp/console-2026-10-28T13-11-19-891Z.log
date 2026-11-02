@@ -1,0 +1,114 @@
+[     689ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[     821ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[     967ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant?panel=DailyBrief:0
+[    1054ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    1101ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[    1232ms] [LOG] [Fast Refresh] done in 323ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    1396ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    1624ms] [LOG] [Fast Refresh] done in 328ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    1731ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    1734ms] [LOG] [Fast Refresh] done in 105ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[    6039ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   16965ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   43521ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/ai-medical-assistant?mode=student&panel=Conference&date=2026-10&trending_id=ce0d4671-7db9-4caf-a535-ce5cab6eba6f&conference_id=0e1059d8-deb1-43d6-a7a5-98eed04bda7b:0
+[   47195ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[   67191ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   68753ms] [LOG] [Fast Refresh] done in 1586ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   69443ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[   69693ms] [LOG] [Fast Refresh] done in 309ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  159958ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  160072ms] [LOG] [Fast Refresh] done in 216ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  205538ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  206201ms] [LOG] [Fast Refresh] done in 664ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  301765ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  304441ms] [LOG] [Fast Refresh] done in 2491ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  309324ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  315786ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  315980ms] [LOG] [Fast Refresh] done in 295ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  316086ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  316107ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  316214ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  316921ms] [LOG] [Fast Refresh] done in 808ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  317339ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  317627ms] [LOG] [Fast Refresh] done in 389ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  318233ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  318421ms] [LOG] [Fast Refresh] done in 289ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  319202ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  319314ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  319453ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant?panel=Trending:0
+[  319547ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  319562ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  319678ms] [LOG] [Fast Refresh] done in 273ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  321563ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  321579ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  321782ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  321973ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  321974ms] [LOG] [Fast Refresh] done in 291ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  322034ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant?panel=Conference&mode=student:0
+[  322171ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  322400ms] [LOG] [Fast Refresh] done in 332ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  322693ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  322740ms] [LOG] [Fast Refresh] done in 147ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  323784ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  323795ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  324070ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  324094ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  324294ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  324294ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  324385ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant?panel=DailyBrief&mode=student:0
+[  325551ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  325571ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  326042ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  326043ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  326584ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant?panel=Trending&mode=student:0
+[  327052ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  327289ms] [LOG] [Fast Refresh] done in 431ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  331013ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  337317ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  338336ms] [LOG] [Fast Refresh] done in 1062ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  395627ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  395753ms] [LOG] [Fast Refresh] done in 228ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  448023ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  448128ms] [LOG] [Fast Refresh] done in 210ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  465978ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  466762ms] [LOG] [Fast Refresh] done in 887ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  468488ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  470320ms] [LOG] [Fast Refresh] done in 1934ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  476070ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  476147ms] [LOG] [Fast Refresh] done in 181ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  476906ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  477291ms] [LOG] [Fast Refresh] done in 489ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  477591ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  479101ms] [LOG] [Fast Refresh] done in 1611ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  479236ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  479483ms] [LOG] [Fast Refresh] done in 349ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  479948ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  481586ms] [LOG] [Fast Refresh] done in 1740ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  518700ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  518832ms] [LOG] [Fast Refresh] done in 234ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  519026ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  519043ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  519719ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  521816ms] [LOG] [Fast Refresh] done in 2197ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  534016ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  534113ms] [LOG] [Fast Refresh] done in 200ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  534222ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  534658ms] [LOG] [Fast Refresh] done in 537ms @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_1bpeoos._.js:2477
+[  545146ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  546149ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  547155ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  548172ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  549190ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  554212ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  559224ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  564253ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  569285ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  574316ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  579334ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  584356ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=qHo2IQIBI5YFbiGony_Pp' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ji3_next_dist_client_125nw-b._.js:13422
+[  681506ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  681507ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[  681511ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:3000/favicon.ico (Download error or resource isn't a valid image) @ http://localhost:3000/ai-medical-assistant?panel=Trending&mode=student&date=2026-10&trending_id=ce0d4671-7db9-4caf-a535-ce5cab6eba6f:0
+[  686449ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[70076022ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0
+[70076025ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/api/journey/events:0

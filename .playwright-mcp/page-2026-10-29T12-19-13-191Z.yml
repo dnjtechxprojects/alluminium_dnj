@@ -1,0 +1,732 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Natraj Agro, home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - generic [ref=e8]: Natraj Agro
+          - generic [ref=e9]: Since 1980
+      - generic [ref=e10]:
+        - link "Get a quote on WhatsApp" [ref=e11] [cursor=pointer]:
+          - /url: https://wa.me/919638822250?text=Hello%20Natraj%20Agro%2C%20I'd%20like%20a%20quote.
+        - button "Open menu" [ref=e14]
+  - generic [ref=e18]:
+    - navigation "Mobile" [ref=e19]:
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - link "01 Home" [ref=e22] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e23]: "01"
+            - text: Home
+        - listitem [ref=e24]:
+          - link "02 Products" [ref=e25] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e26]: "02"
+            - text: Products
+        - listitem [ref=e27]:
+          - link "03 Makka Poha" [ref=e28] [cursor=pointer]:
+            - /url: /makka-poha
+            - generic [ref=e29]: "03"
+            - text: Makka Poha
+        - listitem [ref=e30]:
+          - link "04 About" [ref=e31] [cursor=pointer]:
+            - /url: /about
+            - generic [ref=e32]: "04"
+            - text: About
+        - listitem [ref=e33]:
+          - link "05 Contact" [ref=e34] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e35]: "05"
+            - text: Contact
+    - generic [ref=e36]:
+      - link "WhatsApp for a quote" [ref=e37] [cursor=pointer]:
+        - /url: https://wa.me/919638822250?text=Hello%20Natraj%20Agro%2C%20I'd%20like%20a%20quote.
+      - list [ref=e42]:
+        - listitem [ref=e43]:
+          - generic [ref=e44]: Surat
+          - link "+91 96388 22250" [ref=e45] [cursor=pointer]:
+            - /url: tel:+919638822250
+        - listitem [ref=e48]:
+          - generic [ref=e49]: Sangli
+          - link "+91 96387 11225" [ref=e50] [cursor=pointer]:
+            - /url: tel:+919638711225
+        - listitem [ref=e53]:
+          - generic [ref=e54]: Jalgaon
+          - link "+91 96732 99000" [ref=e55] [cursor=pointer]:
+            - /url: tel:+919673299000
+        - listitem [ref=e58]:
+          - generic [ref=e59]: Raipur
+          - link "+91 88398 71200" [ref=e60] [cursor=pointer]:
+            - /url: tel:+918839871200
+  - main [ref=e63]:
+    - generic [ref=e64]:
+      - region [ref=e65]:
+        - generic [ref=e74]:
+          - heading "Makka Poha manufacturer · Since 1980 Field to Flake." [level=1] [ref=e75]:
+            - generic [ref=e76]: Makka Poha manufacturer · Since 1980
+            - generic [ref=e77]:
+              - generic [ref=e78]: Field
+              - generic [ref=e80]: to
+              - generic [ref=e82]: Flake.
+          - paragraph [ref=e84]:
+            - text: We turn whole maize into
+            - strong [ref=e85]: Makka Poha
+            - text: ", the flake namkeen makers fry into chivda, and bag what’s left as cattle feed. Maize, salt and water. Four plants. 46 years."
+          - generic [ref=e86]:
+            - link "Explore products" [ref=e89] [cursor=pointer]:
+              - /url: /products
+            - link "Get a quote" [ref=e94] [cursor=pointer]:
+              - /url: https://wa.me/919638822250?text=Hello%20Natraj%20Agro%2C%20I'd%20like%20a%20quote.
+      - region [ref=e98]:
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e102]: Maize Flakes
+            - generic [ref=e106]: Makka Poha
+            - generic [ref=e110]: Cattle Feed
+            - generic [ref=e114]: Maize, Salt & Water
+            - generic [ref=e118]: No added colour or flavour
+            - generic [ref=e122]: Surat · Sangli · Jalgaon · Raipur
+          - generic [aria-hidden] [ref=e126]:
+            - generic [ref=e127]: Maize Flakes
+            - generic [ref=e131]: Makka Poha
+            - generic [ref=e135]: Cattle Feed
+            - generic [ref=e139]: Maize, Salt & Water
+            - generic [ref=e143]: No added colour or flavour
+            - generic [ref=e147]: Surat · Sangli · Jalgaon · Raipur
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - heading "What we do" [level=2] [ref=e153]
+            - generic [ref=e154]:
+              - figure "Cattle feed" [ref=e155]:
+                - img "Natraj maize cattle feed" [ref=e156]
+              - figure "Makka Poha" [ref=e158]:
+                - img "Natraj Makka Poha (maize flakes)" [ref=e159]
+              - generic [ref=e161]: Maize
+              - generic [ref=e163]: Iodised salt
+              - generic [ref=e165]: Water
+          - generic [ref=e167]:
+            - paragraph [ref=e168]:
+              - generic [ref=e169]: We
+              - generic [ref=e170]: buy
+              - generic [ref=e171]: whole
+              - generic [ref=e172]: maize
+              - generic [ref=e173]: and
+              - generic [ref=e174]: press
+              - generic [ref=e175]: it
+              - generic [ref=e176]: into
+              - generic [ref=e177]: thin
+              - generic [ref=e178]: flakes.
+              - generic [ref=e179]: Namkeen
+              - generic [ref=e180]: makers
+              - generic [ref=e181]: fry
+              - generic [ref=e182]: them
+              - generic [ref=e183]: into
+              - generic [ref=e184]: chivda.
+              - generic [ref=e185]: Homes
+              - generic [ref=e186]: fry
+              - generic [ref=e187]: a
+              - generic [ref=e188]: handful
+              - generic [ref=e189]: at
+              - generic [ref=e190]: tea-time.
+              - generic [ref=e191]: And
+              - generic [ref=e192]: what's
+              - generic [ref=e193]: left
+              - generic [ref=e194]: becomes
+              - generic [ref=e195]: cattle
+              - generic [ref=e196]: feed,
+              - generic [ref=e197]: so
+              - generic [ref=e198]: nothing
+              - generic [ref=e199]: from
+              - generic [ref=e200]: the
+              - generic [ref=e201]: crop
+              - generic [ref=e202]: goes
+              - generic [ref=e203]: to
+              - text: waste.
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - term [ref=e206]: years of flaking maize
+                - definition [ref=e207]: "46"
+              - generic [ref=e208]:
+                - term [ref=e209]: plants across three states
+                - definition [ref=e210]: "4"
+              - generic [ref=e211]:
+                - term [ref=e212]: products and pack sizes
+                - definition [ref=e213]: "7"
+              - generic [ref=e214]:
+                - term [ref=e215]: "things go in: maize, salt and water"
+                - definition [ref=e216]: "3"
+      - region "From field to four plants" [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e222]:
+            - generic [ref=e223]: The beginning
+            - heading [level=2] [ref=e224]:
+              - text: It starts in the
+              - emphasis [ref=e225]: field.
+            - paragraph [ref=e227]: Whole maize, grown across India’s maize belts.
+          - generic [aria-hidden] [ref=e228]:
+            - generic [ref=e229]: SCRUB
+            - generic [ref=e231]: FRAME 001/126
+      - region [ref=e233]:
+        - generic [ref=e234]:
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - generic [ref=e237]: What we make
+              - heading [level=2] [ref=e238]:
+                - text: One crop.
+                - emphasis [ref=e239]: Three ways
+                - text: it feeds India.
+            - paragraph [ref=e241]: Most of our flakes go to namkeen makers in bulk bags. Some go to shops and homes in Natraj pouches. The broken bits become cattle feed, so nothing is wasted.
+          - generic [ref=e242]:
+            - link "Makai chivda made from fried Makka Poha 01 For namkeen makers Maize flakes, in bulk Thin maize flakes that puff up in hot oil. Fried and seasoned, they become makai chivda and farsan mixes. 15 kg box 15 kg bag 20 kg bag 30 kg Parmal See bulk packs" [ref=e245] [cursor=pointer]:
+              - /url: /products#flakes
+              - generic [ref=e246]:
+                - img "Makai chivda made from fried Makka Poha" [ref=e247]
+                - generic [ref=e248]: 01 For namkeen makers
+              - generic [ref=e249]:
+                - heading "Maize flakes, in bulk" [level=3] [ref=e250]
+                - paragraph [ref=e251]: Thin maize flakes that puff up in hot oil. Fried and seasoned, they become makai chivda and farsan mixes.
+                - list [ref=e252]:
+                  - listitem [ref=e253]: 15 kg box
+                  - listitem [ref=e254]: 15 kg bag
+                  - listitem [ref=e255]: 20 kg bag
+                  - listitem [ref=e256]: 30 kg Parmal
+                - generic [ref=e257]: See bulk packs
+            - link "Natraj Maize Flakes pouch 02 For shops and homes Natraj Maize Flakes pouches Fry a handful, add peanuts and curry leaves, and you have fresh chivda in ten minutes. 12 kg pouch pack See the pouch" [ref=e262] [cursor=pointer]:
+              - /url: /products/maize-flakes-12kg-pouch-pack
+              - generic [ref=e263]:
+                - img "Natraj Maize Flakes pouch" [ref=e264]
+                - generic [ref=e265]: 02 For shops and homes
+              - generic [ref=e266]:
+                - heading "Natraj Maize Flakes pouches" [level=3] [ref=e267]
+                - paragraph [ref=e268]: Fry a handful, add peanuts and curry leaves, and you have fresh chivda in ten minutes.
+                - list [ref=e269]:
+                  - listitem [ref=e270]: 12 kg pouch pack
+                - generic [ref=e271]: See the pouch
+            - link "A herd of cattle walking past the Natraj plant at Surat 03 For dairy farms Maize cattle feed Broken flakes and fine maize meal from our lines become energy-rich feed for cattle and buffalo. Makai Chuni, 40 kg Makai Poha Mamri, 40 kg See cattle feed" [ref=e276] [cursor=pointer]:
+              - /url: /products#feed
+              - generic [ref=e277]:
+                - img "A herd of cattle walking past the Natraj plant at Surat" [ref=e278]
+                - generic [ref=e279]: 03 For dairy farms
+              - generic [ref=e280]:
+                - heading "Maize cattle feed" [level=3] [ref=e281]
+                - paragraph [ref=e282]: Broken flakes and fine maize meal from our lines become energy-rich feed for cattle and buffalo.
+                - list [ref=e283]:
+                  - listitem [ref=e284]: Makai Chuni, 40 kg
+                  - listitem [ref=e285]: Makai Poha Mamri, 40 kg
+                - generic [ref=e286]: See cattle feed
+      - region "A heap of kernels." [ref=e289]:
+        - generic [ref=e290]:
+          - generic:
+            - generic: Since 1980
+            - heading "A heap of kernels." [level=2]:
+              - generic:
+                - text: A heap of
+                - emphasis: kernels.
+            - paragraph: Keep scrolling to assemble the emblem. Move your mouse through the kernels to push them around.
+      - region "Frying Makka Poha" [ref=e292]:
+        - generic [ref=e293]:
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - generic [ref=e296]: The magic moment
+              - heading [level=2] [ref=e297]:
+                - text: Drag to
+                - emphasis [ref=e298]: fry.
+              - paragraph [ref=e299]: Makka Poha is just maize, salt and water. A few seconds in hot oil and it puffs into the crunch inside every plate of chivda.
+              - generic [ref=e300]:
+                - generic [ref=e301]:
+                  - generic [ref=e302]: Oil temperature
+                  - generic [ref=e303]: 30 °C
+                - list [ref=e306]:
+                  - listitem [ref=e307]: Natraj flakes
+                  - listitem [ref=e308]: Into the oil
+                  - listitem [ref=e309]: Puffing
+                  - listitem [ref=e310]: Ready for chivda
+              - paragraph [ref=e311]: Move across the picture. Faster sweeps, hotter oil.
+            - generic [ref=e312]:
+              - img "Natraj maize flakes before frying" [ref=e313]
+              - img "The same flakes fried and seasoned into chivda" [ref=e315]
+              - generic [ref=e316]: Fry the flakes
+              - slider "Fry the flakes" [ref=e317]: "0"
+          - generic [ref=e318]:
+            - generic [ref=e319]:
+              - generic [ref=e320]: Good to know
+              - heading [level=2] [ref=e321]:
+                - text: Makka Poha is
+                - emphasis [ref=e322]: not
+                - text: cornflakes.
+              - generic [ref=e323]:
+                - paragraph [ref=e324]: It’s an ingredient, not a cereal. You fry it (or roast it) and it puffs into light, crunchy flakes that soak up spices. That crunch is the base of makai chivda and many namkeen mixes.
+                - generic [ref=e325]:
+                  - figure "As we pack it" [ref=e327]:
+                    - img "Natraj Makka Poha, as we pack it" [ref=e328]
+                  - figure "Fried & seasoned" [ref=e331]:
+                    - img "Makka Poha fried and seasoned into chivda" [ref=e332]
+            - generic [ref=e334]:
+              - table [ref=e336]:
+                - caption [ref=e337]: Makka Poha compared with breakfast cornflakes
+                - rowgroup [ref=e338]:
+                  - row [ref=e339]:
+                    - columnheader "Question" [ref=e340]
+                    - columnheader "Breakfast cornflakes" [ref=e342]
+                    - columnheader "Natraj Makka Poha" [ref=e343]
+                - rowgroup [ref=e344]:
+                  - row [ref=e345]:
+                    - rowheader "How it’s eaten" [ref=e346]
+                    - cell "Straight from the box, with milk" [ref=e347]
+                    - cell "Fried or roasted, then seasoned" [ref=e348]
+                  - row [ref=e349]:
+                    - rowheader "Made into" [ref=e350]
+                    - cell "A breakfast cereal" [ref=e351]
+                    - cell "Chivda, namkeen and snack mixes" [ref=e352]
+                  - row [ref=e353]:
+                    - rowheader "On the label" [ref=e354]
+                    - cell "Usually sugar, malt and flavourings" [ref=e355]
+                    - cell "Maize and iodised salt. That’s it." [ref=e356]
+              - generic [ref=e357]:
+                - generic [ref=e358]:
+                  - term [ref=e359]: oil per kg when fried
+                  - definition [ref=e360]: ≈ 350 g
+                - generic [ref=e361]:
+                  - term [ref=e362]: expansion in the fryer
+                  - definition [ref=e363]: Even
+                - generic [ref=e364]:
+                  - term [ref=e365]: after frying, holds seasoning
+                  - definition [ref=e366]: Smooth
+                - generic [ref=e367]:
+                  - term [ref=e368]: added colour or flavour
+                  - definition [ref=e369]: Zero
+      - region [ref=e370]:
+        - generic [ref=e372]:
+          - generic [ref=e373]:
+            - generic [ref=e374]: How it’s made
+            - heading [level=2] [ref=e375]:
+              - text: Five steps.
+              - emphasis [ref=e376]: One
+              - text: journey.
+            - paragraph [ref=e377]: Each step plays as you reach it.
+          - article [ref=e378]:
+            - generic [ref=e382]:
+              - generic [ref=e383]: "01"
+              - heading "Intake" [level=3] [ref=e384]
+              - paragraph [ref=e385]: Whole maize arrives by the sackful from growing regions near our four plants.
+          - article [ref=e386]:
+            - generic [ref=e390]:
+              - generic [ref=e391]: "02"
+              - heading "Clean & sort" [level=3] [ref=e392]
+              - paragraph [ref=e393]: Cleaned of dust, stones and husk, then an optical sorter checks every kernel.
+          - article [ref=e394]:
+            - generic [ref=e398]:
+              - generic [ref=e399]: "03"
+              - heading "Flake" [level=3] [ref=e400]
+              - paragraph [ref=e401]: Conditioned with water and salt, rolled thin and dried. No colour, no flavour.
+          - article [ref=e402]:
+            - generic [ref=e406]:
+              - generic [ref=e407]: "04"
+              - heading "Pack" [level=3] [ref=e408]
+              - paragraph [ref=e409]: Weighed into pouches, bags and boxes. Broken bits go to cattle feed.
+          - article [ref=e410]:
+            - generic [ref=e414]:
+              - generic [ref=e415]: "05"
+              - heading "Dispatch" [level=3] [ref=e416]
+              - paragraph [ref=e417]: Boxed and sent from Surat, Sangli, Jalgaon and Raipur, across India and abroad.
+      - region [ref=e418]:
+        - generic [ref=e419]:
+          - generic [ref=e420]:
+            - generic [ref=e421]: Compare
+            - heading [level=2] [ref=e422]:
+              - text: Read the
+              - emphasis [ref=e423]: label.
+            - paragraph [ref=e424]: Loose flakes all look alike in a sack. Here’s what’s different about ours.
+            - figure "Natraj Makka Poha, as packed" [ref=e426]:
+              - img "A heap of Natraj Makka Poha on a white table" [ref=e427]
+          - generic [ref=e429]:
+            - table [ref=e430]:
+              - caption [ref=e431]: Natraj Makka Poha compared with typical loose maize flakes
+              - rowgroup [ref=e432]:
+                - row [ref=e433]:
+                  - columnheader "Natraj" [ref=e434]
+                  - columnheader "Typical loose flakes" [ref=e436]
+              - rowgroup [ref=e437]:
+                - row [ref=e438]:
+                  - rowheader "What goes in" [ref=e439]
+                  - cell "Maize, iodised salt and water" [ref=e441]
+                  - cell [ref=e445]:
+                    - generic [ref=e446]:
+                      - generic [aria-hidden] [ref=e447]: "?"
+                      - text: Often not printed on loose sacks
+                - row [ref=e448]:
+                  - rowheader "Added colour" [ref=e449]
+                  - cell "None. The yellow is the maize." [ref=e451]
+                  - cell [ref=e455]:
+                    - generic [ref=e456]:
+                      - generic [aria-hidden] [ref=e457]: "?"
+                      - text: Some flakes are dyed to look brighter
+                - row [ref=e458]:
+                  - rowheader "Nutrition on the pack" [ref=e459]
+                  - cell "363.2 kcal and 6.7 g protein per 100 g" [ref=e461]
+                  - cell [ref=e465]:
+                    - generic [ref=e466]:
+                      - generic [aria-hidden] [ref=e467]: "?"
+                      - text: Rarely stated
+                - row [ref=e468]:
+                  - rowheader "Food licence" [ref=e469]
+                  - cell "FSSAI 10716022000166 on every pack" [ref=e471]
+                  - cell [ref=e475]:
+                    - generic [ref=e476]:
+                      - generic [aria-hidden] [ref=e477]: "?"
+                      - text: Not always shown
+                - row [ref=e478]:
+                  - rowheader "Who makes it" [ref=e479]
+                  - cell "Our own 4 plants, since 1980" [ref=e481]
+                  - cell [ref=e485]:
+                    - generic [ref=e486]:
+                      - generic [aria-hidden] [ref=e487]: "?"
+                      - text: Often traded on, maker unknown
+                - row [ref=e488]:
+                  - rowheader "In the fryer" [ref=e489]
+                  - cell "Puffs evenly, batch after batch" [ref=e491]
+                  - cell [ref=e495]:
+                    - generic [ref=e496]:
+                      - generic [aria-hidden] [ref=e497]: "?"
+                      - text: Can change from sack to sack
+            - paragraph [ref=e498]: “Typical loose flakes” means unbranded makka poha sold by weight. Ask us for a sample and compare them in your own fryer.
+      - region "Even the crumbs feed a herd." [ref=e499]:
+        - paragraph [ref=e503]:
+          - generic [ref=e504]: Nothing
+          - generic [ref=e505]: wasted
+      - region [ref=e506]:
+        - generic [ref=e507]:
+          - generic [ref=e508]:
+            - generic [ref=e509]:
+              - generic [ref=e510]: Products
+              - heading [level=2] [ref=e511]:
+                - text: Seven packs.
+                - emphasis [ref=e512]: One
+                - text: standard.
+            - link "All products & specs" [ref=e513] [cursor=pointer]:
+              - /url: /products
+          - list [ref=e517]:
+            - listitem [ref=e518]:
+              - link "01 Maize Flakes 15 kg loose box" [ref=e519] [cursor=pointer]:
+                - /url: /products/maize-flakes-15kg-box
+                - generic [ref=e520]: "01"
+                - generic [ref=e521]: Maize Flakes
+                - generic [ref=e522]: 15 kg loose box
+            - listitem [ref=e525]:
+              - link "02 Maize Flakes 15 kg loose bag" [ref=e526] [cursor=pointer]:
+                - /url: /products/maize-flakes-15kg-bag
+                - generic [ref=e527]: "02"
+                - generic [ref=e528]: Maize Flakes
+                - generic [ref=e529]: 15 kg loose bag
+            - listitem [ref=e532]:
+              - link "03 Maize Flakes 20 kg loose bag" [ref=e533] [cursor=pointer]:
+                - /url: /products/maize-flakes-20kg-bag
+                - generic [ref=e534]: "03"
+                - generic [ref=e535]: Maize Flakes
+                - generic [ref=e536]: 20 kg loose bag
+            - listitem [ref=e539]:
+              - link "04 Parmal Maize Flakes 30 kg bag" [ref=e540] [cursor=pointer]:
+                - /url: /products/parmal-dagadi-poha-30kg
+                - generic [ref=e541]: "04"
+                - generic [ref=e542]: Parmal Maize Flakes
+                - generic [ref=e543]: 30 kg bag
+            - listitem [ref=e546]:
+              - link "05 Natraj Maize Flakes 12 kg pouch pack" [ref=e547] [cursor=pointer]:
+                - /url: /products/maize-flakes-12kg-pouch-pack
+                - generic [ref=e548]: "05"
+                - generic [ref=e549]: Natraj Maize Flakes
+                - generic [ref=e550]: 12 kg pouch pack
+            - listitem [ref=e553]:
+              - link "06 Makai Chuni 40 kg bag" [ref=e554] [cursor=pointer]:
+                - /url: /products/makai-chuni-40kg
+                - generic [ref=e555]: "06"
+                - generic [ref=e556]: Makai Chuni
+                - generic [ref=e557]: 40 kg bag
+            - listitem [ref=e560]:
+              - link "07 Makai Poha Mamri 40 kg bag" [ref=e561] [cursor=pointer]:
+                - /url: /products/makai-poha-mamri-40kg
+                - generic [ref=e562]: "07"
+                - generic [ref=e563]: Makai Poha Mamri
+                - generic [ref=e564]: 40 kg bag
+          - generic [ref=e567]:
+            - generic [ref=e568]:
+              - generic [ref=e569]: For shops and homes
+              - heading [level=3] [ref=e570]:
+                - text: Spin the
+                - emphasis [ref=e571]: Natraj
+                - text: pouch.
+              - paragraph [ref=e572]: Drag to turn it over. Maize and iodised salt, 363.2 kcal and 6.7 g protein per 100 g. Fry a handful for ten-minute chivda.
+              - list [ref=e573]:
+                - listitem [ref=e574]: Maize + iodised salt
+                - listitem [ref=e575]: No added colour
+                - listitem [ref=e576]: Fry or roast
+              - link "See the pouch pack" [ref=e577] [cursor=pointer]:
+                - /url: /products/maize-flakes-12kg-pouch-pack
+            - img "Natraj Maize Flakes pouch in 3D. Drag to turn it over and see the nutrition label." [ref=e580]:
+              - generic: ⟲ Drag to spin · 3D
+      - region [ref=e582]:
+        - generic [ref=e583]:
+          - generic [ref=e584]:
+            - generic [ref=e585]:
+              - generic [ref=e586]: Our plants
+              - heading [level=2] [ref=e587]:
+                - text: Four plants.
+                - emphasis [ref=e588]: Closer
+                - text: to you.
+            - paragraph [ref=e590]: Order from the plant nearest you for faster delivery. Each has its own warehouse and packing. Customer care is open Mon–Sat, 9:00 AM – 6:00 PM.
+          - generic [ref=e592]:
+            - generic [ref=e593]:
+              - img "The Natraj Agro plant at Kamrej, Surat, from the air" [ref=e595]
+              - generic [ref=e596]:
+                - generic [ref=e597]:
+                  - heading "Surat" [level=3] [ref=e598]
+                  - generic [ref=e599]: Gujarat · HQ
+                - paragraph [ref=e600]: 68, Navagam Udhyog Nagar, Kamrej, Surat, Gujarat 394185
+                - generic [ref=e601]:
+                  - link "+91 96388 22250" [ref=e602] [cursor=pointer]:
+                    - /url: tel:+919638822250
+                  - link "+91 96388 22211" [ref=e605] [cursor=pointer]:
+                    - /url: tel:+919638822211
+                  - link "natraj_agro_products@yahoo.co.in" [ref=e608] [cursor=pointer]:
+                    - /url: mailto:natraj_agro_products@yahoo.co.in
+                - link "Directions" [ref=e612] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=Natraj%20Agro%20Products%2C%2068%2C%20Navagam%20Udhyog%20Nagar%2C%20Kamrej%2C%20Surat%2C%20Gujarat%20394185
+            - generic [ref=e615]:
+              - 'img "Map of the four Natraj Agro plants: Surat, Gujarat; Sangli, Maharashtra; Jalgaon, Maharashtra; Raipur, Chhattisgarh" [ref=e618]':
+                - generic [ref=e621]:
+                  - generic [ref=e622]: 16°N
+                  - generic [ref=e623]: 18°N
+                  - generic [ref=e624]: 20°N
+                  - generic [ref=e625]: 22°N
+                  - generic [ref=e626]: 72°E
+                  - generic [ref=e627]: 74°E
+                  - generic [ref=e628]: 76°E
+                  - generic [ref=e629]: 78°E
+                  - generic [ref=e630]: 80°E
+                  - generic [ref=e631]: 82°E
+                - generic [ref=e632]: ~520 km
+                - generic [ref=e635]: ~270 km
+                - generic [ref=e638]: ~900 km
+                - generic [ref=e645]:
+                  - text: Surat
+                  - generic [ref=e646]: GJ · HQ
+                - generic [ref=e651]:
+                  - text: Sangli
+                  - generic [ref=e652]: MH
+                - generic [ref=e656]:
+                  - text: Jalgaon
+                  - generic [ref=e657]: MH
+                - generic [ref=e661]:
+                  - text: Raipur
+                  - generic [ref=e662]: CG
+              - generic [ref=e663]:
+                - generic [ref=e664]:
+                  - heading "Sangli" [level=3] [ref=e665]
+                  - generic [ref=e666]: Maharashtra
+                - paragraph [ref=e667]: Plot No J 38/39, Kupwad MIDC, Sangli, Maharashtra 416436
+                - generic [ref=e668]:
+                  - link "+91 96387 11225" [ref=e669] [cursor=pointer]:
+                    - /url: tel:+919638711225
+                  - link "natrajfoodssangli@gmail.com" [ref=e672] [cursor=pointer]:
+                    - /url: mailto:natrajfoodssangli@gmail.com
+                - link "Directions" [ref=e676] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=Natraj%20Agro%20Products%2C%20Plot%20No%20J%2038%2F39%2C%20Kupwad%20MIDC%2C%20Sangli%2C%20Maharashtra%20416436
+            - generic [ref=e679]:
+              - 'img "Map of the four Natraj Agro plants: Surat, Gujarat; Sangli, Maharashtra; Jalgaon, Maharashtra; Raipur, Chhattisgarh" [ref=e682]':
+                - generic [ref=e685]:
+                  - generic [ref=e686]: 16°N
+                  - generic [ref=e687]: 18°N
+                  - generic [ref=e688]: 20°N
+                  - generic [ref=e689]: 22°N
+                  - generic [ref=e690]: 72°E
+                  - generic [ref=e691]: 74°E
+                  - generic [ref=e692]: 76°E
+                  - generic [ref=e693]: 78°E
+                  - generic [ref=e694]: 80°E
+                  - generic [ref=e695]: 82°E
+                - generic [ref=e696]: ~520 km
+                - generic [ref=e699]: ~270 km
+                - generic [ref=e702]: ~900 km
+                - generic [ref=e709]:
+                  - text: Surat
+                  - generic [ref=e710]: GJ · HQ
+                - generic [ref=e714]:
+                  - text: Sangli
+                  - generic [ref=e715]: MH
+                - generic [ref=e720]:
+                  - text: Jalgaon
+                  - generic [ref=e721]: MH
+                - generic [ref=e725]:
+                  - text: Raipur
+                  - generic [ref=e726]: CG
+              - generic [ref=e727]:
+                - generic [ref=e728]:
+                  - heading "Jalgaon" [level=3] [ref=e729]
+                  - generic [ref=e730]: Maharashtra
+                - paragraph [ref=e731]: Plot No C 18, A/1, MIDC, Jalgaon, Maharashtra 425003
+                - generic [ref=e732]:
+                  - link "+91 96732 99000" [ref=e733] [cursor=pointer]:
+                    - /url: tel:+919673299000
+                  - link "natrajagrojalgaon@gmail.com" [ref=e736] [cursor=pointer]:
+                    - /url: mailto:natrajagrojalgaon@gmail.com
+                - link "Directions" [ref=e740] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=Natraj%20Agro%20Products%2C%20Plot%20No%20C%2018%2C%20A%2F1%2C%20MIDC%2C%20Jalgaon%2C%20Maharashtra%20425003
+            - generic [ref=e743]:
+              - img "The Natraj Agro plant at Raipur from the air, with its steel silos and chimney" [ref=e745]
+              - generic [ref=e746]:
+                - generic [ref=e747]:
+                  - heading "Raipur" [level=3] [ref=e748]
+                  - generic [ref=e749]: Chhattisgarh
+                - paragraph [ref=e750]: 44–56, CSIDC Industrial Estate, Bilaspur Road, Rawabhata, Raipur, Chhattisgarh 493221
+                - generic [ref=e751]:
+                  - link "+91 88398 71200" [ref=e752] [cursor=pointer]:
+                    - /url: tel:+918839871200
+                  - link "natrajagro.raipur@gmail.com" [ref=e755] [cursor=pointer]:
+                    - /url: mailto:natrajagro.raipur@gmail.com
+                - link "Directions" [ref=e759] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=Natraj%20Agro%20Products%2C%2044%E2%80%9356%2C%20CSIDC%20Industrial%20Estate%2C%20Bilaspur%20Road%2C%20Rawabhata%2C%20Raipur%2C%20Chhattisgarh%20493221
+      - region [ref=e762]:
+        - generic [ref=e763]:
+          - generic [ref=e764]:
+            - generic [ref=e765]: FAQ
+            - heading [level=2] [ref=e766]:
+              - text: Questions,
+              - emphasis [ref=e767]: answered.
+            - paragraph [ref=e768]:
+              - text: New to Makka Poha? Read our
+              - link "complete guide" [ref=e769] [cursor=pointer]:
+                - /url: /makka-poha
+              - text: ", with the chivda recipe and nutrition facts."
+          - generic [ref=e770]:
+            - group [ref=e771]:
+              - heading "What is Makka Poha?" [level=3] [ref=e773] [cursor=pointer]
+              - paragraph [ref=e777]: "Makka Poha is maize flakes: whole maize pressed into thin flakes with a little salt, then dried. It is a cooking ingredient, not a ready-to-eat cereal. When you fry or roast it, it puffs into light, crunchy flakes that are the base of makai chivda and many namkeen mixes."
+            - group [ref=e778]:
+              - heading "Is Makka Poha the same as cornflakes?" [level=3] [ref=e780] [cursor=pointer]
+            - group [ref=e784]:
+              - heading "Who makes Natraj Makka Poha?" [level=3] [ref=e786] [cursor=pointer]
+            - group [ref=e790]:
+              - heading "What pack sizes are available?" [level=3] [ref=e792] [cursor=pointer]
+            - group [ref=e796]:
+              - heading "What is the price and minimum order?" [level=3] [ref=e798] [cursor=pointer]
+            - group [ref=e802]:
+              - heading "What happens to broken flakes?" [level=3] [ref=e804] [cursor=pointer]
+      - region [ref=e808]:
+        - generic [ref=e811]:
+          - generic [ref=e812]: Bulk enquiries · Mon–Sat, 9:00 AM – 6:00 PM
+          - heading [level=2] [ref=e813]:
+            - text: Let’s talk
+            - emphasis [ref=e814]: maize.
+          - link [ref=e817] [cursor=pointer]:
+            - /url: https://wa.me/919638822250?text=Hello%20Natraj%20Agro%2C%20I'd%20like%20a%20quote.
+            - generic [ref=e818]: WhatsAppfor a quote
+          - list [ref=e821]:
+            - listitem [ref=e822]:
+              - generic [ref=e823]: Surat
+              - link "+91 96388 22250" [ref=e824] [cursor=pointer]:
+                - /url: tel:+919638822250
+            - listitem [ref=e825]:
+              - generic [ref=e826]: Sangli
+              - link "+91 96387 11225" [ref=e827] [cursor=pointer]:
+                - /url: tel:+919638711225
+            - listitem [ref=e828]:
+              - generic [ref=e829]: Jalgaon
+              - link "+91 96732 99000" [ref=e830] [cursor=pointer]:
+                - /url: tel:+919673299000
+            - listitem [ref=e831]:
+              - generic [ref=e832]: Raipur
+              - link "+91 88398 71200" [ref=e833] [cursor=pointer]:
+                - /url: tel:+918839871200
+  - contentinfo [ref=e834]:
+    - generic [ref=e836]:
+      - generic [ref=e837]:
+        - link "Natraj Agro, home" [ref=e838] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e840]:
+            - generic [ref=e841]: Natraj Agro
+            - generic [ref=e842]: Since 1980
+        - paragraph [ref=e843]: Maize flakes for namkeen makers, shops and homes, and maize cattle feed for dairies. Made from maize, salt and water in four plants since 1980.
+        - generic [ref=e844]:
+          - link "WhatsApp" [ref=e845] [cursor=pointer]:
+            - /url: https://wa.me/919638822250?text=Hello%20Natraj%20Agro%2C%20I'd%20like%20a%20quote.
+          - link "+91 96388 22250" [ref=e848] [cursor=pointer]:
+            - /url: tel:+919638822250
+        - link "natraj_agro_products@yahoo.co.in" [ref=e851] [cursor=pointer]:
+          - /url: mailto:natraj_agro_products@yahoo.co.in
+      - navigation "Footer" [ref=e855]:
+        - generic [ref=e856]:
+          - heading "Explore" [level=2] [ref=e857]
+          - list [ref=e858]:
+            - listitem [ref=e859]:
+              - link "Home" [ref=e860] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e861]:
+              - link "Products" [ref=e862] [cursor=pointer]:
+                - /url: /products
+            - listitem [ref=e863]:
+              - link "What is Makka Poha?" [ref=e864] [cursor=pointer]:
+                - /url: /makka-poha
+            - listitem [ref=e865]:
+              - link "About" [ref=e866] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e867]:
+              - link "Contact" [ref=e868] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e869]:
+          - heading "Products" [level=2] [ref=e870]
+          - list [ref=e871]:
+            - listitem [ref=e872]:
+              - link "Maize Flakes (15 kg loose box)" [ref=e873] [cursor=pointer]:
+                - /url: /products/maize-flakes-15kg-box
+            - listitem [ref=e874]:
+              - link "Maize Flakes (15 kg loose bag)" [ref=e875] [cursor=pointer]:
+                - /url: /products/maize-flakes-15kg-bag
+            - listitem [ref=e876]:
+              - link "Maize Flakes (20 kg loose bag)" [ref=e877] [cursor=pointer]:
+                - /url: /products/maize-flakes-20kg-bag
+            - listitem [ref=e878]:
+              - link "Parmal Maize Flakes (30 kg bag)" [ref=e879] [cursor=pointer]:
+                - /url: /products/parmal-dagadi-poha-30kg
+            - listitem [ref=e880]:
+              - link "Natraj Maize Flakes (12 kg pouch pack)" [ref=e881] [cursor=pointer]:
+                - /url: /products/maize-flakes-12kg-pouch-pack
+            - listitem [ref=e882]:
+              - link "Makai Chuni (40 kg bag)" [ref=e883] [cursor=pointer]:
+                - /url: /products/makai-chuni-40kg
+            - listitem [ref=e884]:
+              - link "Makai Poha Mamri (40 kg bag)" [ref=e885] [cursor=pointer]:
+                - /url: /products/makai-poha-mamri-40kg
+        - generic [ref=e886]:
+          - heading "Plants" [level=2] [ref=e887]
+          - list [ref=e888]:
+            - listitem [ref=e889]:
+              - generic [ref=e890]:
+                - text: Surat
+                - generic [ref=e891]: GJ · HQ
+              - link "+91 96388 22250" [ref=e892] [cursor=pointer]:
+                - /url: tel:+919638822250
+            - listitem [ref=e893]:
+              - generic [ref=e894]: Sangli MH
+              - link "+91 96387 11225" [ref=e895] [cursor=pointer]:
+                - /url: tel:+919638711225
+            - listitem [ref=e896]:
+              - generic [ref=e897]: Jalgaon MH
+              - link "+91 96732 99000" [ref=e898] [cursor=pointer]:
+                - /url: tel:+919673299000
+            - listitem [ref=e899]:
+              - generic [ref=e900]: Raipur CG
+              - link "+91 88398 71200" [ref=e901] [cursor=pointer]:
+                - /url: tel:+918839871200
+          - paragraph [ref=e902]: Mon–Sat, 9:00 AM – 6:00 PM
+    - paragraph [aria-hidden]: Natraj Agro
+    - generic [ref=e904]:
+      - paragraph [ref=e905]: © 1980–2026 Natraj Agro Products. All rights reserved.
+      - paragraph [ref=e906]:
+        - generic [ref=e907]: FSSAI Lic. No. 10716022000166
+        - link "llms.txt" [ref=e908] [cursor=pointer]:
+          - /url: /llms.txt
+        - generic [ref=e909]: Website by DNJ Techx
+  - button "Open Next.js Dev Tools" [ref=e915] [cursor=pointer]
+  - alert [ref=e919]

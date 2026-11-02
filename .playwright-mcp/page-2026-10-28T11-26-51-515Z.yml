@@ -1,0 +1,528 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e3]:
+    - generic:
+      - banner:
+        - generic [ref=f2e4]:
+          - button "GastroAGI home" [ref=f2e6] [cursor=pointer]:
+            - img "GastroAGI Logo" [ref=f2e7]
+          - button "Open menu" [ref=f2e9] [cursor=pointer]
+      - button "Close menu backdrop"
+      - dialog "Site navigation":
+        - generic:
+          - button "GastroAGI home":
+            - img "GastroAGI Logo"
+          - button "Close menu"
+        - navigation:
+          - button "Overview"
+          - button "Calculator"
+          - button "Blogs"
+          - button "About"
+          - button "Trending Topics"
+          - button "Daily Brief"
+          - button "Conference"
+        - generic:
+          - button "Try now"
+    - main [ref=f2e14]:
+      - generic [ref=f2e15]:
+        - generic [ref=f2e17]:
+          - generic [ref=f2e18]:
+            - generic:
+              - generic: AI-powered gastroenterology research
+              - heading "Ask Anything" [level=1]
+              - button "Start Asking" [ref=f2e19] [cursor=pointer]
+            - generic [ref=f2e26] [cursor=pointer]:
+              - generic: New Calculator
+              - paragraph: MASLD–MASH NIT
+              - paragraph: Integrated non-invasive assessment of MASLD fibrosis and at-risk MASH — FIB-4, APRI, FAST, Agile 3+, ELF, ADAPT and NFS in one pass
+              - generic: Open calculator
+              - button [ref=f2e27]
+          - generic [ref=f2e30]:
+            - generic [ref=f2e31]:
+              - generic [ref=f2e32]: Meet Your Assistant
+              - heading "Ask smarter. Decide faster." [level=2] [ref=f2e33]
+              - paragraph [ref=f2e34]: Get precise, evidence-backed answers tailored to your clinical or learning needs. No noise. Just clarity.
+            - generic [ref=f2e35]:
+              - generic [ref=f2e36]:
+                - img "GastroAGI" [ref=f2e38]
+                - generic [ref=f2e39]: Hi, I'm your GastroAGI assistant. Here to help you explore gastroenterology with trusted insights.
+              - generic [ref=f2e40]:
+                - paragraph [ref=f2e41]: Choose your mode to get the right answers.
+                - generic [ref=f2e42] [cursor=pointer]
+                - generic [ref=f2e43]:
+                  - button "Student" [ref=f2e44] [cursor=pointer]
+                  - button "Clinician" [ref=f2e45] [cursor=pointer]
+                  - button "Researcher" [ref=f2e46] [cursor=pointer]
+                  - button "Patient" [ref=f2e47] [cursor=pointer]
+              - img "GastroAGI" [ref=f2e50]
+              - img "User" [ref=f2e57]
+              - img "GastroAGI" [ref=f2e60]
+          - generic [ref=f2e64]:
+            - generic [ref=f2e65]: Latest GI Updates
+            - heading "What's new in GI All in one place." [level=2] [ref=f2e66]: What's new in GIAll in one place.
+            - paragraph [ref=f2e67]: Discover recent studies, guidelines, and key updates from conferences, all brought together in one easy place.
+          - generic [ref=f2e142]:
+            - generic [ref=f2e143]:
+              - generic [ref=f2e144]: Powered by
+              - heading "Evidence from the worlds leading GI sources. Organized for you." [level=2] [ref=f2e145]
+              - paragraph [ref=f2e146]: Bringing together journals, guidelines, and conference insights to help you quickly review evidence and stay up to date.
+            - generic [ref=f2e147]:
+              - generic [ref=f2e148]: Journals
+              - generic [ref=f2e153]:
+                - generic [ref=f2e154]:
+                  - img "Endoscopy"
+                - generic [ref=f2e155]:
+                  - img "AJG"
+                - generic [ref=f2e156]:
+                  - img "GIE"
+                - generic [ref=f2e157]:
+                  - img "The New England Journal"
+                - generic [ref=f2e158]:
+                  - img "Nature"
+                - generic [ref=f2e159]:
+                  - img "Hepatology"
+                - generic [ref=f2e160]:
+                  - img "The Lancet"
+                - generic [ref=f2e161]:
+                  - img "Gut"
+                - generic [ref=f2e162]:
+                  - img "UEG Journal"
+                - generic [ref=f2e163]:
+                  - img "Journal of Hepatology"
+                - generic [ref=f2e164]:
+                  - img "JAMA"
+                - generic [ref=f2e165]:
+                  - img "Endoscopy"
+                - generic [ref=f2e166]:
+                  - img "AJG"
+                - generic [ref=f2e167]:
+                  - img "GIE"
+                - generic [ref=f2e168]:
+                  - img "The New England Journal"
+                - generic [ref=f2e169]:
+                  - img "Nature"
+                - generic [ref=f2e170]:
+                  - img "Hepatology"
+                - generic [ref=f2e171]:
+                  - img "The Lancet"
+                - generic [ref=f2e172]:
+                  - img "Gut"
+                - generic [ref=f2e173]:
+                  - img "UEG Journal"
+                - generic [ref=f2e174]:
+                  - img "Journal of Hepatology"
+                - generic [ref=f2e175]:
+                  - img "JAMA"
+                - generic [ref=f2e176]:
+                  - img "Endoscopy"
+                - generic [ref=f2e177]:
+                  - img "AJG"
+                - generic [ref=f2e178]:
+                  - img "GIE"
+                - generic [ref=f2e179]:
+                  - img "The New England Journal"
+                - generic [ref=f2e180]:
+                  - img "Nature"
+                - generic [ref=f2e181]:
+                  - img "Hepatology"
+                - generic [ref=f2e182]:
+                  - img "The Lancet"
+                - generic [ref=f2e183]:
+                  - img "Gut"
+                - generic [ref=f2e184]:
+                  - img "UEG Journal"
+                - generic [ref=f2e185]:
+                  - img "Journal of Hepatology"
+                - generic [ref=f2e186]:
+                  - img "JAMA"
+                - generic [ref=f2e187]:
+                  - img "Endoscopy"
+                - generic [ref=f2e188]:
+                  - img "AJG"
+                - generic [ref=f2e189]:
+                  - img "GIE"
+                - generic [ref=f2e190]:
+                  - img "The New England Journal"
+                - generic [ref=f2e191]:
+                  - img "Nature"
+                - generic [ref=f2e192]:
+                  - img "Hepatology"
+                - generic [ref=f2e193]:
+                  - img "The Lancet"
+                - generic [ref=f2e194]:
+                  - img "Gut"
+                - generic [ref=f2e195]:
+                  - img "UEG Journal"
+                - generic [ref=f2e196]:
+                  - img "Journal of Hepatology"
+                - generic [ref=f2e197]:
+                  - img "JAMA"
+            - generic [ref=f2e198]:
+              - generic [ref=f2e199]: Guidelines
+              - generic [ref=f2e204]:
+                - generic [ref=f2e205]:
+                  - img "AASLD"
+                - generic [ref=f2e206]:
+                  - img "ACG"
+                - generic [ref=f2e207]:
+                  - img "ANMS"
+                - generic [ref=f2e208]:
+                  - img "APA"
+                - generic [ref=f2e209]:
+                  - img "ASGE"
+                - generic [ref=f2e210]:
+                  - img "EASL"
+                - generic [ref=f2e211]:
+                  - img "ECCO"
+                - generic [ref=f2e212]:
+                  - img "ESGE"
+                - generic [ref=f2e213]:
+                  - img "ESNM"
+                - generic [ref=f2e214]:
+                  - img "AASLD"
+                - generic [ref=f2e215]:
+                  - img "ACG"
+                - generic [ref=f2e216]:
+                  - img "ANMS"
+                - generic [ref=f2e217]:
+                  - img "APA"
+                - generic [ref=f2e218]:
+                  - img "ASGE"
+                - generic [ref=f2e219]:
+                  - img "EASL"
+                - generic [ref=f2e220]:
+                  - img "ECCO"
+                - generic [ref=f2e221]:
+                  - img "ESGE"
+                - generic [ref=f2e222]:
+                  - img "ESNM"
+                - generic [ref=f2e223]:
+                  - img "AASLD"
+                - generic [ref=f2e224]:
+                  - img "ACG"
+                - generic [ref=f2e225]:
+                  - img "ANMS"
+                - generic [ref=f2e226]:
+                  - img "APA"
+                - generic [ref=f2e227]:
+                  - img "ASGE"
+                - generic [ref=f2e228]:
+                  - img "EASL"
+                - generic [ref=f2e229]:
+                  - img "ECCO"
+                - generic [ref=f2e230]:
+                  - img "ESGE"
+                - generic [ref=f2e231]:
+                  - img "ESNM"
+                - generic [ref=f2e232]:
+                  - img "AASLD"
+                - generic [ref=f2e233]:
+                  - img "ACG"
+                - generic [ref=f2e234]:
+                  - img "ANMS"
+                - generic [ref=f2e235]:
+                  - img "APA"
+                - generic [ref=f2e236]:
+                  - img "ASGE"
+                - generic [ref=f2e237]:
+                  - img "EASL"
+                - generic [ref=f2e238]:
+                  - img "ECCO"
+                - generic [ref=f2e239]:
+                  - img "ESGE"
+                - generic [ref=f2e240]:
+                  - img "ESNM"
+            - generic [ref=f2e241]:
+              - generic [ref=f2e242]: Conference Digest
+              - generic [ref=f2e247]:
+                - generic [ref=f2e248]:
+                  - img "DDW 2026"
+                - generic [ref=f2e249]:
+                  - img "EASL Congress"
+                - generic [ref=f2e250]:
+                  - img "ACC 2026"
+                - generic [ref=f2e251]:
+                  - img "AASLD The Liver Meeting"
+                - generic [ref=f2e252]:
+                  - img "ECCO"
+                - generic [ref=f2e253]:
+                  - img "CDDW-CLM"
+                - generic [ref=f2e254]:
+                  - img "APASL Istanbul"
+                - generic [ref=f2e255]:
+                  - img "Barcelona UEG Week"
+                - generic [ref=f2e256]:
+                  - img "APDW Manila"
+                - generic [ref=f2e257]:
+                  - img "DDW 2026"
+                - generic [ref=f2e258]:
+                  - img "EASL Congress"
+                - generic [ref=f2e259]:
+                  - img "ACC 2026"
+                - generic [ref=f2e260]:
+                  - img "AASLD The Liver Meeting"
+                - generic [ref=f2e261]:
+                  - img "ECCO"
+                - generic [ref=f2e262]:
+                  - img "CDDW-CLM"
+                - generic [ref=f2e263]:
+                  - img "APASL Istanbul"
+                - generic [ref=f2e264]:
+                  - img "Barcelona UEG Week"
+                - generic [ref=f2e265]:
+                  - img "APDW Manila"
+                - generic [ref=f2e266]:
+                  - img "DDW 2026"
+                - generic [ref=f2e267]:
+                  - img "EASL Congress"
+                - generic [ref=f2e268]:
+                  - img "ACC 2026"
+                - generic [ref=f2e269]:
+                  - img "AASLD The Liver Meeting"
+                - generic [ref=f2e270]:
+                  - img "ECCO"
+                - generic [ref=f2e271]:
+                  - img "CDDW-CLM"
+                - generic [ref=f2e272]:
+                  - img "APASL Istanbul"
+                - generic [ref=f2e273]:
+                  - img "Barcelona UEG Week"
+                - generic [ref=f2e274]:
+                  - img "APDW Manila"
+                - generic [ref=f2e275]:
+                  - img "DDW 2026"
+                - generic [ref=f2e276]:
+                  - img "EASL Congress"
+                - generic [ref=f2e277]:
+                  - img "ACC 2026"
+                - generic [ref=f2e278]:
+                  - img "AASLD The Liver Meeting"
+                - generic [ref=f2e279]:
+                  - img "ECCO"
+                - generic [ref=f2e280]:
+                  - img "CDDW-CLM"
+                - generic [ref=f2e281]:
+                  - img "APASL Istanbul"
+                - generic [ref=f2e282]:
+                  - img "Barcelona UEG Week"
+                - generic [ref=f2e283]:
+                  - img "APDW Manila"
+          - generic [ref=f2e285]:
+            - generic [ref=f2e286]:
+              - generic [ref=f2e287]: Modes
+              - heading "Different needs. One intelligent assistant." [level=2] [ref=f2e288]
+              - paragraph [ref=f2e289]: Choose a mode that matches your role and get answers tailored to your needs.
+            - generic [ref=f2e291]:
+              - generic [ref=f2e294]:
+                - generic [ref=f2e295]:
+                  - generic "More info" [ref=f2e296] [cursor=pointer]: i
+                  - generic [ref=f2e297]:
+                    - img "student" [ref=f2e299]
+                    - paragraph [ref=f2e300]: Student
+                    - paragraph [ref=f2e301]: Get clear, structured answers to build your learning foundation effectively.
+                    - button "Try It Now" [ref=f2e302] [cursor=pointer]
+                    - link "Learn more →" [ref=f2e307] [cursor=pointer]:
+                      - /url: /for-students
+                      - text: Learn more
+                      - generic [ref=f2e308]: →
+                  - generic [ref=f2e309]:
+                    - img "Student"
+                - generic [ref=f2e310]:
+                  - generic [ref=f2e311]:
+                    - paragraph [ref=f2e313]: Student Mode
+                    - button "← Back" [ref=f2e314] [cursor=pointer]
+                  - paragraph [ref=f2e315]: Built for MBBS students, postgraduate trainees, and exam aspirants, Student Mode delivers structured, concept-driven learning in Gastroenterology and Hepatology. It combines textbook foundations, clinical reasoning, NEET PG/NExT preparation, and simplified explanations to help students move from basic science to real clinical understanding.
+              - generic [ref=f2e318]:
+                - generic [ref=f2e319]:
+                  - generic "More info" [ref=f2e320] [cursor=pointer]: i
+                  - generic [ref=f2e321]:
+                    - img "clinician" [ref=f2e323]
+                    - paragraph [ref=f2e324]: Clinician
+                    - paragraph [ref=f2e325]: Support clinical decisions with reliable, evidence-based insights.
+                    - button "Try It Now" [ref=f2e326] [cursor=pointer]
+                    - link "Learn more →" [ref=f2e331] [cursor=pointer]:
+                      - /url: /for-clinicians
+                      - text: Learn more
+                      - generic [ref=f2e332]: →
+                  - generic [ref=f2e333]:
+                    - img "Clinician"
+                - generic [ref=f2e334]:
+                  - generic [ref=f2e335]:
+                    - paragraph [ref=f2e337]: Clinician Mode
+                    - button "← Back" [ref=f2e338] [cursor=pointer]
+                  - paragraph [ref=f2e339]: Designed for practicing gastroenterologists, hepatologists, GI surgeons, physicians, and endoscopists, Clinician Mode provides updated, guideline-based, and clinically actionable insights. Powered by major international guidelines and landmark review articles, it functions like a senior consultant offering practical, evidence-driven recommendations for real-world patient care and academic presentations.
+              - generic [ref=f2e342]:
+                - generic [ref=f2e343]:
+                  - generic "More info" [ref=f2e344] [cursor=pointer]: i
+                  - generic [ref=f2e345]:
+                    - img "researcher" [ref=f2e347]
+                    - paragraph [ref=f2e348]: Researcher
+                    - paragraph [ref=f2e349]: Explore deeper knowledge with relevant research and data connections.
+                    - button "Try It Now" [ref=f2e350] [cursor=pointer]
+                    - link "Learn more →" [ref=f2e355] [cursor=pointer]:
+                      - /url: /for-researchers
+                      - text: Learn more
+                      - generic [ref=f2e356]: →
+                  - generic [ref=f2e357]:
+                    - img "Researcher"
+                - generic [ref=f2e358]:
+                  - generic [ref=f2e359]:
+                    - paragraph [ref=f2e361]: Researcher Mode
+                    - button "← Back" [ref=f2e362] [cursor=pointer]
+                  - paragraph [ref=f2e363]: Built for academics, research fellows, and investigators, Researcher Mode delivers advanced academic and translational research intelligence in Gastroenterology and Hepatology. It frames answers around the evidence base — landmark trials, meta-analyses, mechanisms, biomarkers, and translational science — helping researchers map the literature, connect mechanisms to outcomes, and track the frontier of GI science.
+              - generic [ref=f2e366]:
+                - generic [ref=f2e367]:
+                  - generic "More info" [ref=f2e368] [cursor=pointer]: i
+                  - generic [ref=f2e369]:
+                    - img "patient" [ref=f2e371]
+                    - paragraph [ref=f2e372]: Patient
+                    - paragraph [ref=f2e373]: Understand your condition with simple, easy-to-follow explanations.
+                    - button "Try It Now" [ref=f2e374] [cursor=pointer]
+                    - link "Learn more →" [ref=f2e379] [cursor=pointer]:
+                      - /url: /for-patients
+                      - text: Learn more
+                      - generic [ref=f2e380]: →
+                  - generic [ref=f2e381]:
+                    - img "Patient"
+                - generic [ref=f2e382]:
+                  - generic [ref=f2e383]:
+                    - paragraph [ref=f2e385]: Patient Mode
+                    - button "← Back" [ref=f2e386] [cursor=pointer]
+                  - paragraph [ref=f2e387]: Patient Mode is a calm, empathetic, and patient-friendly digestive health assistant designed to reduce fear and confusion created by generic internet searches. It explains symptoms, blood tests, scans, tumor markers, medications, and reports in simple language while highlighting common causes first, identifying important warning signs, and guiding patients toward safe next steps without unnecessary panic.
+          - generic [ref=f2e390]:
+            - generic [ref=f2e391]:
+              - generic [ref=f2e392]: Spectrum
+              - heading "Explore the breadth of modern gastroenterology practice" [level=2] [ref=f2e393]: Explore the breadth ofmodern gastroenterology practice
+            - generic [ref=f2e394]:
+              - generic [ref=f2e395]:
+                - generic [ref=f2e396]:
+                  - generic [ref=f2e397]: Liver Disorders
+                  - paragraph [ref=f2e402]: Liver disease can result from alcohol use, fatty liver, or chronic inflammation, affecting normal liver function over time.
+                - generic [ref=f2e403]:
+                  - generic [ref=f2e404]: IBD (Inflammatory Bowel Disease)
+                  - paragraph [ref=f2e409]: IBD causes chronic inflammation in the digestive tract and commonly includes Crohn’s disease and ulcerative colitis.
+              - img "Human Anatomy" [ref=f2e411]
+              - generic [ref=f2e412]:
+                - generic [ref=f2e413]:
+                  - generic [ref=f2e414]: Stomach Disorders
+                  - paragraph [ref=f2e419]: Stomach disorders may occur due to infection, acid imbalance, or irritation, leading to pain, nausea, or gastritis.
+                - generic [ref=f2e420]:
+                  - generic [ref=f2e421]: Pancreatitis
+                  - paragraph [ref=f2e426]: Pancreatitis is inflammation of the pancreas that can cause severe abdominal pain and digestive complications.
+                - generic [ref=f2e427]:
+                  - generic [ref=f2e428]: Upper GI Tract Disorders
+                  - paragraph [ref=f2e433]: Upper GI disorders affect the esophagus, stomach, or duodenum and may cause reflux, heartburn, or swallowing issues.
+        - generic [ref=f2e436]:
+          - generic [ref=f2e437]:
+            - generic [ref=f2e438]: Our Growing Reach
+            - heading "Trusted by GI Community." [level=2] [ref=f2e439]
+            - paragraph [ref=f2e440]: Get precise, evidence-backed answers tailored to your clinical or learningneeds. No noise. Just clarity.
+          - generic [ref=f2e442]:
+            - generic [ref=f2e443]:
+              - generic [ref=f2e446]:
+                - generic [ref=f2e447]: 0+
+                - generic [ref=f2e449]: Clinicians
+                - paragraph [ref=f2e450]: Active individuals relying on GastroAGI for fast, reliable evidence.
+              - generic [ref=f2e453]:
+                - generic [ref=f2e454]: 0+
+                - generic [ref=f2e456]: Insights
+                - paragraph [ref=f2e457]: Total research pages, briefing segments, and trend cards viewed.
+            - generic [ref=f2e462]:
+              - generic [ref=f2e463]: 0+
+              - generic [ref=f2e465]: Countries
+              - paragraph [ref=f2e466]: Global footprint, providing instant GI medical reference across borders.
+        - generic [ref=f2e468]:
+          - generic [ref=f2e470]:
+            - generic [ref=f2e471]: Core Features
+            - heading "Built to simplify GI exploration." [level=2] [ref=f2e472]
+            - paragraph [ref=f2e473]: Explore, understand, and make better decisions with a set of toolsdesigned for clarity and ease.
+          - generic [ref=f2e474]:
+            - generic:
+              - generic:
+                - img "frame"
+            - generic [ref=f2e476]:
+              - generic [ref=f2e479]:
+                - img "icon" [ref=f2e481]
+                - heading "Explore complex GI topics with clarity" [level=2] [ref=f2e482]
+                - paragraph [ref=f2e483]: Get intelligent answers, simplified explanations, and deeper clinical understanding powered by GastroAGI.
+              - generic [ref=f2e487]:
+                - img "icon" [ref=f2e489]
+                - heading "Turn medical documents into insights" [level=2] [ref=f2e490]
+                - paragraph [ref=f2e491]: Upload reports, studies, and research papers to quickly uncover key findings and clinical context.
+              - generic [ref=f2e495]:
+                - img "icon" [ref=f2e497]
+                - heading "Discover what matters faster" [level=2] [ref=f2e498]
+                - paragraph [ref=f2e499]: Find related topics, emerging discussions, and relevant clinical information without endless searching.
+              - generic [ref=f2e503]:
+                - img "icon" [ref=f2e505]
+                - heading "Built on trusted medical knowledge" [level=2] [ref=f2e506]
+                - paragraph [ref=f2e507]: Every interaction is designed to support confident learning with evidence-based gastroenterology information.
+        - generic [ref=f2e510]:
+          - generic [ref=f2e517]:
+            - button "Play" [ref=f2e518] [cursor=pointer]
+            - button "Unmute" [ref=f2e521] [cursor=pointer]
+          - generic [ref=f2e527]:
+            - generic [ref=f2e528]:
+              - generic [ref=f2e529]: Blogs
+              - heading "Stories, insights, and updates." [level=2] [ref=f2e530]
+              - paragraph [ref=f2e531]: Explore product updates, clinical insights, and emerging trends in gastroenterology, all in one place.
+            - link "See more" [ref=f2e627] [cursor=pointer]:
+              - /url: /blog
+          - generic [ref=f2e631]:
+            - generic [ref=f2e632]:
+              - img "GastroAGI Logo" [ref=f2e634]
+              - paragraph [ref=f2e635]: We are pioneers in clinical intelligence, dedicated to helping gastroenterologists harness the power of artificial intelligence to drive precision, efficiency, and patient growth.
+              - generic [ref=f2e636]:
+                - button [ref=f2e637] [cursor=pointer]
+                - button [ref=f2e642] [cursor=pointer]
+                - button [ref=f2e646] [cursor=pointer]
+                - button [ref=f2e652] [cursor=pointer]
+                - button [ref=f2e656] [cursor=pointer]
+                - button [ref=f2e660] [cursor=pointer]
+            - generic [ref=f2e664]:
+              - generic [ref=f2e665]:
+                - heading "For You" [level=4] [ref=f2e666]
+                - link "For Students" [ref=f2e667] [cursor=pointer]:
+                  - /url: /for-students
+                - link "For Clinicians" [ref=f2e668] [cursor=pointer]:
+                  - /url: /for-clinicians
+                - link "For Researchers" [ref=f2e669] [cursor=pointer]:
+                  - /url: /for-researchers
+                - link "For Patients" [ref=f2e670] [cursor=pointer]:
+                  - /url: /for-patients
+              - generic [ref=f2e671]:
+                - heading "Core Tools" [level=4] [ref=f2e672]
+                - link "MELD-Na Score" [ref=f2e673] [cursor=pointer]:
+                  - /url: /calculator/meld-na
+                - link "Child-Pugh" [ref=f2e674] [cursor=pointer]:
+                  - /url: /calculator/child-pugh
+                - link "FIB-4 Index" [ref=f2e675] [cursor=pointer]:
+                  - /url: /calculator/fib4
+                - link "Glasgow-Blatchford" [ref=f2e676] [cursor=pointer]:
+                  - /url: /calculator/glasgow-blatchford
+                - link "BISAP Score" [ref=f2e677] [cursor=pointer]:
+                  - /url: /calculator/bisap
+              - generic [ref=f2e678]:
+                - heading "Explore" [level=4] [ref=f2e679]
+                - link "Overview" [ref=f2e680] [cursor=pointer]:
+                  - /url: /
+                - link "About" [ref=f2e681] [cursor=pointer]:
+                  - /url: /about
+                - link "Calculators" [ref=f2e682] [cursor=pointer]:
+                  - /url: /calculator
+                - generic [ref=f2e683] [cursor=pointer]: Trending Topics
+                - generic [ref=f2e684] [cursor=pointer]: Conference Briefings
+                - link "Blog Insights" [ref=f2e685] [cursor=pointer]:
+                  - /url: /blog
+          - generic [ref=f2e689]:
+            - generic [ref=f2e690]: ©GastroAGI 2026
+            - generic [ref=f2e691]:
+              - link "Privacy Policy" [ref=f2e692] [cursor=pointer]:
+                - /url: /privacy-policy
+              - link "Terms of Use" [ref=f2e693] [cursor=pointer]:
+                - /url: /terms-of-use
+              - link "Medical Disclaimer" [ref=f2e694] [cursor=pointer]:
+                - /url: /medical-disclaimer
+              - button "Cookie notice" [ref=f2e695] [cursor=pointer]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f2e701] [cursor=pointer]
+  - alert [ref=f2e705]
