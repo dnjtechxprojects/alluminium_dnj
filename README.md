@@ -76,10 +76,20 @@ Images are downloaded only once, since upload names are never reused. Admin
 accounts and contact enquiries are not public, so they are not included. Set
 `BACKUP_SITE_URL` to back up a different copy of the site.
 
-To restore, run `pnpm import-data`. It upserts the rows by id, so it is safe to
-re-run and never deletes anything. On your laptop it first copies the images it
-needs from `storage/uploads/production` into `storage/uploads/local`. Add
-`--dry-run` to only validate the file.
+To restore, run `pnpm import-data`. It **replaces** the Product and Blog tables
+with the file's rows, so the database ends up exactly matching the file:
+
+- Before changing anything it saves the current rows to
+  `storage/backups/before-import-<time>.json` (git-ignored). To undo an import,
+  copy that file over `scripts/old-data.json` and run `pnpm import-data` again.
+- The delete and the insert run in one transaction: if the insert fails, the
+  database is left exactly as it was.
+- A file with no products is refused, so an empty backup can't wipe the site.
+- Admin accounts are never touched.
+
+On your laptop it first copies the images it needs from
+`storage/uploads/production` into `storage/uploads/local`. Add `--dry-run` to
+only validate the file.
 
 To restore the server from your laptop, copy `storage/uploads/production` up to
 the same folder on the server, push `scripts/old-data.json`, and run
@@ -119,4 +129,4 @@ Client-side guards (`MainGuard`) only hide UI. They are not access control.
 | `pnpm lint` | ESLint |
 | `pnpm seed` | Create the admin account (refuses if it already exists) |
 | `pnpm backup-data` | Back up the live site (data and images) to this laptop |
-| `pnpm import-data` | Restore product and blog rows from `scripts/old-data.json` (never touches accounts) |
+| `pnpm import-data` | Replace product and blog rows with `scripts/old-data.json` (saves the old rows first, never touches accounts) |

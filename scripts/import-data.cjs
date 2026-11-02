@@ -1,6 +1,9 @@
 // Restores PRODUCT and BLOG rows from scripts/old-data.json, the file written
-// by backup-data.cjs. Rows are upserted by id, so re-running it is safe and
-// nothing that is missing from the file gets deleted.
+// by backup-data.cjs. It REPLACES both tables: every existing product and blog
+// is deleted and the file's rows are inserted, in one transaction, so a failure
+// leaves the database exactly as it was. Before that, the current rows are
+// saved to storage/backups/before-import-<time>.json, which is in the same
+// format and can itself be restored by copying it over old-data.json.
 //
 // On a laptop it first copies the images the rows use, and the catalogue
 // PDFs, from storage/uploads/production (where backup-data.cjs saves them)
@@ -16,6 +19,7 @@ const projectRoot = path.resolve(__dirname, "..");
 const dataPath = path.join(__dirname, "old-data.json");
 const envPath = path.join(projectRoot, ".env");
 const backupDir = path.join(projectRoot, "storage", "uploads", "production");
+const snapshotDir = path.join(projectRoot, "storage", "backups");
 const productPages = new Set([
   "DIEMANUFACTURING",
   "EXTRUDEDPRODUCTS",
@@ -161,6 +165,12 @@ async function main() {
   const { products, blogs } = readOldData();
   const summary = `${products.length} product(s) and ${blogs.length} blog(s)`;
 
+  // The tables are emptied before inserting, so a broken or empty backup
+  // would otherwise wipe the site.
+  if (products.length === 0) {
+    throw new Error("old-data.json has no products; refusing to replace the database with it");
+  }
+
   if (process.argv.includes("--dry-run")) {
     console.log(`Validated ${summary}.`);
     return;
@@ -197,29 +207,33 @@ async function main() {
   const prisma = new PrismaClient();
 
   try {
-    await prisma.$transaction(async (transaction) => {
-      for (const product of products) {
-        const { id, ...values } = product;
+    const [currentProducts, currentBlogs] = await Promise.all([
+      prisma.product.findMany({ orderBy: { createdAt: "asc" } }),
+      prisma.blog.findMany({ orderBy: { createdAt: "asc" } }),
+    ]);
 
-        await transaction.product.upsert({
-          where: { id },
-          create: product,
-          update: values,
-        });
-      }
+    // Same shape as old-data.json, so this snapshot can be restored as is.
+    const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+    const snapshotPath = path.join(snapshotDir, `before-import-${stamp}.json`);
 
-      for (const blog of blogs) {
-        const { id, ...values } = blog;
+    fs.mkdirSync(snapshotDir, { recursive: true });
+    fs.writeFileSync(
+      snapshotPath,
+      `${JSON.stringify({ Product: currentProducts, Blog: currentBlogs }, null, 2)}\n`,
+    );
+    console.log(
+      `Saved the current ${currentProducts.length} product(s) and ${currentBlogs.length} blog(s) to ${path.relative(projectRoot, snapshotPath)}.`,
+    );
 
-        await transaction.blog.upsert({
-          where: { id },
-          create: blog,
-          update: values,
-        });
-      }
-    });
+    // One batch transaction: if any insert fails, the deletes roll back too.
+    await prisma.$transaction([
+      prisma.product.deleteMany(),
+      prisma.blog.deleteMany(),
+      prisma.product.createMany({ data: products }),
+      prisma.blog.createMany({ data: blogs }),
+    ]);
 
-    console.log(`Imported ${summary}.`);
+    console.log(`Replaced the database contents with ${summary}.`);
   } finally {
     await prisma.$disconnect();
   }
