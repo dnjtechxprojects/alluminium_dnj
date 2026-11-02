@@ -45,14 +45,8 @@ two upload folders:
 | `storage/uploads/production` | where uploads are saved (`UPLOAD_DIR` unset) | the backup copy of the live files, filled by `pnpm backup-data` |
 | `storage/uploads/local` | not used | where uploads are saved, for `pnpm dev` and `pnpm build`/`start` (`UPLOAD_DIR` in `.env`) |
 
-`storage/uploads/production` is committed, so a `git pull` on the server delivers
-its images and catalogues. `storage/uploads/local` is git-ignored.
-
-Files uploaded on the live site land in the server's production folder as
-untracked files. After `pnpm backup-data` brings them to your laptop, commit
-them from there. If the server's next `git pull` then stops with "untracked
-working tree files would be overwritten", those are the same files it already
-has: move the listed files aside, pull, and the pull puts identical copies back.
+Both folders are git-ignored: images never go into git. Your laptop gets the
+live files only through `pnpm backup-data`.
 
 Images are read back only through `GET /api/image/<filename>`,
 which serves a fixed allowlist of image types with `nosniff`.
