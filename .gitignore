@@ -19,7 +19,10 @@
 
 prisma/migrations
 public/uploads
-storage/uploads
+# Only the production uploads are committed (from the server, as a backup);
+# storage/uploads/local and anything else in storage/uploads stays private.
+storage/uploads/*
+!storage/uploads/production/
 storage/enquiries
 storage/backups
 
@@ -39,6 +42,7 @@ pnpm-lock.yaml
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel

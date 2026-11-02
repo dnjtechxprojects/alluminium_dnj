@@ -17,34 +17,35 @@ pnpm dev
 | --- | --- | --- |
 | `DATABASE_URL` | yes | PostgreSQL connection string. |
 | `AUTH_SECRET` | yes | JWT signing key, min 32 chars. **The API refuses to start without it.** Generate with `openssl rand -base64 48`. |
-| `UPLOAD_DIR` | no | Defaults to `storage/uploads`. Must stay outside `public/`. |
+| `UPLOAD_DIR` | local only | Set to `storage/uploads/local` on your machine (as in `.env.example`). Leave unset on the production server, where it defaults to `storage/uploads/production`. Must stay outside `public/`. |
 
 ## Admin accounts
 
 **There is no registration endpoint and no signup page.** Accounts exist only
-where someone already has database access, and are managed entirely from the
-CLI:
+where someone already has database access. Create the admin account once with:
 
 ```bash
-pnpm create-admin --list                                  # show accounts
-pnpm create-admin <username> [password]                   # create or reset
-pnpm create-admin --remove <username>                     # delete
-pnpm create-admin --replace <oldUser> <newUser> [password] # swap, atomically
+pnpm seed
 ```
 
-Omit the password and a 28-character one is generated and printed once.
-Passwords must be at least 16 characters and are stored as salted scrypt
-hashes. `--remove` refuses to delete the last remaining account, and
-`--replace` creates before it deletes, so you can never end up locked out.
+It refuses to run if the account already exists. Passwords are stored as
+salted scrypt hashes.
 
 Never commit credentials to the repo — `scripts/old-data.json` previously
 carried a plaintext admin password and has been stripped.
 
 ## Uploads
 
-Uploaded images are written to `UPLOAD_DIR` (default `storage/uploads`), which is
-**deliberately outside `public/`** so nothing uploaded can ever be served as a
-static asset. Images are read back only through `GET /api/image/<filename>`,
+Uploaded images are written to `UPLOAD_DIR`, which is **deliberately outside
+`public/`** so nothing uploaded can ever be served as a static asset. There are
+two upload folders:
+
+| Folder | Used by | In git? |
+| --- | --- | --- |
+| `storage/uploads/local` | your machine, for `pnpm dev` and `pnpm build`/`start` (`UPLOAD_DIR` in `.env`) | no, ignored |
+| `storage/uploads/production` | the production server (`UPLOAD_DIR` unset) | yes, committed from the server as a backup |
+
+Images are read back only through `GET /api/image/<filename>`,
 which serves a fixed allowlist of image types with `nosniff`.
 
 The upload endpoint requires authentication, caps files at 5 MB, and determines
@@ -56,15 +57,31 @@ The two Extruded Products catalogue PDFs follow the same rules: uploaded via
 stored in `UPLOAD_DIR` as `catalogue-1.pdf` / `catalogue-2.pdf`, and downloaded
 through `GET /api/catalogue/<slot>`. Their titles live in `src/lib/catalogue.ts`.
 
-Back up `storage/uploads` alongside the database; it is not in version control.
+## Backup and restore
+
+Product and blog rows are backed up to `scripts/old-data.json`, and the files
+they use live in `storage/uploads/production`. Both are committed, so the repo
+is the backup. Admin accounts are never backed up (they hold password hashes).
+
+On the production server:
+
+```bash
+pnpm backup-data        # database → scripts/old-data.json
+git add scripts/old-data.json storage/uploads/production
+git commit -m "Back up production data" && git push
+```
+
+Then `git pull` anywhere to get a copy. To restore, put the files in place and
+run `pnpm import-data`. It upserts by id, so it is safe to re-run and never
+deletes rows. Add `--dry-run` to only validate the file.
 
 ## Contact enquiries
 
 The Contact Us form posts to `POST /api/enquiry`, which validates the fields and
 appends each enquiry to `storage/enquiries/enquiries.json`. Like uploads, the
 file is outside `public/`, so it can't be opened by URL, and no endpoint reads it
-back. It is git-ignored: read it on the server, and back it up with
-`storage/uploads`.
+back. It holds people's contact details, so it is git-ignored and not part of
+the git backup: read it on the server and copy it off separately.
 
 ## API auth
 
@@ -90,5 +107,6 @@ Client-side guards (`MainGuard`) only hide UI. They are not access control.
 | `pnpm dev` | Development server |
 | `pnpm build` / `pnpm start` | Production build / serve on port 3205 |
 | `pnpm lint` | ESLint |
-| `pnpm create-admin` | Create or reset an admin account |
-| `pnpm import:old-data` | One-off legacy **product** import (never touches accounts) |
+| `pnpm seed` | Create the admin account (refuses if it already exists) |
+| `pnpm backup-data` | Back up product and blog rows to `scripts/old-data.json` |
+| `pnpm import-data` | Restore product and blog rows from `scripts/old-data.json` (never touches accounts) |

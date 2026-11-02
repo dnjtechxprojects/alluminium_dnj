@@ -7,9 +7,10 @@
     "build": "next build",
     "start": "next start -p 3107",
     "lint": "eslint",
-    "import:old-data": "node scripts/import-old-data.cjs",
+    "import-data": "node scripts/import-data.cjs",
+    "backup-data": "node scripts/backup-data.cjs",
     "postinstall": "prisma generate",
-    "seed-admin": "node scripts/seed-admin.cjs"
+    "seed": "node scripts/seed.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

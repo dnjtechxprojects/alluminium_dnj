@@ -12,8 +12,13 @@ export const SECRET_KEY: string = rawSecret;
 
 // Where uploaded files live on disk. Deliberately OUTSIDE public/ so that
 // nothing written by an upload can ever be served as a static asset.
+//
+// The production server leaves UPLOAD_DIR unset and writes to
+// storage/uploads/production, which is committed to git as a backup of the
+// live images. Local machines set UPLOAD_DIR="storage/uploads/local" in .env,
+// a git-ignored folder, so test uploads never end up in the repo.
 export const UPLOAD_DIR: string =
-  process.env.UPLOAD_DIR || "storage/uploads";
+  process.env.UPLOAD_DIR || "storage/uploads/production";
 
 // Hard cap on a single uploaded file.
 export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024; // 5 MB

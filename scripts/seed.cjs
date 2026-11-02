@@ -1,7 +1,7 @@
 /**
  * One-time seed: creates the single admin account below.
  *
- *   node scripts/seed-admin.cjs
+ *   node scripts/seed.cjs
  *
  * Refuses to run if that username already exists.
  */
